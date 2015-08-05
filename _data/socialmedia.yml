@@ -1,44 +1,74 @@
-- name: YouTube
-  url: http://www.youtube.com/PhlowMedia
-  class: icon-youtube
-  title: "Videos, Video-Anleitungen und Filme von Phlow auf YouTube"
+#- name: YouTube
+#  url: http://www.youtube.com/@@NAME@@
+#  class: icon-youtube
+#  title: "Videos, Video-Anleitungen und Filme von Phlow auf YouTube"
+
+- name: Email
+  url: mailto:leon.moonen@computer.org
+  class: icon-mail
+  title: "Email"
 
 - name: Twitter
-  url: http://twitter.com/phlow
+  url: https://twitter.com/LeonMoonen
   class: icon-twitter
-  title: "Immer das Neuste von Phlow gibt es auf Twitter"
+  title: "Twitter"
+
+- name: LinkedIn
+  url: https://www.linkedin.com/in/LeonMoonen
+  class: icon-linkedin
+  title: "LinkedIn"
 
 - name: Facebook
-  url: http://www.facebook.com/phlow.media
+  url: https://www.facebook.com/LeonMoonen
   class: icon-facebook
-  title: "Lass uns Freunde sein!"
+  title: "Facebook"
 
-- name: Soundcloud
-  url: http://soundcloud.com/phlow
-  class: icon-soundcloud
-  title: "Sounds und Downloads und mehr"
+- name: GoogleScholar
+  url: https://scholar.google.com/citations?user=vndz7hwAAAAJ
+  class: ai-google-scholar
+  title: "Google Scholar"
+
+#- name: MicrosoftAcademicSearch
+#  url: http://academic.research.microsoft.com/Author/1106054/leon-moonen
+#  class: icon-mas
+#  title: "Microsoft Academic Search"
+
+- name: dblp
+  url: http://dblp.uni-trier.de/pers/hd/m/Moonen:Leon.html
+  class: icon-dblp
+  title: "dblp"
+
+- name: Mendeley
+  url: https://www.mendeley.com/profiles/leon-moonen/
+  class: ai-mendeley-square
+  title: "Mendeley"
+
+#- name: Soundcloud
+#  url: http://soundcloud.com/@@NAME@@
+#  class: icon-soundcloud
+#  title: "Sounds und Downloads und mehr"
 
 - name: GitHub
-  url: http://github.com/phlow
+  url: http://github.com/leonmoonen
   class: icon-github
-  title: Code und mehr...
+  title: "GitHub"
 
-- name: Instagram
-  url: http://instagram.com/phlowmedia
-  class: icon-instagram
-  title: "Bilder und Impressionen mit und ohne Filter..."
+#- name: Instagram
+#  url: http://instagram.com/@@NAME@@
+#  class: icon-instagram
+#  title: "Pictures"
 
-- name: Pinterest
-  url: http://www.pinterest.com/phlowmedia/
-  class: icon-pinterest
-  title: "Bilder, Fotos, Illustrationen, Grafiken sammeln..."
+#- name: Pinterest
+#  url: http://www.pinterest.com/@@NAME@@/
+#  class: icon-pinterest
+#  title: "Inspiration"
 
-- name: Mixcloud
-  url: http://www.mixcloud.com/phlow/
-  class: icon-cloud
-  title: "Mixe, was sonst?"
+#- name: Mixcloud
+#  url: http://www.mixcloud.com/@@NAME@@/
+#  class: icon-cloud
+#  title: "Mixes"
 
 # - name: Xing
-#   url: https://www.xing.com/profile/Moritzmo_Sauer
+#   url: https://www.xing.com/profile/@@NAME@@
 #   class: icon-xing
 #   title: Xing Profil

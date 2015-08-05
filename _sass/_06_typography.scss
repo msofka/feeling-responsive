@@ -490,3 +490,152 @@ font-smoothing: antialiased;
 .icon-warning:before { content: "\f131"; }
 .icon-xing:before { content: "\f135"; }
 .icon-youtube:before { content: "\f132"; }
+
+
+/*!
+ *  Academicons 1.5.0 by James Walsh - https://github.com/jpswalsh
+ *  Fonts generated using the IcoMoon app - http://icomoon.io/app
+ *  Square icons designed to be used alongside Font Awesome square icons - https://fortawesome.github.io/Font-Awesome/
+ *  License - Font: SIL OFL 1.1, CSS: MIT License
+ */
+
+@font-face {
+    font-family: 'academicons';
+    src:url('../fonts/academicons.eot?qbqm87');
+    src:url('../fonts/academicons.eot?#iefixqbqm87') format('embedded-opentype'),
+        url('../fonts/academicons.ttf?qbqm87') format('truetype'),
+        url('../fonts/academicons.woff?qbqm87') format('woff'),
+        url('../fonts/academicons.svg?qbqm87#academicons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.academicons       { font-family: academicons; }
+.academicons-48    { font-size: 48px; }
+
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.ai-google-scholar:before,
+.ai-google-scholar-square:before,
+.ai-researchgate:before,
+.ai-researchgate-square:before,
+.ai-mendeley:before,
+.ai-mendeley-square:before,
+.ai-orcid:before,
+.ai-orcid-square:before,
+.ai-impactstory:before,
+.ai-impactstory-square:before,
+.ai-academia:before,
+.ai-academia-square:before,
+.ai-zotero:before,
+.ai-zotero-square:before,
+.ai-figshare:before,
+.ai-figshare-square:before,
+.ai-dryad:before,
+.ai-dryad-square:before,
+.ai-arxiv:before,
+.ai-arxiv-square:before,
+.ai-scirate:before,
+.ai-scirate-square:before,
+.ai-researchgate-old:before,
+.ai-researchgate-old-square:before {
+    display:inline-block;
+    font:normal normal normal 16px/1 Academicons;
+    font-size: 110%;
+    line-height: 1;
+    text-decoration: inherit;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+.foobartest:before { display:inline-block;
+font-family: "academicicons";
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+line-height: 1;
+text-decoration: inherit;
+text-rendering: optimizeLegibility;
+text-transform: none;
+-moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+font-smoothing: antialiased;
+}
+
+.ai-google-scholar:before {
+    content: "\e600";
+}
+.ai-google-scholar-square:before {
+    content: "\e601";
+}
+.ai-researchgate:before {
+    content: "\e612";
+}
+.ai-researchgate-square:before {
+    content: "\e613";
+}
+.ai-mendeley:before {
+    content: "\e604";
+}
+.ai-mendeley-square:before {
+    content: "\e605";
+}
+.ai-orcid:before {
+    content: "\e606";
+}
+.ai-orcid-square:before {
+    content: "\e607";
+}
+.ai-impactstory:before {
+    content: "\e608";
+}
+.ai-impactstory-square:before {
+    content: "\e609";
+}
+.ai-academia:before {
+    content: "\e60a";
+}
+.ai-academia-square:before {
+    content: "\e60b";
+}
+.ai-zotero:before {
+    content: "\e60c";
+}
+.ai-zotero-square:before {
+    content: "\e60d";
+}
+.ai-figshare:before {
+    content: "\e60e";
+}
+.ai-figshare-square:before {
+    content: "\e60f";
+}
+.ai-dryad:before {
+    content: "\e610";
+}
+.ai-dryad-square:before {
+    content: "\e611";
+}
+.ai-arxiv:before {
+    content: "\e616";
+}
+.ai-arxiv-square:before {
+    content: "\e617";
+}
+.ai-scirate:before {
+    content: "\e614";
+}
+.ai-scirate-square:before {
+    content: "\e615";
+}
+.ai-researchgate-old:before {
+    content: "\e602";
+}
+.ai-researchgate-old-square:before {
+    content: "\e603";
+}
+

@@ -1,7 +1,9 @@
 ---
 layout: page
 show_meta: false
+meta_title: "Search the contents of this site via Google..."
 title: "Search"
+teaser: "Search the contents of this site via Google..."
 permalink: "/search/"
 ---
 
