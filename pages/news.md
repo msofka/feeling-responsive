@@ -5,7 +5,7 @@ title: "News"
 subheadline: ""
 teaser: "This part of the site is currently under development."
 header:
-   image_fullwidth: "header_unsplash_beach.jpg"
+   image_fullwidth: "header_unsplash_dawn.jpg"
 permalink: "/research/news/"
 ---
 <ul>

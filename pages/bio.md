@@ -6,7 +6,7 @@ show_meta: false
 teaser: ""
 permalink: "/about/"
 header:
-    image_fullwidth: "header_unsplash_aloe.jpg"
+    image_fullwidth: "header_unsplash_railroad.jpg"
 ---
 
 Leon Moonen is a senior research scientist in the Software Engineering department at Simula Research Laboratory, Norway. His research aims at creating better techniques and tools to support the understanding, assessment and evolution of large industrial software systems. This combines several subfields of software engineering, such as program comprehension, reverse engineering, program analysis, software visualization and empirical software engineering. Currently ongoing projects include recommendation systems to support smarter evolution and testing of safety-critical cyber-physical product families, and software analytics for measuring and managing technical debt (i.e. software quality and maintainability assessments).

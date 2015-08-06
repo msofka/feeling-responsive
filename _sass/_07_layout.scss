@@ -253,7 +253,7 @@ body.video cite { color: #fff; }
 ------------------------------------------------------------------- */
 
 #up-to-top {
-    padding: 160px 0 10px 0;
+    padding: 60px 0 10px 0;
 }
 #up-to-top a {
     font-size: 24px;
@@ -288,7 +288,7 @@ body.video cite { color: #fff; }
     #footer h4,
     #footer h5 {
         letter-spacing: 1px;
-        color: #fff;
+        color: $footer-color;
         text-transform: italics;
     }
 
@@ -319,14 +319,20 @@ body.video cite { color: #fff; }
         width: 36px;
         border-radius: 50%;
         color: $subfooter-bg;
-        background: $subfooter-color;
+        background: $footer-bg;
         text-align: center;
     }
     #subfooter .social-icons li a:hover {
         background: $subfooter-bg;
-        color: #fff;
+        color: $footer-bg;
     }
 
+    #subfooter h4,
+    #subfooter h5 {
+        letter-spacing: 1px;
+        color: $subfooter-color;
+        text-transform: italics;
+    }
 
 
 /* CSS-Classes to add margin at top or bottom

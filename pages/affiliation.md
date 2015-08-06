@@ -6,7 +6,7 @@ show_meta: false
 teaser: ""
 permalink: "/affiliation/"
 header:
-    image_fullwidth: "header_unsplash_railroad.jpg"
+    image_fullwidth: "header_unsplash_aloe.jpg"
 ---
 
 I am currently a [senior research scientist][simhome] at [Simula Research Laboratory][simula] in Norway. [Contact me][contact] if you are interested in discussing opportunities to work with us on [adressing concrete software engineering needs][research] in industry and society based on fundamental research results.

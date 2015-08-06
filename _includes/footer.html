@@ -6,16 +6,36 @@
 
 
     <footer id="footer-content" class="bg-grau">
+
+      <div id="subfooter">
+        <nav class="row">
+          <div id="subfooter-left" class="b15 small-12 medium-5 columns">
+            <h5>{{ site.data.language.info_website }}</h5>
+
+            <p>
+              {{ site.description }}
+            </p>
+          </div>
+          <div id="subfooter-right" class="t30 small-12 medium-6 medium-offset-1 columns social-icons">
+            <ul class="inline-list">
+            {% for social_item in site.data.socialmedia %}
+              <li><a href="{{ social_item.url }}" target="_blank" class="{{ social_item.class }}" title="{{ social_item.title }}"></a></li>
+            {% endfor %}
+            </ul>
+          </div>
+        </nav>
+      </div><!-- /#subfooter -->
+
       <div id="footer">
         <div class="row">
           <div class="medium-6 large-5 columns">
-            <h5 class="shadow-black">{{ site.data.language.info_website }}</h5>
-
-            <p class="shadow-black">
-              {{ site.description }}
-              <a href="{{ site.url }}/info/">{{ site.data.language.more }}</a>
-            </p>
-          </div><!-- /.large-6.columns -->
+            <h5 class="shadow-black">Copyright</h5>
+            <ul class="inline-list">
+              <li>&copy; 2015 by <a style="display:inline;" href="https://leonmoonen.com/">Leon Moonen</a>.
+              The content is licensed under a <a style="display:inline;" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+              </li>
+            </ul>
+          </div><!-- /.large-5.columns -->
 
 
           <div class="small-6 medium-3 large-3 large-offset-1 columns">
@@ -37,7 +57,7 @@
                   </li>
               {% endfor %}
               </ul>
-          </div><!-- /.large-4.columns -->
+          </div><!-- /.large-3.columns -->
 
 
           <div class="small-6 medium-3 large-3 columns">
@@ -64,22 +84,4 @@
 
       </div><!-- /#footer -->
 
-
-      <div id="subfooter">
-        <nav class="row">
-          <section id="subfooter-left" class="b30 small-12 medium-6 columns">
-            <ul class="inline-list">
-              <li>Copyright (c) 2015 by <a style="display:inline;" href="https://leonmoonen.com/">Leon Moonen</a>, This work is licensed under a <a style="display:inline;" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License <img alt="Creative Commons License" style="display:inline;border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a></li>
-            </ul>
-          </section>
-
-          <section id="subfooter-right" class="small-12 medium-6 columns social-icons">
-            <ul class="inline-list">
-            {% for social_item in site.data.socialmedia %}
-              <li><a href="{{ social_item.url }}" target="_blank" class="{{ social_item.class }}" title="{{ social_item.title }}"></a></li>
-            {% endfor %}
-            </ul>
-          </section>
-        </nav>
-      </div><!-- /#subfooter -->
     </footer>

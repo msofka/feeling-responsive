@@ -54,7 +54,7 @@ format: post
 * Widgets!  First check, if widget is empty or not by checking if there is a title
 *
 {% endcomment %}
-<div class="row t60">
+<div class="row t30">
     {% if page.widget-1.title %}
     <div class="medium-4 columns">
         <a href="{% if page.widget-1.url contains 'http' %}{{ page.widget-1.url }}{% else %}{{ site.url }}{{ site.baseurl }}/{{ page.widget-1.url }}{% endif %}">{% if page.widget-1.image %}<img src="{{ site.urlimg }}/{{ page.widget-1.image }}" width="302" height="182" alt="">{% endif %}{% if page.widget-1.video %}{{ page.widget-1.video }}{% endif %}</a>

@@ -16,13 +16,15 @@ slogan: "Software Explorer"
 
 
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
-description: "Homepage of Leon Moonen, researcher in large scale software evolution."
-
+description: "Homepage of Leon Moonen, researcher of techniques and tools to understand, assess and improve large industrial software systems."
 
 # This URL is the main adresse. Don't include a slash at the end.
 #
 url: "https://leonmoonen.com"
 baseurl: ""
+
+more-info-url: "/research"
+
 
 # This is for the editing function in _/includes/improve_content.html
 # Leave it empty if your site is not on GitHub/GitHub Pages
@@ -34,7 +36,7 @@ improve_content: https://github.com/leonmoonen/leonmoonen.github.io/edit/master
 # Example: <img src="{{ site.urlimg }}/{{ post.image.title }}">
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}/image.jpg)
 #
-urlimg: "http://leonmoonen.com/images/"
+urlimg: "https://leonmoonen.com/images/"
 
 
 # Logo size is 600x80 pixels
@@ -65,9 +67,9 @@ language: "en"
 exclude:
     - Gemfile
     - Gemfile.lock
-    - LICENSE
     - README.md
     - Makefile
+    - logo.graffle
 
 
 #

@@ -3,6 +3,7 @@ layout: page
 show_meta: false
 title: "Upcoming"
 subheadline: ""
+teaser: "This part of the site is currently under development."
 header:
    image_fullwidth: "header_unsplash_balloons.jpg"
 permalink: "/activities/upcoming/"
