@@ -6,10 +6,23 @@ show_meta: false
 teaser: ""
 permalink: "/affiliation/"
 header:
-    image_fullwidth: "header_unsplash_5.jpg"
+    image_fullwidth: "header_unsplash_railroad.jpg"
 ---
 
-Leon Moonen is a senior research scientist in the Software Engineering department at Simula Research Laboratory, Norway. His research aims at creating better techniques and tools to support the understanding, assessment and evolution of large industrial software systems. This combines several subfields of software engineering, such as program comprehension, reverse engineering, program analysis, software visualization and empirical software engineering. Currently ongoing projects include recommendation systems to support smarter evolution and testing of safety-critical cyber-physical product families, and software analytics for measuring and managing technical debt (i.e. software quality and maintainability assessments).
+I am currently a [senior research scientist][simhome] at [Simula Research Laboratory][simula] in Norway. [Contact me][contact] if you are interested in discussing opportunities to work with us on [adressing concrete software engineering needs][research] in industry and society based on fundamental research results.
 
-Dr. Moonen has published nearly 100 scientific papers (2752 citations, h-index: 28) and serves on steering-, organizing-, and program committees of international conferences on software maintenance (ICSM/ICSME), reverse engineering (WCRE), program understanding (ICPC), and source code analysis (SCAM) and he has (co-)organized various workshops on topics related to these areas. Before moving to Simula, he was assistant professor Software Engineering at Delft University of Technology where he taught courses on software evolution and software architecture. He has been advisor to 6 PhD students, 3 Post-docs and 17 MSc students. He is co-founder of the Software Improvement Group, a company that specializes in the use of source code analysis to help organizations get control over their software systems. Dr Moonen received his MSc (cum laude, Computer Science, 1996) and PhD (Computer Science, 2002) from the University of Amsterdam. He is a member of ACM, IEEE Computer Society, EAPLS and the ERCIM Working Group on Software Evolution.
+Before moving to Norway, I was [assistant professor][tudhome] in the [Software Evolution Research Lab][swerl] at [Delft University of Technology][tud], the Netherlands, and researcher in (what is now) the [Software Analysis and Transformation][swat] group at the [Centre for Mathematics and Computer Science (CWI)][cwi] in Amsterdam, the Netherlands. Collaborations in both these groups have helped to shape my research interests in exploring novel techniques that are directly aimed at addressing concrete, real-life software engineering challenges. 
 
+I am one of the founders of the [Software Improvement Group (SIG)][sig], a company that helps organizations deal with software (legacy) issues by means of automatic source code analysis, software risk assessments, software monitoring and automatic (re)generation of technical documentation based on source code analysis. Starting with a small team of 6 people in 2000, SIG now employs 90 people in 2015 and is a key player in evidence-based software quality improvement.
+
+
+[simhome]: http://www.simula.no/people/leon
+[simula]: http://www.simula.no/
+[research]: {{ site.url }}/research/
+[contact]: {{ site.url }}/contact/
+[tudhome]: http://swerl.tudelft.nl/leon/
+[swerl]: http://swerl.tudelft.nl/
+[tud]: http://www.tudelft.nl/
+[swat]: http://www.cwi.nl/research-groups/Software-analysis-and-transformation
+[cwi]: http://www.cwi.nl/
+[sig]: https://www.sig.eu/en

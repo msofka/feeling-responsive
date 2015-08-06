@@ -5,6 +5,8 @@ meta_title: "Search the contents of this site via Google..."
 title: "Search"
 teaser: "Search the contents of this site via Google..."
 permalink: "/search/"
+header:
+   image_fullwidth: "header_unsplash_mist.jpg"
 ---
 
 {% include google_search.html %}

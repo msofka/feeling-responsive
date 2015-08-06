@@ -4,8 +4,9 @@ title: "Contact"
 meta_title: "Contact information and visiting address"
 show_meta: false
 subheadline: ""
-teaser: ""
 permalink: "/contact/"
+header:
+   image_fullwidth: "header_unsplash_sea_night.jpg"
 ---
 
 ### Electronic
