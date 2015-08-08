@@ -35,7 +35,7 @@ Martin Linges vei 17
 1364 Fornebu  
 Norway
 
-[Directions to Simula][directions], and the [address in Google maps][googlemaps]. Simula's receptionist can you help my my office.
+[Directions to Simula][directions], and the [address in Google maps][googlemaps]. Simula's receptionist can you help find my office.
 
 [email]: mailto:leon.moonen@computer.org
 [simmail]: mailto:leon@simula.no
