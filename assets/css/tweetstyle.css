@@ -1,0 +1,44 @@
+.user,.tweet,.timePosted,.interact {margin-bottom:0; margin-right:5px;}
+.interact {display:inline;}
+.timePosted {
+  display:inline-block;
+}
+.interact {
+  margin-left:0px;
+  margin-bottom:0px;
+  display: inline-block;
+}
+.interact li {
+  display: inline;
+  list-style-type:none; 
+}
+.interact a {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  text-decoration:none; 
+  border-bottom: 0px;
+}
+.interact a:hover {
+  text-decoration:none; 
+  border-bottom: 0px;
+}
+
+a.twitter_reply_icon {
+  background: url(/assets/img/reply.png) no-repeat center center;
+}
+a.twitter_fav_icon {
+  background: url(/assets/img/favorite.png) no-repeat center center;
+}
+a.twitter_retweet_icon {
+  background: url(/assets/img/retweet.png) no-repeat center center;
+}
+a.twitter_reply_icon:hover {
+  background: url(/assets/img/reply_hover.png) no-repeat center center;
+}
+a.twitter_fav_icon:hover {
+  background: url(/assets/img/favorite_hover.png) no-repeat center center;
+}
+a.twitter_retweet_icon:hover {
+  background: url(/assets/img/retweet_hover.png) no-repeat center center;
+}

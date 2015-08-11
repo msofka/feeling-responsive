@@ -23,6 +23,11 @@
   class: icon-facebook
   title: "Facebook"
 
+- name: Mendeley
+  url: https://www.mendeley.com/profiles/leon-moonen/
+  class: ai-mendeley-square
+  title: "Mendeley"
+
 - name: GoogleScholar
   url: https://scholar.google.com/citations?user=vndz7hwAAAAJ
   class: ai-google-scholar
@@ -35,13 +40,9 @@
 
 - name: dblp
   url: http://dblp.uni-trier.de/pers/hd/m/Moonen:Leon.html
-  class: icon-dblp
+  class: icon-archive
   title: "dblp"
 
-- name: Mendeley
-  url: https://www.mendeley.com/profiles/leon-moonen/
-  class: ai-mendeley-square
-  title: "Mendeley"
 
 #- name: Soundcloud
 #  url: http://soundcloud.com/@@NAME@@

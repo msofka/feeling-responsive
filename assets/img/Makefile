@@ -6,6 +6,7 @@ all: icon.png
 	sips -Z 114 icon.png --out apple-touch-icon-114x114-precomposed.png
 	sips -Z 120 icon.png --out apple-touch-icon-120x120-precomposed.png
 	sips -Z 144 icon.png --out apple-touch-icon-144x144-precomposed.png
+	cp apple-touch-icon-144x144-precomposed.png msapplication_tileimage.png
 	sips -Z 152 icon.png --out apple-touch-icon-152x152-precomposed.png
 	sips -Z 180 icon.png --out apple-touch-icon-180x180-precomposed.png
 
