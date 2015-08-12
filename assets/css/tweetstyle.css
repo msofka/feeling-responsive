@@ -160,14 +160,24 @@ img.bibbase_icon:hover {
   display:none;
 }
 
-#bibbase .xdropdown-menu {
+
+#bibbase .dropdown-menu {
     background-color: #D7D7D7;  
 }
 
-#bibbase .xdropdown-menu:hover {
+#bibbase .dropdown-menu a:hover {
+    background-color: #BEBEBE;  
+}
+
+#bibbase .dropdown-menu {
+    background-color: #D7D7D7;  
+}
+
+#bibbase .dropdown-menu:hover {
     background-color: #BEBEBE;  
 }
 
 .bibbase_amazon {
   display:none;
 }
+

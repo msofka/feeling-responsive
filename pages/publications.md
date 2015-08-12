@@ -3,7 +3,7 @@ layout: page
 show_meta: false
 title: "Publications"
 subheadline: ""
-teaser: "Please hold while an updated overview is generated..."
+teaser: ""
 header:
    image_fullwidth: "header_unsplash_forest.jpg"
 permalink: "/publications/"
