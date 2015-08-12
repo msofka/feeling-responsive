@@ -18,8 +18,8 @@ I am one of the founders of the [Software Improvement Group (SIG)][sig], a compa
 
 [simhome]: http://www.simula.no/people/leon
 [simula]: http://www.simula.no/
-[research]: {{ site.url }}/research/
-[contact]: {{ site.url }}/contact/
+[research]: /research/
+[contact]: /contact/
 [tudhome]: http://swerl.tudelft.nl/leon/
 [swerl]: http://swerl.tudelft.nl/
 [tud]: http://www.tudelft.nl/
