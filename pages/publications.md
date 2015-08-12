@@ -3,13 +3,11 @@ layout: page
 show_meta: false
 title: "Publications"
 subheadline: ""
-teaser: "An onsite overview of my publications is currently under development. In the meantime, I refer to the list of my publications that is <a target='_blank' href='http://www.simula.no/people/leon'>available via Simula</a> or my <a target='_blank' href='https://www.mendeley.com/profiles/leon-moonen/'>Mendeley homepage.</a>"
+teaser: "Please hold while an updated overview is generated..."
 header:
    image_fullwidth: "header_unsplash_forest.jpg"
 permalink: "/publications/"
 ---
-<ul>
-    {% for post in site.categories.publications %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-</ul>
+
+<script src="http://bibbase.org/service/mendeley/6670f279-692b-3eed-bc36-b89af19ad6e0?jsonp=1&theme=simple&css=/assets/css/tweetstyle.css"></script>
+

@@ -8,26 +8,6 @@
 *  Github: https://github.com/jasonmayes/Twitter-Post-Fetcher
 *  Updates will be posted to this site.
 *********************************************************************/
-/*********************************************************************
-*  #### Twitter Post Fetcher v13.0 ####
-*  Coded by Jason Mayes 2015. A present to all the developers out there.
-*  www.jasonmayes.com
-*  Please keep this disclaimer with my code if you use it. Thanks. :-)
-*  Got feedback or questions, ask here:
-*  http://www.jasonmayes.com/projects/twitterApi/
-*  Github: https://github.com/jasonmayes/Twitter-Post-Fetcher
-*  Updates will be posted to this site.
-*********************************************************************/
-/*********************************************************************
-*  #### Twitter Post Fetcher v13.0 ####
-*  Coded by Jason Mayes 2015. A present to all the developers out there.
-*  www.jasonmayes.com
-*  Please keep this disclaimer with my code if you use it. Thanks. :-)
-*  Got feedback or questions, ask here:
-*  http://www.jasonmayes.com/projects/twitterApi/
-*  Github: https://github.com/jasonmayes/Twitter-Post-Fetcher
-*  Updates will be posted to this site.
-*********************************************************************/
 (function(e,t){"function"==typeof define&&define.amd?define([],t):"object"==typeof exports?module.exports=t():t()})(this,function(){function e(e){if(null===w){for(var t=e.length,i=0,n=document.getElementById(a),s="<ul>";t>i;)s+="<li>"+e[i]+"</li>",i++
 s+="</ul>",n.innerHTML=s}else w(e)}function t(e){return e.replace(/<b[^>]*>(.*?)<\/b>/gi,function(e,t){return t}).replace(/class=".*?"|data-query-source=".*?"|dir=".*?"|rel=".*?"/gi,"")}function i(e){for(var t=e.getElementsByTagName("a"),i=t.length-1;i>=0;i--)t[i].setAttribute("target","_blank")}function n(e,t){for(var i=[],n=RegExp("(^| )"+t+"( |$)"),s=e.getElementsByTagName("*"),a=0,l=s.length;l>a;a++)n.test(s[a].className)&&i.push(s[a])
 return i}function s(e){if(void 0!==e){var t=e.innerHTML.match(/data-srcset="([A-z0-9%_\.-]+)/i)[0]
