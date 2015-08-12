@@ -150,10 +150,17 @@ img.bibbase_icon:hover {
     font-size: smaller;
 }
 
-[class^="icon-"], 
-[class*=" icon-"] {
+#subfooter [class^="icon-"] {
   height:36px;
   line-height:36px;
+}
+
+#navigation [class^="icon-"] {
+    background-image: url("");
+    background-position:0 0px;
+    height:inherit;
+    line-height:inherit;
+    vertical-align: text-center;
 }
 
 #bibbase_header li[style*="float"] {
