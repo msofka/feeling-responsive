@@ -2,7 +2,18 @@
 
 /* tweet stuff */
 
-.user,.tweet,.timePosted,.interact {margin-bottom:0; margin-right:5px;}
+.user,.tweet,.timePosted,.interact {
+  margin-bottom:0; 
+  margin-right:5px;
+  white-space: pre;           /* CSS 2.0 */
+  white-space: pre-wrap;      /* CSS 2.1 */
+  white-space: pre-line;      /* CSS 3.0 */
+  white-space: -pre-wrap;     /* Opera 4-6 */
+  white-space: -o-pre-wrap;   /* Opera 7 */
+  white-space: -moz-pre-wrap; /* Mozilla */
+  white-space: -hp-pre-wrap;  /* HP Printers */
+  word-wrap: break-word;      /* IE 5+ */
+}
 .interact {display:inline;}
 .timePosted {
   display:inline-block;
@@ -162,6 +173,7 @@ img.bibbase_icon:hover {
     line-height:inherit;
     vertical-align: text-center;
 }
+
 
 #bibbase_header li[style*="float"] {
   display:none;
