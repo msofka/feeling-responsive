@@ -21,7 +21,7 @@ I serve on the following steering committees:
 
 *   IEEE International Conference on Program Comprehension ([ICPC](https://program-comprehension.org), 2009–2012, re-elected 2012–2015, chair).
 *   IEEE International Working Conference on Source Code Analysis and Manipulation ([SCAM](https://www.ieee-scam.org/), 2003-2006, 2006-2009, 2011-2014, re-elected 2014-2017, chair)
-*   International Workshop on Patterns Promotion and Anti-patterns Prevention (PPAP, 2013-2015)
+*   International Workshop on Patterns Promotion and Anti-patterns Prevention (PPAP, 2013-2016)
 *   Norwegian High Integrity Systems Forum ([HISF](https://www.high-integrity-systems.no/forum/))
 
 and earlier on:
@@ -33,6 +33,8 @@ and earlier on:
 
 In addition, I am, or have been, involved in the organisation of the following conferences and workshops:
 
+* 3rd Workshop on Patterns Promotion and Anti-patterns Prevention ([PPAP 2016](http://ppap.soccerlab.polymtl.ca/))
+* 2nd High Integrity Systems Symposium ([HISS 2015](https://high-integrity-systems.no/))
 *   Program co-chair, 30th IEEE International Conference on Software Maintenance and Evolution ([ICSME 2014](https://icsme.org/), with Lori Pollock)
 *   Program co-chair, 22nd IEEE International Conference on Program Comprehension ([ICPC 2014](http://icpc2014.usask.ca/), with Andrew Begel)
 *   Organizer, 2nd International Workshop on Multi Product Line Engineering ([MultiPLE 2014](https://sites.google.com/site/wmultiple2014/))
@@ -56,8 +58,15 @@ In addition, I am, or have been, involved in the organisation of the following c
 
 Finally, I serve, or have served, on the following program committees:
 
+* 16th IEEE International Working Conference on Source Code Analysis and Manipulation ([SCAM 2016](http://www.ieee-scam.org/2016/))
 * 	32rd IEEE International Conference on Software Maintenance and Evolution ([ICSME 2016](http://icsme2016.github.io/))
+* 3rd International Workshop on (Meta)modelling for Healthcare Systems ([MMHS 2016](http://mmhs.hib.no/2016/call-for-papers/))
+* 	 24th International Conference on Program Comprehension ([ICPC 2016](http://www.program-comprehension.org/icpc16/))
+* 3rd Workshop on Patterns Promotion and Anti-patterns Prevention ([PPAP 2016](http://ppap.soccerlab.polymtl.ca/))
+* 23nd IEEE International Conference on Program Comprehension ([ICPC 2015](https://dibt.unimol.it/ICPC15/Home.html))
+* 22nd IEEE International Conference on Software Analysis, Evolution, and Reengineering ([SANER 2015](http://saner.soccerlab.polymtl.ca/doku.php?id=en:start), program committee)
 * 	... (oops, it seems we have a maintenance gap here) ...
+* 1st Workshop on Patterns Promotion and Anti-patterns Prevention ([PPAP 2013](http://ppap.soccerlab.polymtl.ca/ppap2013/))
 *   17th European Conference on Software Maintenance and Reengineering ([CSMR 2013](http://csmr2013.disi.unige.it/))
 *   21th IEEE International Conference on Program Comprehension ([ICPC 2013](http://www.ing.unisannio.it/icpc2013/))
 *   29th IEEE International Conference on Software Maintenance ([ICSM 2013](http://icsm2013.tue.nl/))
