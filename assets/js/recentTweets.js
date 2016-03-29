@@ -1,11 +1,11 @@
 var config = {
-  "id": '629648951713660928',
+  "id": '497690207215288321',
   "domId": 'recentTweets',
   "maxTweets": 4,
   "enableLinks": true,
   "showUser": false,
   "showImages": false,
   "showRetweet": false,
-  "showInteractionText": false
+  "showInteraction": false
 };
 twitterFetcher.fetch(config);

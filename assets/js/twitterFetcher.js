@@ -1,5 +1,5 @@
 /*********************************************************************
-*  #### Twitter Post Fetcher v13.0 ####
+*  #### Twitter Post Fetcher v15.0.1 ####
 *  Coded by Jason Mayes 2015. A present to all the developers out there.
 *  www.jasonmayes.com
 *  Please keep this disclaimer with my code if you use it. Thanks. :-)
@@ -34,11 +34,11 @@
   var showRts = true;
   var customCallbackFunction = null;
   var showInteractionLinks = true;
-  var showInteractionText = true;
   var showImages = false;
   var targetBlank = true;
   var lang = 'en';
   var permalinks = true;
+  var dataOnly = false;
   var script = null;
   var scriptAdded = false;
 
@@ -61,7 +61,7 @@
 
   function strip(data) {
     return data.replace(/<b[^>]*>(.*?)<\/b>/gi, function(a,s){return s;})
-        .replace(/class=".*?"|data-query-source=".*?"|dir=".*?"|rel=".*?"/gi,
+        .replace(/class="(?!(tco-hidden|tco-display|tco-ellipsis))+.*?"|data-query-source=".*?"|dir=".*?"|rel=".*?"/gi,
         '');
   }
 
@@ -85,8 +85,9 @@
   }
 
   function extractImageUrl(image_data) {
-    if (image_data !== undefined) {
-      var data_src = image_data.innerHTML.match(/data-srcset="([A-z0-9%_\.-]+)/i)[0];
+    if (image_data !== undefined && image_data.innerHTML.indexOf('data-srcset') >= 0) {
+      var data_src = image_data.innerHTML
+          .match(/data-srcset="([A-z0-9%_\.-]+)/i)[0];
       return decodeURIComponent(data_src).split('"')[1];
     }
   }
@@ -117,9 +118,6 @@
       if (config.showInteraction === undefined) {
         config.showInteraction = true;
       }
-      if (config.showInteractionText === undefined) {
-        config.showInteractionText = true;
-      }
       if (config.showImages === undefined) {
         config.showImages = false;
       }
@@ -128,6 +126,9 @@
       }
       if (config.showPermalinks === undefined) {
         config.showPermalinks = true;
+      }
+      if (config.dataOnly === undefined) {
+        config.dataOnly = false;
       }
 
       if (inProgress) {
@@ -144,10 +145,10 @@
         formatterFunction = config.dateFunction;
         customCallbackFunction = config.customCallback;
         showInteractionLinks = config.showInteraction;
-        showInteractionText = config.showInteractionText;
         showImages = config.showImages;
         targetBlank = config.linksInNewWindow;
         permalinks = config.showPermalinks;
+        dataOnly = config.dataOnly;
 
         var head = document.getElementsByTagName('head')[0];
         if (script !== null) {
@@ -169,6 +170,12 @@
          supportsClassName = false;
       }
 
+      function swapDataSrc(element) {
+        var avatarImg = element.getElementsByTagName('img')[0];
+        avatarImg.src = avatarImg.getAttribute('data-src-2x');
+        return element;
+      };
+
       var tweets = [];
       var authors = [];
       var times = [];
@@ -179,21 +186,23 @@
       var x = 0;
 
       if (supportsClassName) {
-        var tmp = div.getElementsByClassName('tweet');
+        var tmp = div.getElementsByClassName('timeline-Tweet');
         while (x < tmp.length) {
-          if (tmp[x].getElementsByClassName('retweet-credit').length > 0) {
+          if (tmp[x].getElementsByClassName('timeline-Tweet-retweetCredit').length > 0) {
             rts.push(true);
           } else {
             rts.push(false);
           }
           if (!rts[x] || rts[x] && showRts) {
-            tweets.push(tmp[x].getElementsByClassName('e-entry-title')[0]);
+            tweets.push(tmp[x].getElementsByClassName('timeline-Tweet-text')[0]);
             tids.push(tmp[x].getAttribute('data-tweet-id'));
-            authors.push(tmp[x].getElementsByClassName('p-author')[0]);
+            authors.push(swapDataSrc(tmp[x]
+                .getElementsByClassName('timeline-Tweet-author')[0]));
             times.push(tmp[x].getElementsByClassName('dt-updated')[0]);
-            permalinksURL.push(tmp[x].getElementsByClassName('permalink')[0]);
-            if (tmp[x].getElementsByClassName('inline-media')[0] !== undefined) {
-              images.push(tmp[x].getElementsByClassName('inline-media')[0]);
+            permalinksURL.push(tmp[x].getElementsByClassName('timeline-Tweet-timestamp')[0]);
+            if (tmp[x].getElementsByClassName('timeline-Tweet-media')[0] !==
+                undefined) {
+              images.push(tmp[x].getElementsByClassName('timeline-Tweet-media')[0]);
             } else {
               images.push(undefined);
             }
@@ -201,23 +210,25 @@
           x++;
         }
       } else {
-        var tmp = getElementsByClassName(div, 'tweet');
+        var tmp = getElementsByClassName(div, 'timeline-Tweet');
         while (x < tmp.length) {
-          tweets.push(getElementsByClassName(tmp[x], 'e-entry-title')[0]);
-          tids.push(tmp[x].getAttribute('data-tweet-id'));
-          authors.push(getElementsByClassName(tmp[x], 'p-author')[0]);
-          times.push(getElementsByClassName(tmp[x], 'dt-updated')[0]);
-          permalinksURL.push(getElementsByClassName(tmp[x], 'permalink')[0]);
-          if (getElementsByClassName(tmp[x], 'inline-media')[0] !== undefined) {
-            images.push(getElementsByClassName(tmp[x], 'inline-media')[0]);
-          } else {
-            images.push(undefined);
-          }
-
-          if (getElementsByClassName(tmp[x], 'retweet-credit').length > 0) {
+          if (getElementsByClassName(tmp[x], 'timeline-Tweet-retweetCredit').length > 0) {
             rts.push(true);
           } else {
             rts.push(false);
+          }
+          if (!rts[x] || rts[x] && showRts) {
+            tweets.push(getElementsByClassName(tmp[x], 'timeline-Tweet-text')[0]);
+            tids.push(tmp[x].getAttribute('data-tweet-id'));
+            authors.push(swapDataSrc(getElementsByClassName(tmp[x],
+                'timeline-Tweet-author')[0]));
+            times.push(getElementsByClassName(tmp[x], 'dt-updated')[0]);
+            permalinksURL.push(getElementsByClassName(tmp[x], 'timeline-Tweet-timestamp')[0]);
+            if (getElementsByClassName(tmp[x], 'timeline-Tweet-media')[0] !== undefined) {
+              images.push(getElementsByClassName(tmp[x], 'timeline-Tweet-media')[0]);
+            } else {
+              images.push(undefined);
+            }
           }
           x++;
         }
@@ -235,102 +246,110 @@
       var arrayTweets = [];
       var x = tweets.length;
       var n = 0;
-      while(n < x) {
-        if (typeof(formatterFunction) !== 'string') {
-          var datetimeText = times[n].getAttribute('datetime');
-          var newDate = new Date(times[n].getAttribute('datetime')
-              .replace(/-/g,'/').replace('T', ' ').split('+')[0]);
-          var dateString = formatterFunction(newDate, datetimeText);
-          times[n].setAttribute('aria-label', dateString);
+      if (dataOnly) {
+        while (n < x) {
+          arrayTweets.push({
+            tweet: tweets[n].innerHTML,
+            author: authors[n].innerHTML,
+            time: times[n].textContent,
+            image: extractImageUrl(images[n]),
+            rt: rts[n],
+            tid: tids[n],
+            permalinkURL: (permalinksURL[n] === undefined) ?
+                '' : permalinksURL[n].href 
+          });
+          n++;
+        }
+      } else {
+        while (n < x) {
+          if (typeof(formatterFunction) !== 'string') {
+            var datetimeText = times[n].getAttribute('datetime');
+            var newDate = new Date(times[n].getAttribute('datetime')
+                .replace(/-/g,'/').replace('T', ' ').split('+')[0]);
+            var dateString = formatterFunction(newDate, datetimeText);
+            times[n].setAttribute('aria-label', dateString);
 
-          if (tweets[n].innerText) {
-            // IE hack.
-            if (supportsClassName) {
-              times[n].innerText = dateString;
+            if (tweets[n].textContent) {
+              // IE hack.
+              if (supportsClassName) {
+                times[n].textContent = dateString;
+              } else {
+                var h = document.createElement('p');
+                var t = document.createTextNode(dateString);
+                h.appendChild(t);
+                h.setAttribute('aria-label', dateString);
+                times[n] = h;
+              }
             } else {
-              var h = document.createElement('div');
-              var t = document.createTextNode(dateString);
-              h.appendChild(t);
-              h.setAttribute('aria-label', dateString);
-              times[n] = h;
+              times[n].textContent = dateString;
+            }
+          }
+          var op = '';
+          if (parseLinks) {
+            if (targetBlank) {
+              targetLinksToNewWindow(tweets[n]);
+              if (printUser) {
+                targetLinksToNewWindow(authors[n]);
+              }
+            }
+            if (printUser) {
+              op += '<div class="user">' + strip(authors[n].innerHTML) +
+                  '</div>';
+            }
+            op += '<p class="tweet">' + strip(tweets[n].innerHTML) + '</p>';
+            if (printTime) {
+              if (permalinks) {
+                op += '<p class="timePosted"><a href="' + permalinksURL[n] +
+                   '">' + times[n].getAttribute('aria-label') + '</a></p>';
+              } else {
+                op += '<p class="timePosted">' +
+                    times[n].getAttribute('aria-label') + '</p>';
+              }
             }
           } else {
-            times[n].textContent = dateString;
-          }
-        }
-        var op = '';
-        if (parseLinks) {
-          if (targetBlank) {
-            targetLinksToNewWindow(tweets[n]);
-            if (printUser) {
-              targetLinksToNewWindow(authors[n]);
-            }
-          }
-          if (printUser) {
-            op += '<div class="user">' + strip(authors[n].innerHTML) +
-                '</div>';
-          }
-          op += '<div class="tweet">' + strip(tweets[n].innerHTML) + '</div>';
-          if (printTime) {
-            if (permalinks) {
-              op += '<div class="timePosted"><a href="' + permalinksURL[n] +
-                 '">' + times[n].getAttribute('aria-label') + '</a></div>';
+            if (tweets[n].textContent) {
+              if (printUser) {
+                op += '<p class="user">' + authors[n].textContent + '</p>';
+              }
+              op += '<p class="tweet">' +  tweets[n].textContent + '</p>';
+              if (printTime) {
+                op += '<p class="timePosted">' + times[n].textContent + '</p>';
+              }
+
             } else {
-              op += '<div class="timePosted">' +
-                  times[n].getAttribute('aria-label') + '</div>';
+              if (printUser) {
+                op += '<p class="user">' + authors[n].textContent + '</p>';
+              }
+              op += '<p class="tweet">' +  tweets[n].textContent + '</p>';
+              if (printTime) {
+                op += '<p class="timePosted">' + times[n].textContent + '</p>';
+              }
             }
           }
-        } else {
-          if (tweets[n].innerText) {
-            if (printUser) {
-              op += '<div class="user">' + authors[n].innerText + '</div>';
-            }
-            op += '<div class="tweet">' +  tweets[n].innerText + '</div>';
-            if (printTime) {
-              op += '<div class="timePosted">' + times[n].innerText + '</div>';
-            }
-
-          } else {
-            if (printUser) {
-              op += '<div class="user">' + authors[n].textContent + '</div>';
-            }
-            op += '<div class="tweet">' +  tweets[n].textContent + '</div>';
-            if (printTime) {
-              op += '<div class="timePosted">' + times[n].textContent + '</div>';
-            }
+          if (showInteractionLinks) {
+            op += '<p class="interact"><a href="https://twitter.com/intent/' +
+                'tweet?in_reply_to=' + tids[n] +
+                '" class="twitter_reply_icon"' +
+                (targetBlank ? ' target="_blank">' : '>') +
+                'Reply</a><a href="https://twitter.com/intent/retweet?' +
+                'tweet_id=' + tids[n] + '" class="twitter_retweet_icon"' +
+                (targetBlank ? ' target="_blank">' : '>') + 'Retweet</a>' +
+                '<a href="https://twitter.com/intent/favorite?tweet_id=' +
+                tids[n] + '" class="twitter_fav_icon"' +
+                (targetBlank ? ' target="_blank">' : '>') + 'Favorite</a></p>';
           }
-        }
 
-        var replyText = 'Reply';
-        var retweetText = 'Retweet';
-        var favText = 'Favorite';
-        if (!showInteractionText) {
-          var replyText = '';
-          var retweetText = '';
-          var favText = '';
-        }
+          if (showImages && images[n] !== undefined) {
+            op += '<div class="media">' +
+                '<img src="' + extractImageUrl(images[n]) +
+                '" alt="Image from tweet" />' + '</div>';
+          }
 
-        if (showInteractionLinks) {
-          op += '<ul class="interact"><li><a href="https://twitter.com/intent/' +
-              'tweet?in_reply_to=' + tids[n] + '" class="twitter_reply_icon"' +
-              (targetBlank ? ' target="_blank">' : '>') +
-              replyText + '</a></li><li><a href="https://twitter.com/intent/retweet?tweet_id=' +
-              tids[n] + '" class="twitter_retweet_icon"' +
-              (targetBlank ? ' target="_blank">' : '>') + retweetText + 
-              '</a></li><li><a href="https://twitter.com/intent/favorite?tweet_id=' +
-              tids[n] + '" class="twitter_fav_icon"' +
-              (targetBlank ? ' target="_blank">' : '>') + favText + '</a></li></ul>';
+          arrayTweets.push(op);
+          n++;
         }
-
-        if (showImages && images[n] !== undefined) {
-          op += '<div class="media">' +
-              '<img src="' + extractImageUrl(images[n]) +
-              '" alt="Image from tweet" />' + '</div>';
-        }
-
-        arrayTweets.push(op);
-        n++;
       }
+
       handleTweets(arrayTweets);
       inProgress = false;
 
@@ -343,6 +362,5 @@
 
   // It must be a global variable because it will be called by JSONP.
   window.twitterFetcher = twitterFetcher;
-
   return twitterFetcher;
 }));
