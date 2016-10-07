@@ -19,14 +19,14 @@ _Consider submitting a paper and/or attending!_
 
 I serve on the following steering committees:
 
-*   IEEE International Conference on Program Comprehension ([ICPC](https://program-comprehension.org), 2009–2012, re-elected 2012–2015, chair).
 *   IEEE International Working Conference on Source Code Analysis and Manipulation ([SCAM](https://www.ieee-scam.org/), 2003-2006, 2006-2009, 2011-2014, re-elected 2014-2017, chair)
-*   International Workshop on Patterns Promotion and Anti-patterns Prevention (PPAP, 2013-2016)
+*   International Workshop on Patterns Promotion and Anti-patterns Prevention (PPAP, 2013-2017)
 *   Norwegian High Integrity Systems Forum ([HISF](https://www.high-integrity-systems.no/forum/))
 
 and earlier on:
 
-*   IEEE International Conference on Software Maintenance (ICSM, 2009–2012, chair)
+*   IEEE International Conference on Program Comprehension ([ICPC](https://program-comprehension.org), 2009–2012, re-elected 2012–2015, chair).
+*   IEEE International Conference on Software Maintenance ([ICSM](http://conferences.computer.org/icsm/), 2009–2012, chair)
 *   International Working Conference on Reverse Engineering (WCRE, 2004–2008, re-elected 2010–2014. WCRE merged in 2014 with CSMR to form the IEEE International Conference on Software Analysis, Evolution, and Reengineering, SANER).
 
 ### Conference and workshop organisation
@@ -34,7 +34,12 @@ and earlier on:
 In addition, I am, or have been, involved in the organisation of the following conferences and workshops:
 
 * 3rd Workshop on Patterns Promotion and Anti-patterns Prevention ([PPAP 2016](http://ppap.soccerlab.polymtl.ca/))
-* 2nd High Integrity Systems Symposium ([HISS 2015](https://high-integrity-systems.no/))
+* 3rd International Workshop on (Meta)modelling for Healthcare Systems ([MMHS 2016](http://mmhs.hib.no/2016/call-for-papers/), program committee)
+* 16th IEEE International Working Conference on Source Code Analysis and Manipulation ([SCAM 2016](http://www.ieee-scam.org/2016/), program committee, steering committee)
+* 32rd IEEE International Conference on Software Maintenance and Evolution ([ICSME 2016](https://icsme2016.github.io/), program committee)
+* 2nd High Integrity Systems Symposium ([HISS 2015](https://high-integrity-systems.no/), organizer)
+* 22nd IEEE International Conference on Software Analysis, Evolution, and Reengineering ([SANER 2015](http://saner.soccerlab.polymtl.ca/doku.php?id=en:start), program committee)
+* 23nd IEEE International Conference on Program Comprehension ([ICPC 2015](https://dibt.unimol.it/ICPC15/Home.html), program committee)
 *   Program co-chair, 30th IEEE International Conference on Software Maintenance and Evolution ([ICSME 2014](https://icsme.org/), with Lori Pollock)
 *   Program co-chair, 22nd IEEE International Conference on Program Comprehension ([ICPC 2014](http://icpc2014.usask.ca/), with Andrew Begel)
 *   Organizer, 2nd International Workshop on Multi Product Line Engineering ([MultiPLE 2014](https://sites.google.com/site/wmultiple2014/))
