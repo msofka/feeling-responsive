@@ -8,11 +8,10 @@ header:
    image_fullwidth: "header_unsplash_balloons.jpg"
 permalink: "/activities/upcoming/"
 upcoming:
-- 3rd International Workshop on (Meta)modelling for Healthcare Systems ([MMHS 2016](http://mmhs.hib.no/2016/call-for-papers/), program committee)
-- 16th IEEE International Working Conference on Source Code Analysis and Manipulation ([SCAM 2016](http://www.ieee-scam.org/2016/), program committee, steering committee)
-- 32rd IEEE International Conference on Software Maintenance and Evolution ([ICSME 2016](https://icsme2016.github.io/), program committee)
-- 24th International Conference on Program Comprehension ([ICPC 2016](http://www.program-comprehension.org/icpc16/), program committee)
-- 3rd Workshop on Patterns Promotion and Anti-patterns Prevention ([PPAP 2016](http://ppap.soccerlab.polymtl.ca/), organizer)
+- 4th International Workshop on Patterns Promotion and Anti-patterns Prevention ([PPAP 2017](http://ppap.soccerlab.polymtl.ca/), organizer)
+- 1st International Workshop on Technical Debt Analytics ([TDA2016](https://tda2016.bitbucket.io), organizer)
+- 17th IEEE International Working Conference on Source Code Analysis and Manipulation ([SCAM 2017](http://www.ieee-scam.org/2017/), steering committee)
+- 33rd IEEE International Conference on Software Maintenance and Evolution ([ICSME 2017](https://icsme2016.github.io/))
 ---
 <ul>
     {% for item in page.upcoming %}
