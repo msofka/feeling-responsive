@@ -33,8 +33,10 @@ and earlier on:
 
 In addition, I am, or have been, involved in the organisation of the following conferences and workshops:
 
-* 3rd Workshop on Patterns Promotion and Anti-patterns Prevention ([PPAP 2016](http://ppap.soccerlab.polymtl.ca/))
+* 1st International Workshop on Technical Debt Analytics ([TDA 2016](https://tda2016.bitbucket.io/))
+* 3rd International Workshop on Patterns Promotion and Anti-patterns Prevention ([PPAP 2016](http://ppap.soccerlab.polymtl.ca/))
 * 3rd International Workshop on (Meta)modelling for Healthcare Systems ([MMHS 2016](http://mmhs.hib.no/2016/call-for-papers/), program committee)
+* 24th IEEE International Conference on Program Comprehension ([ICPC 2016](http://2016.program-comprehension.org/), program committee)
 * 16th IEEE International Working Conference on Source Code Analysis and Manipulation ([SCAM 2016](http://www.ieee-scam.org/2016/), program committee, steering committee)
 * 32rd IEEE International Conference on Software Maintenance and Evolution ([ICSME 2016](https://icsme2016.github.io/), program committee)
 * 2nd High Integrity Systems Symposium ([HISS 2015](https://high-integrity-systems.no/), organizer)
