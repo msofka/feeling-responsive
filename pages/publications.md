@@ -9,5 +9,8 @@ header:
 permalink: "/publications/"
 ---
 
-<script src="http://bibbase.org/service/mendeley/6670f279-692b-3eed-bc36-b89af19ad6e0?jsonp=1&theme=simple&css=/assets/css/tweetstyle.css"></script>
+
+Although I try to keep the overview here up to date, it depends on external scripting which sometimes breaks. If that should happen, you can also find publication overviews on <a href="https://www.simula.no/people/leon">my Simula homepage</a> (with PDFs) or via <a href="https://scholar.google.com/citations?user=vndz7hwAAAAJ">Google Scholar</a>, <a href="http://dblp.uni-trier.de/pers/hd/m/Moonen:Leon.html">DBLP</a>, or <a href="https://www.mendeley.com/profiles/leon-moonen/">Mendeley</a>.
+
+<script src="https://bibbase.org/show?bib=https%3A%2F%2Fleonmoonen.com%2Fassets%2Fpublications_leon_moonen.bib&jsonp=1"></script>
 
