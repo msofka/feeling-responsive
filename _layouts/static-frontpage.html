@@ -84,7 +84,7 @@ format: post
         <ul>
         {% for thepage in site.pages %}
           {% if thepage.news %}
-            {% for item in thepage.news limit:5 %}
+            {% for item in thepage.news limit:4 %}
             <li>{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</li>
             {% endfor %}
           {% endif %}

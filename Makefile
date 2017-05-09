@@ -5,7 +5,7 @@ all: bib
 
 bib:
 	cat "`kpsewhich 'Leon Moonen Publications.bib'`" \
-		| perl -pi -e 's|file = {:Users/leon/Documents/Mendeley/(.*)\.pdf:pdf}|url_Paper = {publications/\1.pdf}|' \
+		| perl -pe 's|file = {:Users/leon/Documents/Mendeley/(.*)\.pdf:pdf}|url_Paper = {publications/\1.pdf}|' \
 		| bibclean -no-fix-names -max-width 5000 \
 		> assets/publications_leon_moonen.bib 
 	grep "url_paper" assets/publications_leon_moonen.bib | perl -p -e 's|\s*url_paper\s*=\s*"publications/(.*)\.pdf",|cp "/Users/leon/Documents/Mendeley/\1.pdf" "assets/publications/\1.pdf"|' > /tmp/script
