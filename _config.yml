@@ -20,7 +20,7 @@ description: "Homepage of Leon Moonen, researcher of techniques and tools to und
 
 # This URL is the main address. Don't include a slash at the end.
 #
-url: "https://leonmoonen.com"
+url: "https://msofka.github.io"
 baseurl: ""
 
 more-info-url: "/research"
@@ -28,7 +28,7 @@ more-info-url: "/research"
 
 # This is for the editing function in _/includes/improve_content.html
 # Leave it empty if your site is not on GitHub/GitHub Pages
-improve_content: https://github.com/leonmoonen/leonmoonen.github.io/edit/master
+improve_content: https://github.com/msofka/msofka.github.io/edit/master
 
 # This URL points directly to the images directory making
 # things easier to link to images in posts and templates. It does not need a slash at the end.
