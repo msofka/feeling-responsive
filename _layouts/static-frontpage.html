@@ -1,0 +1,111 @@
+---
+layout: default
+format: post
+---
+<article itemscope itemtype="http://schema.org/Article">
+
+<div id="header-home">
+    <div class="row">
+        <div class="small-12 columns">
+            <header>
+                <span itemprop="name">
+                    {% if page.subheadline %}<p class="subheadline">{{ page.subheadline }}</p>{% endif %}
+                </span>
+            </header>
+        </div><!-- /.small-12.columns -->
+    </div><!-- /.row -->
+</div><!-- /#header-home -->
+
+
+<div class="row t60">
+    <div class="medium-10 small-centered columns end">
+            <div class="row">
+                {% if page.teaser.text %}
+                <div class="medium-8 columns" style='text-align: center'>
+                    <p class="teaser" itemprop="description">
+                        {{ page.teaser.text }}
+                    </p>
+                </div>
+                {% endif %}
+                {% if page.teaser.image %}
+                <div class="medium-4 columns" style='text-align: center'>
+                    <img src="{{ site.urlimg }}/{{ page.teaser.image }}" width=220 alt="{{ page.teaser.name }}" itemprop="image" style='vertical-align: middle'>
+                </div>
+                {% endif %}
+            </div><!-- /.row -->
+
+            <span itemprop="articleSection">
+            {{ content }}
+            </span>
+
+            {% if page.show_meta == true %}
+            {% include meta_information %}
+            {% endif %}
+
+            {% if page.comments == true %}
+            {% include comments %}
+            {% endif %}
+    </div><!-- /.medium-10.columns -->
+
+</div><!-- /.row -->
+
+{% comment %}
+*
+* Widgets!  First check, if widget is empty or not by checking if there is a title
+*
+{% endcomment %}
+<div class="row t30">
+    {% if page.widget-1.title or page.widget-1.video %}
+    <div class="medium-4 columns">
+        <a href="{{ page.widget-1.url }}">{% if page.widget-1.image %}<img src="{{ site.urlimg }}/{{ page.widget-1.image }}" width="302" height="182" alt="">{% endif %}{% if page.widget-1.video %}{{ page.widget-1.video }}{% endif %}</a>
+        <h2 class="font-size-h3 t10">{{ page.widget-1.title }}</h2>
+        <div>{{ page.widget-1.text-open }}
+        <ul>
+        {% for thepage in site.pages %}
+          {% if thepage.upcoming %}
+            {% for item in thepage.upcoming limit:5 %}
+            <li>{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+            {% endfor %}
+          {% endif %}
+        {% endfor %}</ul>
+        {{ page.widget-1.text-close }}
+        </div>
+        <p><a class="button tiny radius" href="{{ page.widget-1.url }}">{{ site.data.language.more }}</a></p>
+    </div><!-- /.medium-4.columns -->
+    {% endif %}
+
+    {% if page.widget-2.title %}
+    <div class="medium-4 columns">
+        {% if page.widget-2.img or page.widget-2.video %}
+        <a href="{{ page.widget-2.url }}">{% if page.widget-2.image %}<img src="{{ site.urlimg }}/{{ page.widget-2.image }}" width="302" height="182" alt="">{% endif %}{% if page.widget-2.video %}{{ page.widget-2.video }}{% endif %}</a>
+        {% endif %}
+        <h2 class="font-size-h3 t10">{{ page.widget-2.title }}</h2>
+        <div>{{ page.widget-2.text-open }}
+        <ul>
+        {% for thepage in site.pages %}
+          {% if thepage.news %}
+            {% for item in thepage.news limit:4 %}
+            <li>{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+            {% endfor %}
+          {% endif %}
+        {% endfor %}</ul>
+        {{ page.widget-2.text-close }}
+        </div>
+        <p><a class="button tiny radius" href="{{ page.widget-2.url }}">{{ site.data.language.more }}</a></p>
+    </div><!-- /.medium-4.columns -->
+    {% endif %}
+
+    {% if page.widget-3.title %}
+    <div class="medium-4 columns">
+        {% if page.widget-3.img or page.widget-3.video %}
+        <a href="{{ page.widget-3.url }}">{% if page.widget-3.image %}<img src="{{ site.urlimg }}/{{ page.widget-3.image }}" width="302" height="182" alt="">{% endif %}{% if page.widget-3.video %}{{ page.widget-3.video }}{% endif %}</a>
+        <a href="{{ page.widget-3.url }}">{% if page.widget-3.image %}<img class="lazy" data-src="{{ site.urlimg }}/{{ page.widget-3.image }}" width="302" height="182" alt="">{% endif %}{% if page.widget-3.video %}{{ page.widget-3.video }}{% endif %}</a>
+        {% endif %}
+        <h2 class="font-size-h3 t10">{{ page.widget-3.title }}</h2>
+        {{ page.widget-3.text }}
+        <p><a class="button tiny radius" href="{{ page.widget-3.url }}">{% if page.widget-3.alt-more %}{{ page.widget-3.alt-more}}{% else %}{{ site.data.language.more }}{% endif %}</a></p>
+    </div><!-- /.medium-4.columns -->
+    {% endif %}
+</div><!-- /.row -->
+
+</article>

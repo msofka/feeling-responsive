@@ -1,4 +1,3 @@
-@charset "utf-8";
 /* TOC
 
 - Adjustments: Video Layout
@@ -48,10 +47,6 @@ body.video cite { color: #fff; }
 #navigation {
     -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.2);
-
-    [class^='icon-']:before, [class*=' icon-']:before {
-        margin-right: rem-calc(8);
-    }
 }
 
 
@@ -59,8 +54,9 @@ body.video cite { color: #fff; }
 /* Search
 ------------------------------------------------------------------- */
 
-.no-js form#search {
-  display: none;
+#search {
+    padding: 20px 0 0 0;
+    background: $ci-4;
 }
 
 
@@ -86,7 +82,9 @@ body.video cite { color: #fff; }
     height: 175px;
 }
 #masthead-no-image-header #logo img {
+    margin: 15px auto;
     margin-top: 60px;
+    display: block;
 }
 
 /* Masthead › small-only
@@ -121,7 +119,9 @@ body.video cite { color: #fff; }
 
 @media #{$medium-only} {
     #logo img {
+        margin: 15px auto;
         margin-top: 60px;
+        display: block;
     }
     #masthead {
         height: 280px;
@@ -144,7 +144,9 @@ body.video cite { color: #fff; }
 
 @media #{$large-only} {
     #logo img {
+        margin: 15px auto;
         margin-top: 80px;
+        display: block;
     }
     #masthead {
         height: 310px;
@@ -167,7 +169,9 @@ body.video cite { color: #fff; }
 
 @media #{$xlarge-up} {
     #logo img {
+        margin: 15px auto;
         margin-top: 110px;
+        display: block;
     }
     #masthead {
         height: 380px;
@@ -249,7 +253,7 @@ body.video cite { color: #fff; }
 ------------------------------------------------------------------- */
 
 #up-to-top {
-    padding: 160px 0 10px 0;
+    padding: 60px 0 10px 0;
 }
 #up-to-top a {
     font-size: 24px;
@@ -284,8 +288,8 @@ body.video cite { color: #fff; }
     #footer h4,
     #footer h5 {
         letter-spacing: 1px;
-        color: #fff;
-        text-transform: uppercase;
+        color: $footer-color;
+        text-transform: italics;
     }
 
 
@@ -297,43 +301,40 @@ body.video cite { color: #fff; }
     background: $subfooter-bg;
     color: $subfooter-color;
     padding-top: 30px;
+    padding-bottom: 10px;
 }
-
-#subfooter-left ul.inline-list {
-    float: left;
-}
-
-.credits a {
-    color: $subfooter-link-color;
-    border: 0;
-    text-transform: uppercase;
-    &:hover {
-        color: #fff;
-  }
-}
-
-.social-icons {
-    margin-bottom: 10px !important;
-
-// Beware of SCSS-Syntax here
-  li {
-    padding: 0 0 20px 0;
-  }
-  a {
-    font-size: rem-calc(23);
-    display: block;
-    width: 36px;
-    border-radius: 50%;
-    color: $subfooter-bg;
-    background: $subfooter-color;
-    text-align: center;
-    &:hover {
-      background: $subfooter-bg;
-      color: #fff;
+    #subfooter-left ul.inline-list {
+        float: left;
     }
-  }
-}
+    #subfooter li a {
+        color: $subfooter-link-color;
+        text-transform: italics;
+    }
+    #subfooter li a:hover {
+        color: #fff;
+    }
+    #subfooter .social-icons li a {
+        font-size: rem-calc(23);
+        display: block;
+        width: 36px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        border-radius: 50%;
+        color: $subfooter-bg;
+        background: $footer-bg;
+        text-align: center;
+    }
+    #subfooter .social-icons li a:hover {
+        background: $subfooter-bg;
+        color: $footer-bg;
+    }
 
+    #subfooter h4,
+    #subfooter h5 {
+        letter-spacing: 1px;
+        color: $subfooter-color;
+        text-transform: italics;
+    }
 
 
 /* CSS-Classes to add margin at top or bottom
