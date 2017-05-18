@@ -4,24 +4,24 @@
 #  title: "Videos, Video-Anleitungen und Filme von Phlow auf YouTube"
 
 - name: Email
-  url: mailto:leon.moonen@computer.org
+  url: mailto:michal.sofka@gmail.com
   class: icon-mail
   title: "Email"
 
 - name: Twitter
-  url: https://twitter.com/LeonMoonen
+  url: https://twitter.com/MichalSofka
   class: icon-twitter
   title: "Twitter"
 
 - name: LinkedIn
-  url: https://www.linkedin.com/in/LeonMoonen
+  url: https://www.linkedin.com/in/MichalSofka
   class: icon-linkedin
   title: "LinkedIn"
 
-- name: Facebook
-  url: https://www.facebook.com/LeonMoonen
-  class: icon-facebook
-  title: "Facebook"
+#- name: Facebook
+#  url: https://www.facebook.com/MichalSofka
+#  class: icon-facebook
+#  title: "Facebook"
 
 - name: Mendeley
   url: https://www.mendeley.com/profiles/leon-moonen/
@@ -29,17 +29,17 @@
   title: "Mendeley"
 
 - name: GoogleScholar
-  url: https://scholar.google.com/citations?user=vndz7hwAAAAJ
+  url: https://scholar.google.com/citations?user=fyN3FbgAAAAJ
   class: ai-google-scholar
   title: "Google Scholar"
 
 #- name: MicrosoftAcademicSearch
-#  url: http://academic.research.microsoft.com/Author/1106054/leon-moonen
+#  url: http://academic.research.microsoft.com/Author/110
 #  class: icon-mas
 #  title: "Microsoft Academic Search"
 
 - name: dblp
-  url: http://dblp.uni-trier.de/pers/hd/m/Moonen:Leon.html
+  url: http://dblp.uni-trier.de/pers/hd/s/Sofka:Michal
   class: icon-archive
   title: "dblp"
 
@@ -50,7 +50,7 @@
 #  title: "Sounds und Downloads und mehr"
 
 - name: GitHub
-  url: http://github.com/leonmoonen
+  url: http://github.com/msofka
   class: icon-github
   title: "GitHub"
 
