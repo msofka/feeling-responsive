@@ -106,7 +106,7 @@ defaults:
       show_meta: true 	# Show metadata beneath all pages
       # sidebar:    		# Possible values › left, right › by default there will be no sidebar
       comments: false
-      author: "Leon Moonen"
+      author: "Michal Sofka"
   -
     scope:
       path: ""        
@@ -115,7 +115,7 @@ defaults:
       show_meta: true   # Show metadata beneath all posts
       # sidebar:        # Possible values › left, right › by default there will be no sidebar
       comments: false
-      author: "Leon Moonen"
+      author: "Michal Sofka"
 
 
 
@@ -137,10 +137,10 @@ defaults:
 #   ___/ / /___/ /_/ / 
 #  /____/_____/\____/    Verify Website to Webmaster Tools
 
-google_author:             "https://plus.google.com/u/0/100336266135658273699"
-google_site_verification:  "megqP0b90YxqOyfsemC1JodI3u0qELYiB_mQvmqKQRk"
-#bing_webmastertools_id:    ""
-# alexa_verify_id:         ""
+#google_author:             "https://plus.google.com/103878959855994358888"
+#google_site_verification:  "djisdafsdfkjsdadI3u0qELYiB_mQvmqKQRk"
+##bing_webmastertools_id:    ""
+## alexa_verify_id:         ""
 
 
 
@@ -174,8 +174,8 @@ msapplication_tilecolor:                "#fabb00"
 og_image:                           "/images/logo.png"
 og_locale:                          "en_EN"
 og_type:                            "website"
-og_title:                           "Leon Moonen – Software Explorer"
-og_description:                     "Homepage of Leon Moonen, researcher of techniques and tools to understand, assess and improve large industrial software systems."
+og_title:                           "Michal Sofka - Senior Scientist and Technical Leader"
+og_description:                     "Homepage of Leon Moonen, scientist and technical leader with passion for innovation to transform ideas into product solutions."
 # og_url:                           ""
 # og_site_name:                     ""
 
@@ -199,7 +199,7 @@ og_description:                     "Homepage of Leon Moonen, researcher of tech
 #
 # used in _includes/comments.html
 
-disqus_shortname: leonmoonen
+disqus_shortname: michalsofka
 
 
 #      _____                
@@ -223,7 +223,7 @@ sass:
 #
 # used in _includes/footer_scripts.html
 
-google_analytics_tracking_id: UA-6009883-2
+google_analytics_tracking_id: UA-3321010-1 
 
 
 
