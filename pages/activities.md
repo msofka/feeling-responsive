@@ -17,3 +17,4 @@ _Consider submitting a paper and/or attending!_
         
 ### Talks 
 
+No upcoming talks

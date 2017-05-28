@@ -31,6 +31,6 @@ widget-2:
 widget-3:
     title: "Recent Tweets"
     url: "https://twitter.com/intent/follow?screen_name=MichalSofka"
-    text: "<div id='recentTweets'></div><script data-cfasync='false' src='https://platform.twitter.com/widgets.js'></script>"
+    text: "<a class='twitter-timeline' data-width='220' data-height='640' data-dnt='true' href='https://twitter.com/MichalSofka'>Tweets by MichalSofka</a> <script async src='//platform.twitter.com/widgets.js' charset='utf-8'></script>"
     alt-more: "« follow @MichalSofka on Twitter »"
 ---

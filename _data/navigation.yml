@@ -28,10 +28,6 @@
   - title: "Upcoming"
     url: "/activities/upcoming/"
 
-- title: Schedule
-  url: "/schedule/"
-  side: left
-
 - title: "Search"
   url: "/search/"
   side: right
