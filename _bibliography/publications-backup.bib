@@ -1,0 +1,1126 @@
+@InProceedings{franc:ecml15,
+  author =	 {Vojtech Franc and Michal Sofka and Karel Bartos},
+  title =	 {Learning detector of malicious network traffic from weak labels},
+  booktitle =    {Proceedings of the European Conference on Machine Learning
+  	and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD)},
+  year =         2015,
+  month =        {7--11~} # sep,
+  pages =        {85--99},
+  address =      {Porto, Portugal},                  
+  abstract =	 {We address the problem of learning a detector of malicious behavior in network
+	traffic. The malicious behavior is detected based on the analysis of network
+	proxy logs that capture malware communication between client and server
+	computers. The conceptual problem in using the standard supervised learning
+	methods is the lack of sufficiently representative training set containing
+	examples of malicious and legitimate communication. Annotation of individual
+	proxy logs is an expensive process involving security experts and does not
+	scale with constantly evolving malware. However, weak supervision can be
+	achieved on the level of properly defined bags of proxy logs by leveraging
+	internet domain black lists, security reports, and sandboxing analysis. We
+	demonstrate that an accurate detector can be obtained from the collected
+	security intelligence data by using a Multiple Instance Learning algorithm
+	tailored to the Neyman-Pearson problem. We provide a thorough experimental
+	evaluation on a large corpus of network communications collected from various
+	company network environments.},
+  url =		 {http://www.sofka.com}
+}
+
+@InProceedings{bartos:ecml15,
+  author =	 {Karel Bartos and Michal Sofka,
+  title =	 {Robust representation of network traffic for detecting malware variations},
+  booktitle =    {Proceedings of the European Conference on Machine Learning
+  	and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD)},
+  year =         2015,
+  month =        {7--11~} # sep,
+  pages =        {116--132},
+  address =      {Porto, Portugal},                  
+  abstract =	 {The goal of domain adaptation is to solve the problem of different joint
+	distribution of observation and labels in the training and testing data sets.
+	This problem happens in many practical situations such as when a malware
+	detector is trained from labeled datasets at certain time point but later
+	evolves to evade detection. We solve the problem by introducing a new
+	representation which ensures that a conditional distribution of the observation
+	given labels is the same. The representation is computed for bags of samples
+	(network traffic logs) and is designed to be invariant under shifting and
+	scaling of the feature values extracted from the logs and under permutation and
+	size changes of the bags. The invariance of the representation is achieved by
+	relying on a self-similarity matrix computed for each bag. In our experiments,
+	we will show that the representation is effective for training detector of
+	malicious traffic in large corporate networks. Compared to the case without
+	domain adaptation, the recall of the detector improves from 0.81 to 0.88 and
+	precision from 0.998 to 0.999.},
+  url =		 {http://www.sofka.com}
+}
+
+@InProceedings{birkbeck:miccai14,
+  author =	 {Neil Birkbeck and Timo Kohlberger and Jingdan Zhang and Michal Sofka and Jens Kaftan and Dorin Comaniciu and S.~Kevin Zhou},
+  title =	 {Lung Segmentation from {CT} with Severe Pathologies Using Anatomical Constraints},
+  booktitle =    {Proceedings of the 17th International Conference on
+                  Medical Image Computing and Computer-Assisted
+                  Intervention (MICCAI 2014)},
+  year =         2014,
+  month =        {14--18~} # sep,
+  address =      {Boston, MA, USA},                  
+  abstract =	 {The diversity in appearance of diseased lung
+	  tissue makes automatic segmentation of lungs from CT with
+	  severe pathologies challenging. To overcome this challenge, we
+	  rely on contextual constraints from neighboring anatomies to
+	  detect and segment lung tissue across a variety of pathologies
+	  and propose an algorithm that combines statistical learning
+	  with these anatomical constraints to seek a segmentation of the
+	  lung that is consistent with adjacent structures, such as the
+	  heart, liver, spleen, and ribs. We demonstrate that our
+	  algorithm reduces the number of failed detections and increases
+	  the accuracy of the segmentation on unseen test cases with
+	  severe pathologies.},
+  url =		 {http://www.sofka.com}
+}
+
+@InProceedings{wu:miccai14,
+  author =	 {Dijia Wu and Michal Sofka and Neil Birkbeck and S.~Kevin Zhou},
+  title =	 {Segmentation of Multiple Knee Bones from {CT} for Orthopedic Knee Surgery Planning},
+  booktitle =    {Proceedings of the 17th International Conference on
+                  Medical Image Computing and Computer-Assisted
+                  Intervention (MICCAI 2014)},
+  year =         2014,
+  month =        {14--18~} # sep,
+  address =      {Boston, MA, USA},                  
+  abstract =	 {Patient-specific orthopedic knee surgery
+	  planning requires precisely segmenting from 3D CT images
+	  multiple knee bones, namely femur, tibia, fibula, and patella,
+	  around the knee joint with severe pathologies. In this work, we
+	  propose a fully automated, highly precise, and computationally
+	  efficient joint segmentation approach for multiple bones.
+	  First, each bone is initially segmented using a model-based
+	  marginal space learning framework for pose estimation followed
+	  by non-rigid boundary deformation. To recover shape details, we
+	  refine the bone segmentation using the shape priors derived
+	  from the initial segmentation and formulate the spatial
+	  exclusion constraints between neighboring bones as a multiple
+	  layered graph partition problem. As a result, the segmentation
+	  accuracy is effectively improved and potential overlap removed.
+	  In experimental, we achieve simultaneous segmentation of femur,
+	  tibia, patella, and fibula with an overall accuracy of less
+	  than 1mm surface-to-surface error in less than 90s on hundreds
+	  of 3D CT data sets.},
+  url =		 {http://www.sofka.com}
+}
+
+@InProceedings{harrison:miccai13,
+  author =	 {Adam P.\ Harrison and Neil Birkbeck and Michal Sofka},
+  title =	 {{IntellEditS}: Intelligent Learning-Based Editor of Segmentations},
+  booktitle =    {Proceedings of the 16th International Conference on
+                  Medical Image Computing and Computer-Assisted
+                  Intervention (MICCAI 2013)},
+  year =         2013,
+  month =        {22--26~} # sep,
+  address =      {Nagoya, Japan},                  
+  abstract =	 {Automatic segmentation techniques, despite demonstrating excellent
+				  overall accuracy, can often produce inaccuracies in local regions. As a result,
+				  correcting segmentations remains an important task that is often laborious, especially
+				  when done manually for 3D datasets. This work presents a powerful
+				  tool called Intelligent Learning-Based Editor of Segmentations (IntellEditS) that
+				  minimizes user effort and further improves segmentation accuracy. The tool partners
+				  interactive learning with an energy-minimization approach to editing. Based
+				  on interactive user input, a discriminative classifier is trained and applied to the
+				  edited 3D region to produce soft voxel labeling. The labels are integrated into
+				  a novel energy functional along with the existing segmentation and image data.
+				  Unlike the state of the art, IntellEditS is designed to correct segmentation results
+				  represented not only as masks but also as meshes. In addition, IntellEditS accepts
+				  intuitive boundary-based user interactions. The versatility and performance
+				  of IntellEditS are demonstrated on both MRI and CT datasets consisting of varied
+				  anatomical structures and resolutions.},
+  url =		 {http://www.sofka.com}
+}
+
+@InProceedings{park:miccai13,
+  author =	 {JinHyeong Park and Michal Sofka and SunMi Lee and DaeYoung Kim and S.~Kevin Zhou},
+  title =	 {Automatic Nuchal Translucency Measurement from Ultrasonography},
+  booktitle =    {Proceedings of the 16th International Conference on
+                  Medical Image Computing and Computer-Assisted
+                  Intervention (MICCAI 2013)},
+  year =         2013,
+  month =        {22--26~} # sep,
+  address =      {Nagoya, Japan},                  
+  abstract =	 {This paper proposes a fully automatic approach for computing
+				  Nuchal Translucency (NT) measurement in an ultrasound scans of
+				  the mid-sagittal plane of a fetal head. This is an improvement upon current
+				  NT measurement methods which require manual placement of NT
+				  measurement points or user-guidance in semi-automatic segmentation of
+				  the NT region. The algorithm starts by finding the pose of the fetal head
+				  using discriminative learning-based detectors. The fetal head serves as
+				  a robust anchoring structure and the NT region is estimated from the
+				  statistical relationship between the fetal head and the NT region. Next,
+				  the pose of the NT region is locally refined and its inner and outer edge
+				  approximately determined via Dijkstra’s shortest path applied on the
+				  edge-enhanced image. Finally, these two region edges are used to define
+				  foreground and background seeds for accurate graph cut segmentation.
+				  The NT measurement is computed from the segmented region. Experiments
+				  show that the algorithm efficiently and effectively detects the NT
+				  region and provides accurate NT measurement which suggests suitability
+				  for clinical use.},
+  url =		 {http://www.sofka.com}
+}
+
+@InProceedings{sofka:HPmiccai10,
+  author =	 {Michal Sofka and Kristof Ralovich and Jingdan Zhang and S.~Kevin Zhou
+              and Dorin Comaniciu},
+  title =	 {Progressive Data Transmission for Hierarchical Detection in a Cloud},
+  booktitle =    {Proceedings of the 2nd International Workshop on High-Performance
+                  Medical Image Computing for Image-Assisted Clinical Intervention
+				  and Decision-Making (HP-MICCAI 2010)},
+  year =         2010,
+  month =        {24~} # sep,
+  address =      {Bejing, China},                  
+  pages =	 {},
+  abstract =	 {In response to the growing need for image analysis services
+                  in the cloud computing environment, this paper proposes an automatic
+                  system for detecting landmarks in 3D volumes. The inherent problem of
+                  limited bandwidth between a (thin) client, Data Center (DC), and Data
+                  Analysis (DA) server is addressed by a hierarchical detection algorithm
+                  that obtains data by progressively transmitting only image regions required
+                  for processing. The client sends a request for a visualization of a
+                  specific landmark. The algorithm obtains a coarse level image from DC
+                  and outputs landmark location candidates. The coarse landmark location
+                  candidates are then used to obtain image neighborhood regions at a finer
+                  resolution level. The final location is computed as the robust mean of the
+                  strongest candidates after refinement at the subsequent resolution levels.
+                  The feedback about candidates detected at a coarser resolution makes it
+                  possible to only transmit image regions surrounding these candidates at
+                  a finer resolution rather then the entire images. Furthermore, the image
+                  regions are lossy compressed with JPEG 2000. Together, these properties
+                  amount to at least 50 times bandwidth reduction while achieving similar
+                  accuracy when compared to an algorithm using the original data.},
+  note = {Michal Sofka},
+  url =		 {http://www.sofka.com/publications.html}
+}
+
+@article{lin:tbe12,
+	author = {Kai-Shun Lin and Chia-Ling Tsai and Chih-Hsiangng Tsai
+	        and Michal Sofka and Shih-Jen Chen and Wei-Yang Lin},
+	journal = {IEEE Transactions on Biomedical Engineering},
+	title = {Retinal Vascular Tree Reconstruction With Anatomical
+	       Realism},
+    year = 2012,
+    month = dec,
+    volume = 59,
+    number = 12,
+	pages = {3337--3347},
+	abstract={Motivated by the goals of automatically extracting
+		vessel segments and constructing retinal vascular trees with
+		anatomical realism, this paper presents and analyses an
+		algorithm that combines vessel segmentation and grouping of
+		the extracted vessel segments. The proposed method aims to
+		restore the topology of the vascular trees with anatomical
+		realism for clinical studies and diagnosis of retinal
+		vascular diseases, which manifest abnormalities in either
+		venous and/or arterial vascular systems. Vessel segments are
+		grouped using extended Kalman filter which takes into account
+		continuities in curvature, width, and intensity changes at
+		the bifurcation or crossover point. At a junction, the
+		proposed method applies the minimum-cost matching algorithm
+		to resolve the conflict in grouping due to error in tracing.
+		The system was trained with 20 images from the DRIVE dataset,
+		and tested using the remaining 20 images. The dataset
+		contained a mixture of normal and pathological images. In
+		addition, six pathological fluorescein angiogram sequences
+		were also included in this study. The results were compared
+		against the groundtruth images provided by a physician,
+		achieving average success rates of 88.79% and 90.09%,
+		respectively.},
+	keywords={Kalman filters; bifurcation; blood
+		vessels; diseases; eye; image matching; image segmentation; image
+		sequences; medical image processing; DRIVE dataset; anatomical
+		realism; arterial vascular systems; bifurcation; extended Kalman
+		filter; minimum-cost matching algorithm; pathological
+		fluorescein angiogram sequences; pathological image; retinal
+		vascular disease diagnosis; retinal vascular tree
+		reconstruction; venous vascular systems; vessel
+		segmentation; Blood vessels; Image reconstruction; Image
+		segmentation; Kalman filters; Retina; Kalman filter; retinal
+		vascular tree; vascular tree
+		reconstruction; Algorithms; Databases, Factual; Fluorescein
+		Angiography; Humans; Image Processing,
+		Computer-Assisted; Retinal Diseases; Retinal Vessels},
+	doi={10.1109/TBME.2012.2215034},
+    ISSN={0018-9294}
+}
+
+@Article{sofka:tmi14,
+  author =	 {Michal Sofka and Jingdan Zhang and Sara Good
+              and S.~Kevin Zhou and Dorin Comaniciu},
+  title =	 {Automatic Detection and Measurement of Structures
+              in Fetal Head Ultrasound Volumes Using Sequential
+              Estimation and Integrated Detection Network ({IDN})},
+  journal =	 tmi,
+  year =	 2014,
+  month = may,
+  volume = 33,
+  number = 5,
+  pages = {1054--1070},
+  abstract =	 {Routine ultrasound exam in the second and third
+	       trimesters of pregnancy involves manually measuring fetal head
+	       and brain structures in 2D scans. The procedure requires a
+	       sonographer to find the standardized visualization planes with
+	       a probe and manually place measurement calipers on the
+	       structures of interest. The process is tedious, time consuming,
+	       and introduces user variability into the measurements. This
+	       paper proposes an Automatic Fetal Head and Brain (AFHB) system
+	       for automatically measuring anatomical structures from 3D
+	       ultrasound volumes. The system searches the 3D volume in a
+	       hierarchy of resolutions and by focusing on regions that are
+	       likely to be the measured anatomy. The output is a standardized
+	       visualization of the plane with correct orientation and
+	       centering as well as the biometric measurement of the anatomy.
+	       The system is based on a novel framework for detecting multiple
+	       structures in 3D volumes. Since a joint model is difficult to
+	       obtain in most practical situations, the structures are
+	       detected in a sequence, one-byone. The detection relies on
+	       Sequential Estimation techniques, frequently applied to visual
+	       tracking. The interdependence of structure poses and strong
+	       prior information embedded in our domain yields faster and more
+	       accurate results than detecting the objects individually. The
+	       posterior distribution of the structure pose is approximated at
+	       each step by sequential Monte Carlo. The samples are propagated
+	       within the sequence across multiple structures and hierarchical
+	       levels. The probabilistic model helps solve many challenges
+	       present in the ultrasound images of the fetus such as speckle
+	       noise, signal drop-out, shadows caused by bones, and appearance
+	       variations caused by the differences in the fetus gestational
+	       age. This is possible by discriminative learning on an
+	       extensive database of scans comprising more than two thousand
+	       volumes and more than thirteen thousand annotations. The
+	       average difference between ground truth and automatic measu-
+	       ements is below 2 mm with a running time of 6.9 seconds (GPU)
+	       or 14.7 seconds (CPU). The accuracy of the AFHB system is
+	       within inter-user variability and the running time is fast,
+	       which meets the requirements for clinical use.},
+  doi = {http://dx.doi.org/10.1109/TMI.2014.2301936},
+  url =		 {}
+}
+
+@article{sofka:mia10,
+  author =	 {Michal Sofka and Charles V.\ Stewart},
+  title =	 {Location Registration and Recognition ({LRR}) for
+                  Serial Analysis of Nodules in Lung {CT} Scans},
+  journal =	 mia,
+  year =	 2010,
+  volume =	 14,
+  number =	 3,
+  pages =	 {407--428},
+  abstract =	 {In the clinical workflow for lung cancer management,
+                  the comparison of nodules between CT scans from
+                  subsequent visits by a patient is necessary for
+                  timely classification of pulmonary nodules into
+                  benign and malignant and for analyzing nodule growth
+                  and response to therapy. The algorithm described in
+                  this paper takes (a) two temporally-separated CT
+                  scans, I1 and I2, and (b) a series of nodule
+                  locations in I1, and for each location it produces
+                  an affine transformation that maps the locations and
+                  their immediate neighborhoods from I1 to I2. It does
+                  this without deformable registration and without
+                  initialization by global affine
+                  registration. Requiring the nodule locations to be
+                  specified in only one volume provides the clinician
+                  more flexibility in investigating the condition of
+                  the lung. The algorithm uses a combination of
+                  feature extraction, indexing, refinement, and
+                  decision processes. Together, these processes
+                  essentially ``recognize'' the neighborhoods. We show
+                  on lung CT scans that our technique works at near
+                  interactive speed and that the median alignment
+                  error of 134 nodules is 1.70 mm compared to the
+                  error 2.14 mm of the Diffeomorphic Demons algorithm,
+                  and to the error 3.57 mm of the global nodule
+                  registration with local refinement. We demonstrate
+                  on the alignment of 250 nodules, that the algorithm
+                  is robust to changes caused by cancer progression
+                  and differences in breathing states, scanning
+                  procedures, and patient positioning. Our algorithm
+                  may be used both for diagnosis and treatment
+                  monitoring of lung cancer. Because of the generic
+                  design of the algorithm, it might also be used in
+                  other applications that require fast and accurate
+                  mapping of regions.},
+  annote =	 {},
+  keywords =	 {}
+}
+
+@InProceedings{lin:bibe09,
+  author =	 {Kai-Shung Lin and Chia-Ling Tsai and Michal Sofka
+                  and Chih-Hsiangng Tsai and Shih-Jen Chen and
+                  Wei-Yang Lin},
+  title =	 {Vascular Tree Construction with Anatomical Realism
+                  for Retinal Images},
+  booktitle =	 {Bioinformatics and BioEngineering, 2009. BIBE
+                  '09. Ninth IEEE International Conference on},
+  year =	 2009,
+  month =	 {24 } # jun,
+  pages =	 {313--318},
+  keywords =	 {Kalman filters, biomedical measurement, diseases,
+                  eye, medical image processing, DRIVE database,
+                  anatomical realism, arterial vascular system,
+                  bifurcation, cardio-vascular diseases, extended
+                  Kalman filter, hypertension, multiscale matched
+                  filtering, pathological image, patient diagnosis,
+                  retinal images, vascular tree construction, venous
+                  system, vessel extraction, vessel likelihood
+                  measure, vessel segments},
+  abstract =	 {In this paper, we present a method to automatically
+                  extract the vessel segments and construct the
+                  vascular tree with anatomical realism from a color
+                  retinal image. The significance of the work is to
+                  assist in clinical studies of diagnosis of
+                  cardio-vascular diseases, such as hypertension,which
+                  manifest abnormalities in either venous and/or
+                  arterial vascular systems. To maximize the
+                  completeness of vessel extraction, we introduce
+                  vessel connectiveness measure to improve on an
+                  existing algorithm which applies multiscale matched
+                  filtering and vessel likelihood measure.Vessel
+                  segments are grouped using extended Kalman filter to
+                  take into consideration continuities in curvature,
+                  width,and color changes at the bifurcation or
+                  crossover point. The algorithm is tested on five
+                  images from the DRIVE database,a mixture of normal
+                  and pathological images, and the results are
+                  compared with the ground truth images provided by a
+                  physician. The preliminary results show that our
+                  method reaches an average success rate of 92.1\%.},
+  annote =	 {}
+}
+
+@InProceedings{sofka:cvpr10,
+  author =	 {Michal Sofka and Jingdan Zhang and S.~Kevin Zhou and
+                  Dorin Comaniciu},
+  title =	 {Multiple Object Detection by Sequential {M}onte {C}arlo
+                  and Hierarchical Detection Network},
+  crossref =	 {cvpr10},
+  abstract =	 {In this paper, we propose a novel framework for
+                  detecting multiple objects in 2D and 3D
+                  images. Since a joint multi-object model is
+                  difficult to obtain in most practical situations, we
+                  focus here on detecting the objects sequentially,
+                  one-by-one. The interdependence of object poses and
+                  strong prior information embedded in our domain of
+                  medical images results in better performance than
+                  detecting the ob- jects individually. Our approach
+                  is based on Sequential Estimation techniques,
+                  frequently applied to visual tracking. Unlike in
+                  tracking, where the sequential order is naturally
+                  determined by the time sequence, the order of
+                  detection of multiple objects must be selected,
+                  leading to a Hierarchical Detection Network
+                  (HDN). We present an algorithm that optimally
+                  selects the order based on probability of states
+                  (object poses) within the ground truth region. The
+                  posterior distribution of the object pose is
+                  approximated at each step by sequential Monte
+                  Carlo. The samples are propagated within the
+                  sequence across multiple objects and hierarchical
+                  levels. We show on 2D ultrasound images of left
+                  atrium, that the automatically selected sequential
+                  order yields low mean detection error. We also
+                  quantitatively evaluate the hierarchical detection
+                  of fetal faces and three fetal brain structures in
+                  3D ultrasound images.},
+  annote =	 {}
+}
+
+
+%title =    {[{T}itle Omitted for Anonymous Review]},
+
+@InProceedings{sofka:miccai08,
+  author =	 {Michal Sofka and Charles V.\ Stewart},
+  title =	 {Location Registration and Recognition ({LRR}) for
+                  Longitudinal Evaluation of Corresponding Regions in
+                  {CT} Volumes},
+  crossref =	 {miccai08},
+  pages =	 {989--997},
+  volume =	 2,
+  month =        {6--10~} # sep,
+  abstract =	 {The algorithm described in this paper takes (a) two
+                  temporally-separated CT scans, I1 and I2, and (b) a
+                  series of locations in I1, and it produces, for each
+                  location, an affine transformation mapping the
+                  locations and their immediate neighborhood from I1
+                  to I2. It does this without deformable registration
+                  by using a combination of feature extraction,
+                  indexing, refinement and decision
+                  processes. Together these essentially
+                  ``recognize'' the neighborhoods. We show on lung
+                  CT scans that this works at near interactive speeds,
+                  and is at least as accurate as the Diffeomorphic
+                  Demons algorithm. The algorithm may be used both for
+                  diagnosis and treatment monitoring.},
+  url =		 {http://www.vision.cs.rpi.edu/LRR/},
+  paperloc =	 {/projects/vision/web/papers/},
+  annote =	 {}
+}
+
+
+@Article{tsai:titb08,
+  author =   {Chia-Ling Tsai and Benjamin Madore and Matthew Leotta
+              and Michal Sofka and Gehua Yang and Anna Majerovics
+              and Howard L.\ Tanenbaum and Charles V.\ Stewart and Badrinath Roysam},
+  title =    {Automated Retinal Image Analysis over the Internet},
+  journal =  {IEEE Transactions on Information Technology in Biomedicine},
+  year =     2008,
+  volume =   12,
+  number =   4,
+  pages =    {480--487},
+  month =    jul,
+  abstract =     {Retinal clinicians and researchers make extensive
+                  use of images, and the current emphasis is on
+                  digital imaging of the retinal fundus. The goal of
+                  this paper is to introduce a system, known as RIVERS
+                  (Retinal Image Vessel Extraction and Registration
+                  System), which provides the community of retinal
+                  clinicians, researchers, and study directors an
+                  integrated suite of advanced digital retinal image
+                  analysis tools over the Internet. The capabilities
+                  include vasculature tracing and morphometry, joint
+                  (simultaneous) montaging of multiple retinal fields,
+                  cross-modality registration (color/red-free fundus
+                  photographs, and fluorescein angiograms), and
+                  generation of flicker animations for visualization
+                  of changes from longitudinal image sequences. Each
+                  capability has been carefully-validated in our
+                  previous research work. The integrated
+                  internet-based system can enable significant
+                  advances in retina-related clinical diagnosis,
+                  visualization of the complete fundus at full
+                  resolution from multiple low-angle views, analysis
+                  of longitudinal changes, research on the retinal
+                  vasculature, and objective, quantitative
+                  computer-assisted scoring of clinical trials
+                  imagery. It could pave the way for future screening
+                  services from optometry facilities.},
+  url =      {http://www.vision.cs.rpi.edu/RIVERS/},
+  paperloc =     {/projects/vision/doc/papers/}
+}
+
+@InProceedings{kelman:cvprw07,
+  author =   {Avital Kelman and Michal Sofka and Charles
+                  V. Stewart},
+  title =    {Keypoint Descriptors for Matching Across Multiple
+                  Image Modalities and Non-linear Intensity
+                  Variations},
+  crossref =     {cvprw-irf07},
+  abstract =     {In this paper, we investigate the effect of
+                  substantial inter-image intensity changes and
+                  changes in modality on the performance of keypoint
+                  detection, description, and matching algorithms in
+                  the context of image registration. In doing so, we
+                  modify widely-used keypoint descriptors such as SIFT
+                  and shape contexts, attempting to capture the
+                  insight that some structural information is indeed
+                  preserved between images despite dramatic appearance
+                  changes. These extensions include (a) pairing
+                  opposite-direction gradients in the formation of
+                  orientation histograms and (b) focusing on edge
+                  structures only. We also compare the stability of
+                  MSER, Laplacian-of-Gaussian, and Harris corner
+                  keypoint location detection and the impact of
+                  detection errors on matching results. Our
+                  experiments on multimodal image pairs and on image
+                  pairs with significant intensity differences show
+                  that indexing based on our modified descriptors
+                  produces more correct matches on difficult pairs
+                  than current techniques at the cost of a small
+                  decrease in performance on easier pairs. This
+                  extends the applicability of image registration
+                  algorithms such as the Dual-Bootstrap which rely on
+                  correctly matching only a small number of keypoints},
+  keywords =     {},
+  url =      {},
+  paperloc =     {}
+}
+
+@InProceedings{sofka:cvpr07,
+  author =   {Michal Sofka and Gehua Yang and Charles V.\
+                  Stewart},
+  title =    {Simultaneous Covariance Driven Correspondence
+                  ({CDC}) and Transformation Estimation in the
+                  Expectation Maximization},
+  crossref =     {cvpr07},
+  abstract =     {This paper proposes a new registration algorithm,
+                  Covariance Driven Correspondences (CDC), that
+                  depends fundamentally on the estimation of
+                  uncertainty in point correspondences. This
+                  uncertainty is derived from the covariance matrices
+                  of the individual point locations and from the
+                  covariance matrix of the estimated transformation
+                  parameters. Based on this uncertainty, CDC uses a
+                  robust objective function and an EM-like algorithm
+                  to simultaneously estimate the transformation
+                  parameters, their covariance matrix, and the likely
+                  correspondences. Unlike the Robust Point Matching
+                  (RPM) algorithm, CDC requires neither an annealing
+                  schedule nor an explicit outlier
+                  process. Experiments on synthetic and real images
+                  using a polynomial transformation models in 2D and
+                  in 3D show that CDC has a broader domain of
+                  convergence than the well-known Iterative Closest
+                  Point (ICP) algorithm and is more robust to missing
+                  or extraneous structures in the data than RPM.},
+  url =      {http://www.vision.cs.rpi.edu/CDC/},
+  paperloc =     {/projects/vision/web/papers/},
+  annote =   {}
+}
+
+@InProceedings{sofka:spit02,
+  author =   {Michal Sofka and Rachid Benslimane and
+                  Ludovic Macaire and Michael Rudko and Jack-G\'erard
+                  Postaire},
+  title =	 {Archeological mosaic image indexing by color-based
+                  segmentation and skeleton extraction},
+  booktitle =    {Proceedings of the Second IEEE International
+                  Symposium on Signal Processing and Information
+                  Technology},
+  year =     2002,
+  pages =    {327--331},
+  address =  {Marrakesh, Marocco},
+  keywords =     {registration, feature based},
+  paperloc =     {/projects/vision/doc/papers/}
+}
+
+@Article{sofka:tmi06,
+  author =   {Michal Sofka and Charles V.\ Stewart},
+  title =    {Retinal Vessel Extraction Using Multiscale Matched
+                  Filters, Confidence and Edge Measures},
+  journal =  tmi,
+  year =     2006,
+  volume =   25,
+  number =   12,
+  pages =    {1531--1546},
+  month =    dec,
+  abstract =     {Motivated by the goals of improving detection of
+                  low-contrast and narrow vessels and eliminating
+                  false detections at non-vascular structures, a new
+                  technique is presented for extracting vessels in
+                  retinal images. The core of the technique is a new
+                  likelihood ratio test that combines matched-filter
+                  responses, confidence measures and vessel boundary
+                  measures. Matched filter responses are derived in
+                  scale-space to extract vessels of widely varying
+                  widths. A vessel confidence measure is defined as a
+                  projection of a vector formed from a normalized
+                  pixel neighborhood onto a normalized ideal vessel
+                  profile. Vessel boundary measures and associated
+                  confidences are computed at potential vessel
+                  boundaries. Combined, these responses form a
+                  6-dimensional measurement vector at each pixel. A
+                  training technique is used to develop a mapping of
+                  this vector to a likelihood ratio that measures the
+                  ``vesselness'' at each pixel. Results comparing this
+                  vesselness measure to matched filters alone and to
+                  measures based on the Hessian of intensities show
+                  substantial improvements both qualitatively and
+                  quantitatively. The Hessian can be used in place of
+                  the matched filter to obtain similar but
+                  less-substantial improvements or to steer the
+                  matched filter by preselecting kernel
+                  orientations. Finally, the new vesselness likelihood
+                  ratio is embedded into a vessel tracing framework,
+                  resulting in an efficient and effective vessel
+                  centerline extraction algorithm.},
+  url =      {http://www.vision.cs.rpi.edu/vessels/},
+  paperloc =     {/projects/vision/doc/papers/}
+}
+
+@InProceedings{tsai:smc06,
+  author =   {Chia-Ling Tsai and Charles V. Stewart and Amitha
+                  Perera and Ying-Lin Lee and Gehua Yang and
+                  Michal Sofka },
+  title =    {A Correspondence-Based Software Toolkit for Image
+                  Registration},
+  booktitle =    {Proceedings of the IEEE International Conference on
+                  Systems, Man, and Cybernetics},
+  year =     2006,
+  pages = {3972--3977},
+  month =  {8--11~} # oct,
+  address = {Taipei, Taiwan},
+  keywords =     {registration, feature based, toolkit, software system},
+  paperloc =     {/projects/vision/doc/papers/},
+  abstract =     {Retinal clinicians and researchers make extensive
+                  use of images, and the current emphasis is on
+                  digital imaging of the retinal fundus. The goal of
+                  this paper is to introduce a system, known as RIVERS
+                  (Retinal Image Vessel Extraction and Registration
+                  System), which provides the community of retinal
+                  clinicians, researchers, and study directors an
+                  integrated suite of advanced digital retinal image
+                  analysis tools over the Internet. The capabilities
+                  include vasculature tracing and morphometry, joint
+                  (simultaneous) montaging of multiple retinal fields,
+                  cross-modality registration (color/red-free fundus
+                  photographs, and fluorescein angiograms), and
+                  generation of flicker animations for visualization
+                  of changes from longitudinal image sequences. Each
+                  capability has been carefully-validated in our
+                  previous research work.\\ The integrated
+                  internet-based system can enable significant
+                  advances in retina-related clinical diagnosis,
+                  visualization of the complete fundus at full
+                  resolution from multiple low-angle views, analysis
+                  of longitudinal changes, research on the retinal
+                  vasculature, and objective, quantitative
+                  computer-assisted scoring of clinical trials
+                  imagery. It could pave the way for future screening
+                  services from optometry facilities.}
+}
+
+@InProceedings{yang:icvs06,
+  author =   {Gehua Yang and Charles V. Stewart and Michal Sofka
+                  and Chia-Ling Tsai},
+  title =    {Automatic robust image registration system:
+                  initialization, estimation, and decision},
+  crossref =     {icvs06},
+  pages =    {23--31},
+  keywords =     {registration, feature based},
+  paperloc =     {/projects/vision/doc/papers/},
+  abstract =     {Our goal is a highly-reliable, fully-automated image
+                  registration technique that takes two images and
+                  correctly aligns them or decides that they can not
+                  be aligned. The technique should handle image pairs
+                  having low overlap, variations in scale, large
+                  illumination differences (e.g.\ day and night),
+                  substantial scene changes, and different
+                  modalities. Our approach is a combination of
+                  algorithms for initialization, estimation and
+                  refinement, and decision-making. It starts by
+                  extracting and matching keypoints. Rank-ordered
+                  matches are tested individually in succession. Each
+                  is used to generate a similarity transformation
+                  estimate in a small region of each image surrounding
+                  the matched keypoints. A generalization of the
+                  recently developed Dual-Bootstrap algorithm is then
+                  applied to generate an image-wide transformation
+                  estimate through a combination of matching and
+                  re-estimation, model selection, and region growing,
+                  all driven by a new multiscale feature extraction
+                  technique. After convergence of the Dual-Bootstrap,
+                  the transformation is accepted if it passes a
+                  correctness test that combines measures of accuracy,
+                  stability and non-randomness; otherwise the process
+                  starts over with the next keypoint
+                  match. Experimental results on a suite of
+                  challenging image pairs shows the effectivenss of
+                  the complete system.}
+}
+
+@Article{yang:pami07,
+  author =   {Gehua Yang and Charles V.\ Stewart and Michal Sofka
+              and Chia-Ling Tsai},
+  title =    {Registration of Challenging Image Pairs: Initialization,
+            Estimation, and Decision},
+  journal =  pami,
+  year =   2007,
+  volume = 23,
+  number = 11,
+  month = nov,
+  pages =  {1973--1989},
+  keywords =     {image alignment, registration system, feature based
+                  registration, decision criteria},
+  url =      {http://www.vision.cs.rpi.edu/GDBICP/},
+  paperloc =     {},
+  abstract =     {Our goal is an automated 2d-image-pair registration
+                  algorithm capable of aligning images taken of a wide
+                  variety of natural and man-made scenes as well as
+                  many medical images. The algorithm should handle low
+                  overlap, substantial orientation and scale
+                  differences, large illumination variations, and
+                  physical changes in the scene. An important
+                  component of this is the ability to automatically
+                  reject pairs that have no overlap or have too many
+                  differences to be aligned well. \\ We propose a
+                  complete algorithm, including techniques for
+                  initialization, for estimating transformation
+                  parameters, and for automatically deciding if an
+                  estimate is correct. Keypoints extracted and matched
+                  between images are used to generate initial
+                  similarity transform estimates, each accurate over a
+                  small region. These initial estimates are
+                  rank-ordered and tested individually in
+                  succession. Each estimate is refined using the
+                  Dual-Bootstrap ICP algorithm, driven by matching of
+                  multiscale features. A three-part decision criteria,
+                  combining measurements of alignment accuracy,
+                  stability in the estimate, and consistency in the
+                  constraints, determines whether the refined
+                  transformation estimate is accepted as
+                  correct. Experimental results on a data set of 22
+                  challenging image pairs show that the algorithm
+                  effectively aligns 19 of the 22 pairs and rejects
+                  99.8\% of the misalignments that occur when all
+                  possible pairs are tried. The algorithm
+                  substantially out-performs algorithms based on
+                  keypoint matching alone.}
+}
+
+@misc{zhang:patent12,
+	title =    {Feature-Based Composing for {3D} {MR} Angiography
+	Images},
+	author =   {Li Zhang and Michal Sofka and Ulf
+	Sch\"afer},
+	howpublished = {Application number: 11/185,603, Publication number: US 2006/0052686 A1, Patent number: US8265354},
+	note =     {},
+	month =    {Issued: 11~} # sep,  
+	year =     {2012}
+}
+
+@misc{zhou:patent14,
+	title =    {Cloud-Based Processing of Medical Imaging Data},
+	author =   {Shaohua Kevin Zhou and Neil Birkbeck and Giorgio Di Guardia and Jingdan Zhang and Michal Sofka and James B.~Thompson and Gianluca Paladini},
+	howpublished = {Reference number: 2014P12500 US},
+	note =     {},
+	month =    {Filed: 8~} # sep,
+	year =     {2014}	
+}
+
+@misc{bartos:patent15,
+  title =    {Catching More Security Incidents: Global Clustering of Incidents Based on Malware Similarity and Online Trustfulness},
+  author =   {Karel Bartos and Martin Rehak and Michal Sofka},
+  howpublished = {Application number: 14/612,623},
+  note =     {},
+  month =    {Filed: 2~} # mar,
+  year =     {2015}	
+}
+
+@misc{bartos:patent14,
+	title =    {Identifying Threats Based on Hierarchical Classification},
+	author =   {Karel Bartos and Michal Sofka},
+	howpublished = {Application number: 14/519,444},
+	note =     {},
+	month =    {Filed: 21~} # oct,
+	year =     {2014}	
+}
+
+
+@misc{sofka:patent13,
+  title =    {Method and System for Multiple Object Detection by Sequential {M}onte
+             {C}arlo and {H}ierarchical {D}etection {N}etwork},
+  author =   {Michal Sofka and Jingdan Zhang and S.~Kevin Zhou and Dorin Comaniciu},
+  howpublished = {Application number: 13/080,964, Publication number: US8605969 B2, Patent number: US8605969},
+  note =     {},
+  month =    {Issued: 10~} # dec,
+  year =     {2013}
+}
+
+@InProceedings{birkbeck:cvprw11,
+  author =	 {Neil Birkbeck and Michal Sofka and S.~Kevin Zhou},
+  title =	 {Fast Boosting Trees for Classification, Pose Detection, and Boundary Detection on a GPU},
+  booktitle =    {Proceedings of the 7th IEEE Workshop on Embedded Computer Vision
+                 (in conjunction with IEEE CVPR)},
+  year =         2011,
+  month =        {20~Jun},
+  address =      {Colorado Springs, CO},                  
+  abstract =	 {Discriminative classifiers are often the computational
+                  bottleneck in medical imaging applications such as foreground/
+                  background classification, 3D pose detection, and
+                  boundary delineation. To overcome this bottleneck, we propose
+                  a fast technique based on boosting tree classifiers
+                  adapted for GPU computation. Unlike standard tree-based
+                  algorithms, our method does not have any recursive calls
+                  which makes it GPU-friendly. The algorithm is integrated
+                  into an optimized Hierarchical Detection Network (HDN)
+                  for 3D pose detection and boundary detection in 3D medical
+                  images. On desktop GPUs, we demonstrate an 80x speedup in
+				  simpleclassification of Liver in MRI volumes,
+                  and 30x speedup in multi-object localization of fetal head
+                  structures in ultrasound images, and 10x speedup on 2.49
+                  mm accurate Liver boundary detection in MRI.}
+}
+
+@misc{birkbeck:patent14ev,
+  title =    {Method and System for Evaluation Using Probabilistic Boosting Trees},
+  author =   {Neil Birkbeck and Michal Sofka and S.~Kevin Zhou},
+  howpublished = {Application number: 13/228,505, Publication number: US 2012/0069003 A1, CN102592133A, EP2434435A2, EP2434435A3, Patent number: US8860715},
+  note =     {},
+  month =    {Issued: 14~} # oct,
+  year =     {2014}	
+}
+
+@misc{wu:patent14,
+  title =    {Multi-Bone Segmentation for {3D} Computed Tomography},
+  author =   {Dijia Wu and Neil Birkbeck and Michal Sofka and Meizhu Liu and S.~Kevin Zhou},
+  howpublished = {Application number: 13/953,825, Publication number: US20140086465 A1},
+  note =     {},
+  month =    {Filed: 27~} # mar,
+  year =     {2014}	
+}
+
+@misc{sofka:patent14,
+  title =    {Method and System for Bone Segmentation and Landmark Detection for Joint Replacement Surgery},
+  author =   {Michal Sofka and Meizhu Liu and Dijia Wu and S.~Kevin Zhou},
+  howpublished = {Application number: 14/041,029, Publication number: US20140093153 A1},
+  note =     {},
+  month =    {Filed: 3~} # apr,
+  year =     {2014}	
+}
+
+@misc{wu:patent13pelvis,
+  title =    {Automatic Pelvis Unfolding from {3D} {CT} Images},
+  author =   {Dijia Wu and Neil Birkbeck and Michal Sofka and Meizhu Liu and Grzegorz Soza and S.~Kevin Zhou},
+  howpublished = {201314579},
+  note =     {},
+  month =    {Filed: },
+  year =     {2013}	
+}
+
+@misc{kohlberger:patent12,
+  title =    {Method and System for Multi-Organ Segmentation Using Learning-Based
+              Segmentation and Level Set Optimization},
+  author =   {Timo Kohlberger and Michal Sofka and Jens Wetzl and Jingdan Zhang
+              S.~Kevin Zhou and Neil Birkbeck and Jens Kaftan and J{\'e}r{\^o}me Declerck},
+  howpublished = {Application number: 13/416,508, Publication number: US20120230572 A1},
+  note =     {},
+  month =    {Filed: 9~} # mar,
+  year =     {2012}	
+}
+
+@misc{el-zehiry:patent12,
+  title =    {Semi-Automated Preoperative Resection Planning},
+  author =   {Noha Youssry El-Zehiry and Leo Grady and Michal Sofka and Christian
+              Tietjen and Shaohua Kevin Zhou},
+  howpublished = {Application number: 13/622,393, Publication number: US 2011/0077842 A1, CN103049638A},
+  note =     {},
+  month =    {Filed: 19~} # sep,
+  year =     {2012}
+}
+
+@misc{sofka:patent14pdt,
+  title =    {Data Transmission in Remote Computer Assisted Detection},
+  author =   {Michal Sofka and Kristof Ralovich and Jingdan Zhang and Shaohua Kevin Zhou
+              and Gianluca Paladini and Dorin Comaniciu},
+  howpublished = {Application number: 13/080,891, Publication number: US 2011/0243407 A1, Patent number: US8811697},
+  note =     {},
+  month =    {Issued: 19~} # aug,
+  year =     {2014}
+}
+
+@misc{sofka:patent10,
+  title =    {Validation Scheme For Composing Magnetic Resonance
+                  Images ({MRI})},
+  author =   {Michal Sofka and Li Zhang and Ulf
+                  Sch\"afer},
+  howpublished = {Application number: 11/204,790, Publication number: US 2006/0047197 A1, WO2006023216A3, Patent number: US7711161},
+  note =     {},
+  month =    {Issued: 4~} # may,
+  year =     {2010}
+}
+
+@Article{sofka:mim12,
+  author =	 {Michal Sofka and Kristof Ralovich and Jingdan Zhang and S.~Kevin Zhou
+              and Dorin Comaniciu},
+  title =	 {Progressive Data Transmission for Anatomical Landmark Detection in a Cloud},
+  journal =	 {Methods of Information in Medicine},
+  year =	 2012,
+  note =	 {Invited Paper.},
+  volume =	 51,
+  number =	 3,
+  pages =	 {268--278},
+  abstract =	 {
+    Background:
+    In the concept of cloud-computing-based systems, various authorized users have secure access to patient records from a number of care delivery organizations from any location. This creates a growing need for remote visualization, advanced image processing, state-of-the-art image analysis, and computer aided diagnosis.
+    Objectives:
+    This paper proposes a system of algorithms for automatic detection of anatomical landmarks in 3D volumes in the cloud computing environment. The system addresses the inherent problem of limited bandwidth between a (thin) client, data center, and data analysis server.
+    Methods:
+    The problem of limited bandwidth is solved by a hierarchical sequential detection algorithm that obtains data by progressively transmitting only image regions required for processing. The client sends a request to detect a set of landmarks for region visualization or further analysis.
+    The algorithm running on the data analysis server obtains a coarse level image from the data center and generates landmark location candidates. The candidates are then used to obtain image neighborhood regions at a finer resolution level for further detection.
+    This way, the landmark locations are hierarchically and sequentially detected and refined.
+    Results:
+    Only image regions surrounding landmark location candidates need to be transmitted during detection. Furthermore, the image regions are \emph{lossy} compressed with JPEG 2000. Together, these properties amount to at least 30 times bandwidth reduction while achieving similar accuracy when compared to an algorithm using the original data.
+    Conclusions:
+    The hierarchical sequential algorithm with progressive data transmission considerably reduces bandwidth requirements in cloud-based detection systems.},
+  keywords = {Cloud Computing, Machine Learning, Pattern Recognition System, Computer-Assisted Image Processing, Image Compression},
+  url =		 {http://www.sofka.com/publications.html}
+}
+
+@InProceedings{kohlberger:miccai11,
+  author =	 {Timo Kohlberger and Michal Sofka and Jingdan Zhang and Neil Birkbeck and Jens Wetzl and
+              Jens Kaftan and J{\'e}r{\^o}me Declerck and and S.~Kevin Zhou},
+  title =	 {Automatic Multi-Organ Segmentation Using Learning-based Segmentation
+              and Level Set Optimization},
+  booktitle =    {Proceedings of the 14th International Conference on
+                  Medical Image Computing and Computer-Assisted
+                  Intervention (MICCAI 2011)},
+  year =         2011,
+  month =        {18--22~} # sep,
+  address =      {Toronto, Canada},                  
+  abstract =	 {We present a novel generic segmentation system for the fully
+                  automatic multi-organ segmentation from CT medical images. Thereby
+                  we combine the advantages of learning-based approaches on point cloudbased
+                  shape representation, such a speed, robustness, point correspondences,
+                  with those of PDE-optimization-based level set approaches, such
+                  as high accuracy and the straightforward prevention of segment overlaps.
+                  In a benchmark on 10–100 annotated datasets for the liver, the lungs,
+                  and the kidneys we show that the proposed system yields segmentation
+                  accuracies of 1.17–2.89mm average surface errors. Thereby the level set
+                  segmentation (which is initialized by the learning-based segmentations)
+                  contributes with an 20\%-40\% increase in accuracy.},
+  url =		 {http://www.sofka.com}
+}
+
+@InProceedings{sofka:miccai11contrast,
+  author =	 {Michal Sofka and Dijia Wu and Michael Suehling and David Liu and Christian Tietjen
+              and Grzegorz Soza and S.~Kevin Zhou},
+  title =	 {Automatic Contrast Phase Estimation in {CT} Volumes},
+  booktitle =    {Proceedings of the 14th International Conference on
+                  Medical Image Computing and Computer-Assisted
+                  Intervention (MICCAI 2011)},
+  year =         2011,
+  month =        {18--22~} # sep,
+  address =      {Toronto, Canada},                  
+  abstract =	 {We propose an automatic algorithm for phase labeling that
+                  relies on the intensity changes in anatomical regions due to the contrast
+                  agent propagation. The regions (specified by aorta, vena cava, liver, and
+                  kidneys) are first detected by a robust learning-based discriminative al-
+                  gorithm. The intensities inside each region are then used in multi-class
+                  LogitBoost classifiers to independently estimate the contrast phase. Each
+                  classifier forms a node in a decision tree which is used to obtain the final
+                  phase label. Combining independent classification from multiple regions
+                  in a tree has the advantage when one of the region detectors fail or
+                  when the phase training example database is imbalanced. We show on a
+                  dataset of 1016 volumes that the system correctly classifies native phase
+                  in 96.2\% of the cases, hepatic dominant phase (92.2\%), hepatic venous
+                  phase (96.7\%), and equilibrium phase (86.4\%) in 7 seconds on average.},
+  url =		 {http://www.sofka.com}
+}
+
+@InProceedings{sofka:miccai11lung,
+  author =	 {Michal Sofka and Jens Wetzl and Neil Birkbeck and Jingdan Zhang and Timo Kohlberger
+              and Jens Kaftan and J{\'e}r{\^o}me Declerck and S.~Kevin Zhou},
+  title =	 {Multi-stage Learning for Robust Lung Segmentation in Challenging {CT} Volumes},
+  booktitle =    {Proceedings of the 14th International Conference on
+                  Medical Image Computing and Computer-Assisted
+                  Intervention (MICCAI 2011)},
+  year =         2011,
+  month =        {18--22~} # sep,
+  address =      {Toronto, Canada},                  
+  abstract =	 {Simple algorithms for segmenting healthy lung parenchyma
+                  in CT are unable to deal with high density tissue common in pulmonary
+                  diseases. To overcome this problem, we propose a multi-stage learning-
+                  based approach that combines anatomical information to predict an ini-
+                  tialization of a statistical shape model of the lungs. The initialization
+                  first detects the carina of the trachea, and uses this to detect a set of
+                  automatically selected stable landmarks on regions near the lung (e.g.,
+                  ribs, spine). These landmarks are used to align the shape model, which is
+                  then refined through boundary detection to obtain fine-grained segmen-
+                  tation. Robustness is obtained through hierarchical use of discriminative
+                  classifiers that are trained on a range of manually annotated data of dis-
+                  eased and healthy lungs. We demonstrate fast detection (35s per volume
+                  on average) and segmentation of 2 mm accuracy on challenging data.},
+  url =		 {http://www.sofka.com}
+}
+
+
+@InCollection{birkbeck:chapter13,
+  editor =	 {Kenji Suzuki},
+  booktitle =	 {Computational Intelligence in Biomedical Imaging},
+  author =	 {Neil Birkbeck and Michal Sofka and Timo Kohlberger and Jingdan Zhang
+              and Jens Wetzl and Jens Kaftan and S.~Kevin Zhou},
+  title =	 {Robust Segmentation of Challenging Lungs in {CT} using Multi-Stage Learning
+              and Level Set Optimization},
+  publisher =	 {Springer New York},
+  year =	 2014,
+  pages =	 {185--208},
+  annote =	 {},
+  keywords =	 {lung},
+  doi={10.1007/978-1-4614-7245-2\_8},
+  isbn={978-1-4614-7244-5},
+  url =		 {},
+  paperloc =	 {}
+}
+
+
+@InProceedings{breitenreicher:ipmi13,
+  author =	 {Dirk Breitenreicher and Michal Sofka and Stefan Britzen and S.Kevin Zhou},
+  title =	 {Hierarchical Discriminative Framework for Detecting Tubular Structures in {3D} Images},
+  booktitle =    {Proceedings of the 23rd International Conference on
+                  Information Processing in Medical Imaging (IPMI 2013)},
+  year =         2013,
+  month =        {29~Jun -- 3~Jul},
+  address =      {Asilomar, CA, USA},                  
+  abstract =	 {Detecting tubular structures such as airways or
+	  vessels in medical images is important for diagnosis and
+	  surgical planning. Many state-of-the-art approaches address
+	  this problem by starting from the root and progressing towards
+	  thinnest tubular structures usually guided by image filtering
+	  techniques. These approaches need to be tailored for each
+	  application and can fail in noisy or low-contrast regions. In
+	  this work, we address these challenges by a two-layer model
+	  which consists of a low-level likelihood measure and a
+	  high-level measure verifying tubular branches. The algorithm
+	  starts by computing robust measure of tubular presence using a
+	  discriminative classifier at multiple image scales. The measure
+	  is then used in an efficient multi-scale shortest path
+	  algorithm to generate candidate centerline branches and
+	  corresponding radii measurements. Finally, the branches are
+	  verified by a learning-based indicator function that discards
+	  false candidate branches. The experiments on detecting airways
+	  in rotational X-ray volumes show that the technique is robust
+	  to noise and correctly finds airways even in the presence of
+	  imaging artifacts.},
+  url =		 {http://www.sofka.com}
+}
+
+@InProceedings{sofka:isbi11,
+  author =	 {Michal Sofka and Krist\'{o}f Ralovich and Neil Birkbeck
+              and Jingdan Zhang and S.Kevin Zhou},
+  title =	 {Integrated Detection Network ({IDN}) for Pose and Boundary
+              Estimation in Medical Images},
+  booktitle =    {Proceedings of the 8th International Symposium on
+                  Biomedical Imaging (ISBI 2011)},
+  year =         2011,
+  month =        {30~Mar -- 2~Apr},
+  address =      {Chicago, IL},                  
+  abstract =	 {The expanding role of complex object detection
+                  algorithms introduces a need for flexible architectures
+				  that simplify interfacing with machine learning
+				  techniques and offer easy-to-use training and detection
+				  procedures. To address this need, the Integrated Detection
+				  Network (IDN) proposes a conceptual design for rapid
+				  prototyping of object and boundary detection systems.
+                  The IDN uses a strong spatial prior present in the medical
+				  imaging domain and a large annotated database of images to
+				  train robust detectors. The best detection hypotheses are
+				  propagated throughout the detection network using sequential
+				  sampling techniques. The effectiveness of the IDN is
+				  demonstrated on two learning-based algorithms: (1) automatic
+				  detection of fetal brain structures in ultrasound volumes,
+				  and (2) liver boundary detection in MRI volumes. Modifying
+				  the detection pipeline is simple and allows for immediate
+				  adaptation to the variations of the desired algorithms. Both
+				  systems achieved low detection error (3.09 and 4.20 mm for
+				  two brain structures and 2.53 mm for boundary).}
+}
+
+@InProceedings{el-zehiry:isbi13,
+  author =	 {Noha El-Zehiry and Marie-Pierre Jolly and Michal Sofka},
+  title =	 {A Splice-Guided Data Driven Interactive Editing},
+  booktitle =    {International Symposium on Biomedical Imaging: From Nano to Macro (ISBI 2013)},
+  year =         2013,
+  month =        {7--11~} # apr,  
+  address =      {San Francisco, CA, USA},                  
+  abstract =	 {Image segmentation is one of the most challenging tasks in
+					the field of image processing. Even the best automatic segmentation
+					approaches cannot yet provide accurate segmentation in
+					all situations. Hence, there is a persistent need for interactive
+					editing tools to correct the automatic segmentation results such
+					that they match what would be clinically accepted by an expert.
+					We present an editing approach that uses a user-drawn
+					splice (contour) in 2D to correct any 2D or 3D segmentation
+					that may have been obtained automatically or manually. The
+					algorithm integrates the image data, the existing segmentation
+					(presegmentation), and the user’s input into an energy minimization
+					framework. We will show that the proposed segmentation
+					editing approach is general and can be used in multiple
+					applications and for multiple imaging modalities.},
+  url =		 {http://www.sofka.com}
+}
+
+
+

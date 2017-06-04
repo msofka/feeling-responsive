@@ -47,6 +47,7 @@ logo: "logo.png"
 #paginate: 5
 
 
+
 # Pagination path › Important for blog page in /blog/ to work
 paginate_path: "blog/page:num"
 
@@ -86,6 +87,14 @@ collections:
 - news
 - activities
 
+# BIBLIOGRAPHY
+
+scholar:
+    style: apa
+    bibliography: publications.bib
+    bibliography_template: bibtemplate
+    replace_strings: true
+    query: "@*"
 
 
 #
