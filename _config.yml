@@ -18,6 +18,10 @@ slogan: "Scientist and Technical Leader"
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
 description: "Homepage of Michal Sofka, scientist and technical leader with passion for innovation to transform ideas into product solutions."
 
+
+gems: [jekyll/scholar]
+
+
 # This URL is the main address. Don't include a slash at the end.
 #
 url: "https://msofka.github.io"
@@ -89,12 +93,63 @@ collections:
 
 # BIBLIOGRAPHY
 
+#scholar:
+#    style: apa
+#    bibliography: publications.bib
+#    bibliography_template: bibtemplate
+#    replace_strings: true
+#    query: "@*"
+
 scholar:
-    style: apa
-    bibliography: publications.bib
-    bibliography_template: bibtemplate
-    replace_strings: true
-    query: "@*"
+  #style: chicago-fullnote-bibliography
+  style: apa
+  locale: en
+
+  sort_by: none
+  order: ascending
+
+  source: ./_bibliography
+  bibliography: publications.bib
+  bibliography_template: bibtemplate
+
+  replace_strings: true
+  join_strings:    true
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  query: "@*"
+
+  repository: ./pdfs/
+
+  bibliography_list_tag: ul
+  bibliography_item_tag: li
+
+
+permalink: /:year/:month/:day/:title
+exclude:   ["Rakefile", "no-build"]
+title:
+url:
+
+# jekyll-scholar configurations
+#scholar:
+#  style: ./assets/publications/customized-jse.csl
+#  locale: en
+#  sort_by: year
+#  order: descending
+#  source: ./assets/publications
+#  bibliography: ./publications.bib
+#  details_dir: ./assets/publications/details
+#  query: "@*[public!=no]"
+
+#  # Scholar has changed the way it renders bib tags
+#  # Need to look at more at the defaults.
+#  bibliography_list_tag: "ul"
+
+# jekyll-scholar-extras configurations
+# TODO Options need to be reworked through
+
 
 
 #

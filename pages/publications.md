@@ -9,8 +9,12 @@ header:
 permalink: "/publications/"
 ---
 
-
 {% bibliography %}
+
+
+## Journal Papers
+
+{% bibliography --query @*[group=journal] %}
 
 
 My publications on <a href="https://scholar.google.com/citations?user=fyN2FbgAAAAJ">Google Scholar</a> and <a href="http://dblp.uni-trier.de/pers/hd/s/Sofka:Michal">DBLP</a>.
