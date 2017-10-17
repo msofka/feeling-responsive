@@ -123,7 +123,7 @@ scholar:
 
   repository: ./pdfs/
 
-  bibliography_list_tag: ul
+  bibliography_list_tag: ol
   bibliography_item_tag: li
 
 

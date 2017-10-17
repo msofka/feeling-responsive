@@ -1,3 +1,24 @@
+.cf img {float:left;}
+.cf div  {float:left;}
+
+img {
+   float: left;
+   padding: 15px 15px 15px 0;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+ol li {
+    background-repeat: no-repeat;
+    background-position: 0px center;
+    padding-left: 5px; 
+    margin-top: 10px;
+}
+
 .button0 {
     background-color: #4CAF50;
     border: none;
@@ -72,4 +93,11 @@
     cursor: pointer;
     border-radius: 5px;
 }
+
+.thumb {
+    width: 100;
+    vspace: 5;
+    border: 5;
+}
+
 

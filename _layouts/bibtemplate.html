@@ -1,11 +1,17 @@
 ---
 ---
+
+<div class="cf">
+<img src="/assets/img/{{keyval}}-1.jpg" class="thumb"/>
+<img src="/assets/img/{{keyval}}-2.jpg" class="thumb"/>
+
 {{ reference }}
 
-<br>
-
+</div>
 
 <div id="{{key}}-materials">
+
+{% assign keyval={{key | replace:':','-'}} %}
 
 {% if entry.doi %}
     <a href="{{ entry.doi | prepend: 'http://doi.org/' }}"><input class="button1" type="button" value="publisher" /></a>
@@ -16,19 +22,17 @@
 {% endif %}
 
 {% if entry.abstract %}
-  <button class="button0" onclick="$('#{{key}}-abstract').toggle();">abstract</button> 
+  <button class="button0" onclick="$('#{{keyval}}-abstract').toggle();">abstract</button> 
 {% endif %}
 
-<button class="button1" onclick="$('#{{key}}-bibtex').toggle();">bibtex</button>
+<button class="button1" onclick="$('#{{keyval}}-bibtex').toggle();">bibtex</button>
 
 {% if entry.abstract %}
 <p>
-  <small id="{{key}}-abstract" style="display: none;">{{ entry.abstract }}</small>
+  <small id="{{keyval}}-abstract" style="display: none;">{{ entry.abstract }}</small>
 </p>
 {% endif %}
 
-<pre id="{{key}}-bibtex" style="display: none;"><small>{{ entry.bibtex }}</small></pre>
-
+<pre id="{{keyval}}-bibtex" style="display: none;"><small>{{ entry.bibtex }}</small></pre>
+<br>
 </div>
-
-
