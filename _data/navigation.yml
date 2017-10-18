@@ -2,34 +2,35 @@
   url: "/"
   side: left
 
-- title: Affiliation
-  url: "/affiliation/"
-  side: left
-
-- title: bio
+- title: About
   url: "/about/"
   side: left
+  dropdown:
+  - title: "Bio"
+    url: "/about/"
+  - title: "Affiliation"
+    url: "/affiliation/"
 
-- title: Research
-  url: "/research/"
+- title: Projects
+  url: "/projects/"
   side: left
   dropdown:
   - title: "News"
-    url: "/research/news/"
+    url: "/projects/news/"
+  - title: "Activities"
+    url: "/activities/"
 
 - title: Publications
   url: "/publications/"
   side: left
-
-- title: Activities
-  url: "/activities/"
-  side: left
   dropdown:
-  - title: "Upcoming"
-    url: "/activities/upcoming/"
+  - title: "Papers"
+    url: "/papers/"
+  - title: "Patents"
+    url: "/patents/"
 
-- title: "Search"
-  url: "/search/"
+- title: "Blog"
+  url: "/blog/"
   side: right
 
 - title: "Contact"
