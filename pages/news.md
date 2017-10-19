@@ -6,7 +6,7 @@ subheadline: ""
 teaser: "An overview of older and newer news in reverse chronological order"
 header:
    image_fullwidth: "header_unsplash_dawn.jpg"
-permalink: "/research/news/"
+permalink: "/projects/news/"
 news:
 
 -  "4/27/2017 Paper on our work accepted to [MICCAI 2017](http://http://www.miccai2017.org/)."

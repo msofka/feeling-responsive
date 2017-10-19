@@ -3,7 +3,7 @@
 /* tweet stuff */
 
 .user,.tweet,.timePosted,.interact {
-  margin-bottom:0; 
+  margin-bottom:0;
   margin-right:5px;
   white-space: pre;           /* CSS 2.0 */
   white-space: pre-wrap;      /* CSS 2.1 */
@@ -25,17 +25,17 @@
 }
 .interact li {
   display: inline;
-  list-style-type:none; 
+  list-style-type:none;
 }
 .interact a {
   display: inline-block;
   height: 20px;
   width: 20px;
-  text-decoration:none; 
+  text-decoration:none;
   border-bottom: 0px;
 }
 .interact a:hover {
-  text-decoration:none; 
+  text-decoration:none;
   border-bottom: 0px;
 }
 
@@ -99,7 +99,7 @@ img.bibbase_icon {
     filter: grayscale(100%); /* Current draft standard */
     -webkit-filter: grayscale(100%); /* New WebKit */
     -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%); 
+    -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
     filter: gray; /* IE6+ */
 }
@@ -181,22 +181,25 @@ img.bibbase_icon:hover {
 
 
 #bibbase .dropdown-menu {
-    background-color: #D7D7D7;  
+    background-color: #D7D7D7;
 }
 
 #bibbase .dropdown-menu a:hover {
-    background-color: #BEBEBE;  
+    background-color: #BEBEBE;
 }
 
 #bibbase .dropdown-menu {
-    background-color: #D7D7D7;  
+    background-color: #D7D7D7;
 }
 
 #bibbase .dropdown-menu:hover {
-    background-color: #BEBEBE;  
+    background-color: #BEBEBE;
 }
 
 .bibbase_amazon {
   display:none;
 }
 
+.twitter-timeline {
+  background-color: #bebebe !important;
+}
