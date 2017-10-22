@@ -1,0 +1,33 @@
+---
+---
+{{ reference }}
+
+
+{% if key contains "patent" %}
+
+<br>
+
+
+<div id="{{key}}-materials">
+
+{% if entry.doi %}
+    <a href="{{ entry.doi | prepend: 'http://doi.org/' }}"><input class="button1" type="button" value="publisher" /></a>
+{% endif %}
+
+{% if entry.url %}
+    <a href="{{ entry.url }}"><input class="button3" type="button" value="website" /></a>
+{% endif %}
+
+{% assign keyval={{key | replace:':','-'}} %}
+
+<button class="button1" onclick="$('#{{keyval}}-bibtex').toggle();">bibtex</button>
+
+<pre id="{{keyval}}-bibtex" style="display: none;"><small>{{ entry.bibtex }}</small></pre>
+
+</div>
+
+
+<pre id="{{keyval}}-bibtex" style="display: none;"><small>{{ entry.bibtex }}</small></pre>
+
+{% endif %}
+
