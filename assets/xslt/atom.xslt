@@ -487,13 +487,9 @@
             
               <li><a href="https://www.linkedin.com/in/MichalSofka" target="_blank" class="icon-linkedin" title="LinkedIn"></a></li>
             
-              <li><a href="https://www.mendeley.com/profiles/leon-moonen/" target="_blank" class="ai-mendeley-square" title="Mendeley"></a></li>
-            
               <li><a href="https://scholar.google.com/citations?user=fyN3FbgAAAAJ" target="_blank" class="ai-google-scholar" title="Google Scholar"></a></li>
             
               <li><a href="http://dblp.uni-trier.de/pers/hd/s/Sofka:Michal" target="_blank" class="icon-archive" title="dblp"></a></li>
-            
-              <li><a href="http://github.com/msofka" target="_blank" class="icon-github" title="GitHub"></a></li>
             
             </ul>
           </section>
