@@ -24,8 +24,9 @@ gems: [jekyll/scholar]
 
 # This URL is the main address. Don't include a slash at the end.
 #
-url: "https://msofka.github.io"
-baseurl: ""
+baseurl: /
+domain_name: 'https://msofka.github.io'
+url: 'https://msofka.github.io'
 
 more-info-url: "/research"
 
@@ -62,7 +63,7 @@ permalink: /:categories/:title/
 highlight: pygments
 excerpt_separator: "\n\n"
 exclude: []
-include: ['.htaccess']
+include: ['.htaccess','.nojekyll']
 
 
 # The language setting is used in /includes/header.html for html-settings
@@ -264,7 +265,7 @@ og_description:                     "Homepage of Leon Moonen, scientist and tech
 # used in _includes/comments.html
 
 disqus_shortname: michalsofka
-
+comments: true
 
 #      _____
 #     / ___/____ ___________

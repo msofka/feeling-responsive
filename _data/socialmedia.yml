@@ -23,10 +23,10 @@
 #  class: icon-facebook
 #  title: "Facebook"
 
-- name: Mendeley
-  url: https://www.mendeley.com/profiles/leon-moonen/
-  class: ai-mendeley-square
-  title: "Mendeley"
+# - name: Mendeley
+#   url: https://www.mendeley.com/profiles/leon-moonen/
+#   class: ai-mendeley-square
+#   title: "Mendeley"
 
 - name: GoogleScholar
   url: https://scholar.google.com/citations?user=fyN3FbgAAAAJ
@@ -49,10 +49,10 @@
 #  class: icon-soundcloud
 #  title: "Sounds und Downloads und mehr"
 
-- name: GitHub
-  url: http://github.com/msofka
-  class: icon-github
-  title: "GitHub"
+# - name: GitHub
+#   url: http://github.com/msofka
+#   class: icon-github
+#   title: "GitHub"
 
 #- name: Instagram
 #  url: http://instagram.com/@@NAME@@

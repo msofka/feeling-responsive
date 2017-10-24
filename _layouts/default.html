@@ -6,14 +6,13 @@
 <body id="top-of-page" class="{{ page.format }}">
 	{% include navigation %}
 
-	{% include masthead %}
+  {% if page.header_image_set %}{% include masthead %}{% endif %}
 
 	{{ content }}
 
 	{% include footer %}
-	
+
 	{% include footer_scripts %}
 
 </body>
 </html>
-
