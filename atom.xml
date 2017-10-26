@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>http://localhost:4000//</id>
 	<title></title>
-	<updated>2017-10-25T00:13:37+05:30</updated>
+	<updated>2017-10-26T23:58:26+05:30</updated>
 
 	<subtitle>Homepage of Michal Sofka, scientist and technical leader with passion for innovation to transform ideas into product solutions.</subtitle>
 
@@ -77,6 +77,55 @@
 			
 
 			<published>2015-10-15T00:00:00+05:30</published>
+		</entry>
+	
+		<entry>
+			<id>http://localhost:4000//2015/09/03/first_blog</id>
+			<title>Learning Detectors of Malicious Network Traffic</title>
+			<link href="http://localhost:4000//2015/09/03/first_blog" rel="alternate" type="text/html" title="Learning Detectors of Malicious Network Traffic" />
+			<updated>2015-09-03T00:00:00+05:30</updated>
+
+			
+				
+				<author>
+					
+						<name>Michal Sofka</name>
+					
+					
+					
+				</author>
+			
+			<summary>Malware is constantly evolving and changing. One way to identify malware is by analyzing the communication that the malware performs on the network.</summary>
+			<content type="html" xml:base="http://localhost:4000//2015/09/03/first_blog">&lt;p&gt;Malware is constantly evolving and changing. One way to identify malware is by analyzing the communication that the malware performs on the network.&lt;!--more--&gt; Using machine learning, these traffic patterns can be utilized to identify malicious software. Machine learning faces two obstacles: obtaining a sufficient training set of malicious and normal traffic and retraining the system as malware evolves. This post will analyze an approach that overcomes these obstacles by developing a detector that utilizes domains (easily obtained from domain black lists, security reports, and sandboxing analysis) to train the system which can then be used to analyze more detailed proxy logs using statistical and machine learning techniques.&lt;/p&gt;
+
+&lt;p&gt;The network traffic analysis relies on extracting communication patterns from HTTP proxy logs (flows) that are distinctive for malware. Behavioral techniques compute features from the proxy log fields and build a detector that generalizes to the particular malware family exhibiting the targeted behavior.&lt;/p&gt;
+
+&lt;p&gt;The statistical features calculated from flows of malware samples are used to train a classifier of malicious traffic. This way, the classifier generalizes the information present in the flows and features and learns to recognize a malware behavior. We use features describing URL structures (such as URL length, decomposition, or character distribution), number of bytes transferred from server to client and vice versa, user agent, HTTP status, MIME type, port, etc. In our experimental evaluation, we used 305 features in total for each flow.&lt;/p&gt;
+
+&lt;p&gt;The first conceptual problem in using the standard supervised machine learning methods is the lack of sufficiently representative training set containing examples of malicious and legitimate communication. Providing security intelligence on individual proxy logs is expensive and does not scale with constantly evolving malware. The second problem is that the trained classifier is heavily dependent on the samples used in the training. Once a malware changes the behavior, the system needs to be retrained. With continuously rising number of malware variants, this becomes a major bottleneck in modern malware detection systems.&lt;/p&gt;
+
+&lt;p&gt;Both problems are addressed by considering groups of flows (also called bags). The bags are constructed for each user (or source IP) and contain all network communication with a particular hostname for a specific period of time.&lt;/p&gt;
+
+&lt;p&gt;Multiple Instance Learning
+The robustness of the learned malicious flow detector directly depends on using a representative training set. Labeling individual flows in large quantities is difficult but the labels of domains can be easily obtained by leveraging internet domain black lists, security reports, and sandboxing analysis. Assigning labels based on the domains instead of the richer proxy logs with full target website URLs results in weak supervision in training: it is not known which flows in a positive bag are malicious and which are legitimate. The key advantage of this approach is that the requirements on the labeled samples (and their accuracy) are lower. This way, the system can train a detector that operates on individual proxy-logs while the training uses only domains to indicate malicious or legitimate traffic. Since the labeling is at the level of domains while the system trains a proxy log classifier, it can happen that some proxy logs in the positive bags (labeled positive based on the domain) can be negative (legitimate). The training algorithm correctly handles such cases.&lt;/p&gt;
+
+&lt;p&gt;The problem is formulated as weakly supervised learning since the bag labels are used to train a classifier of individual flows. We propose an algorithm based on the Multiple Instance Learning (MIL) that seeks for the Neyman-Pearson detector with a very low false positive rate that is necessary in the deployment of the system. The approach is illustrated in Figure 1.&lt;/p&gt;
+
+&lt;p&gt;This post was authored by Karel Bartos, Vojtech Franc, &amp;amp; Michal Sofka.&lt;/p&gt;
+</content>
+
+			
+				<category term="Cognitive Research" />
+			
+			
+				<category term="Computer Networks" />
+			
+				<category term="Malware" />
+			
+				<category term="Information Technology" />
+			
+
+			<published>2015-09-03T00:00:00+05:30</published>
 		</entry>
 	
 		<entry>
@@ -984,77 +1033,6 @@ image:
 			
 
 			<published>2014-10-09T00:00:00+05:30</published>
-		</entry>
-	
-		<entry>
-			<id>http://localhost:4000//2014/10/08/header-image-pattern</id>
-			<title>Header Image With Pattern</title>
-			<link href="http://localhost:4000//2014/10/08/header-image-pattern" rel="alternate" type="text/html" title="Header Image With Pattern" />
-			<updated>2014-10-08T00:00:00+05:30</updated>
-
-			
-				
-				<author>
-					
-						<name>Michal Sofka</name>
-					
-					
-					
-				</author>
-			
-			<summary>Feeling Responsive allows you to use all kinds of headers. This example shows a header image in front of a pattern.</summary>
-			<content type="html" xml:base="http://localhost:4000//2014/10/08/header-image-pattern">&lt;p&gt;It’s so easy to do. Just define in front matter an image and a pattern image. Instead of a pattern you can also use a color. Have a look at the &lt;a href=&quot;http://localhost:4000//design/header-image-color/&quot;&gt;example with a background color&lt;/a&gt;.
-&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;front-matter-code&quot;&gt;Front Matter Code&lt;/h2&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;header:
-    image:  &quot;header_unsplash_2-970x.jpg&quot;
-    pattern:  &quot;pattern_concrete.jpg&quot;
-    caption: This is a caption for the header image with link
-    caption_url: https://unsplash.com/
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 class=&quot;t60&quot; id=&quot;all-header-styles&quot;&gt;All Header-Styles&lt;/h3&gt;
-
-&lt;ul class=&quot;side-nav&quot;&gt;
-
-  
-
-    
-      &lt;li&gt;&lt;a href=&quot;/2015/08/11/no-header&quot;&gt;Headers With Style &amp;middot; &lt;strong&gt;No Header&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-    
-      &lt;li&gt;&lt;a href=&quot;/2015/03/12/no-header-but-image&quot;&gt;Headers With Style &amp;middot; &lt;strong&gt;No Header but Article Image&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-    
-      &lt;li&gt;&lt;a href=&quot;/2015/02/10/header-with-text&quot;&gt;Headers With Style &amp;middot; &lt;strong&gt;Header With Text&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-    
-      &lt;li&gt;&lt;a href=&quot;/2014/10/09/header-logo-only&quot;&gt;Headers With Style &amp;middot; &lt;strong&gt;Header With Logo Only&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-    
-      &lt;li&gt;&lt;a href=&quot;/2014/10/09/header-image-color&quot;&gt;Headers With Style &amp;middot; &lt;strong&gt;Header Image With Background Color&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-    
-      &lt;li&gt;&lt;a href=&quot;/2014/10/09/header-full-width-image&quot;&gt;Headers With Style &amp;middot; &lt;strong&gt;Header with a Full-Width-Image&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-    
-      &lt;li&gt;&lt;a href=&quot;/2014/10/08/header-image-pattern&quot;&gt;Headers With Style &amp;middot; &lt;strong&gt;Header Image With Pattern&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-    
-
-  
-&lt;/ul&gt;
-
-</content>
-
-			
-				<category term="design" />
-			
-			
-				<category term="design" />
-			
-				<category term="pattern" />
-			
-				<category term="header" />
-			
-
-			<published>2014-10-08T00:00:00+05:30</published>
 		</entry>
 	
 </feed>
