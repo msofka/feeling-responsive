@@ -19,7 +19,7 @@ slogan: "Scientist and Technical Leader"
 description: "Homepage of Michal Sofka, scientist and technical leader with passion for innovation to transform ideas into product solutions."
 
 
-gems: [jekyll/scholar]
+gems: [jekyll/scholar , jekyll-paginate]
 
 
 # This URL is the main address. Don't include a slash at the end.
@@ -41,7 +41,7 @@ improve_content: https://github.com/msofka/msofka.github.io/edit/master
 # Example: <img src="{{ site.urlimg }}/{{ post.image.title }}">
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}/image.jpg)
 #
-urlimg: "/images"
+urlimg: "/images/"
 
 
 # Logo size is 600x80 pixels
@@ -49,7 +49,7 @@ logo: "logo.png"
 
 
 # Paginates all X entries
-#paginate: 5
+paginate: 5
 
 
 
