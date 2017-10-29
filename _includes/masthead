@@ -44,7 +44,7 @@
 
 {% elsif page.header.image_fullwidth %}
 
-<div id="masthead">
+<div id="masthead" style="background: url({{ site.urlimg }}/{{ page.header.image_fullwidth }});background-position: center;">
 	<div class="row">
 		<div class="small-12 columns">
 			{% unless page.header.noname %}
