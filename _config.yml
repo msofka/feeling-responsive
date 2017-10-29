@@ -264,7 +264,7 @@ og_description:                     "Homepage of Leon Moonen, scientist and tech
 #
 # used in _includes/comments.html
 
-disqus_shortname: michalsofka
+disqus_shortname: sofka
 comments: true
 
 #      _____

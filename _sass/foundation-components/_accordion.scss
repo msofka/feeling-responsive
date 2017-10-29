@@ -155,3 +155,155 @@ $accordion-content-active-bg-color: $white !default;
     }
   }
 }
+
+.carousel img {
+  padding: 0 !important;
+}
+
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+  background-color: black;
+  border-radius: 50%;
+  padding-top: 3px;
+  font-size: 20px;
+}
+
+.carousel-control.right, .carousel-control.left {
+  background-image: none !important;
+}
+
+.carousel-caption {
+    right: 0;
+    left: 0;
+    padding-bottom: 0;
+    top: 0;
+    text-align: right;
+    padding-top: 0;
+}
+
+a:focus, a:hover {
+  text-decoration: initial;
+}
+
+.no-marg {
+  margin: 0 !important;
+}
+
+.myFont, h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+kbd {
+    box-shadow: none;
+}
+
+.iconfont {
+  color: #313131;
+}
+
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    display: flex;
+    list-style: none;
+}
+
+.nav-pills>li {
+    float: left;
+}
+
+.nav>li {
+    position: relative;
+    display: block;
+}
+
+.nav-pills>li.active>a>h3, .nav-pills>li.active>a>h3:focus, .nav-pills>li.active>a>h3:hover {
+    color: #000;
+}
+
+.nav-pills>li+li {
+    margin-left: 2px;
+}
+
+.nav-pills>li>a {
+    border-radius: 4px;
+}
+
+.nav-pills>li>a>h3 {
+    color: #978B7D;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    border: 0;
+    padding-right: 30px;
+    padding-left: 0;
+    background-color: #d7d7d7 !important;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  background-color: #d7d7d7 !important;
+  border: 0!important;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+  background-color: #d7d7d7 !important;
+  border: 0!important;
+
+}
+
+.tab-content>.tab-pane {
+    display: none;
+}
+
+.tab-content>.active {
+    display: block;
+}
+
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}
+
+.fade.in {
+    opacity: 1;
+}
+
+
+.tab a h3::after {
+    content: '';
+    display: block;
+    width: 0;
+    margin: 0 auto;
+    height: 3px;
+    background: #313131;
+    transition: width .3s;
+}
+
+.tab a h3::after {
+    content: '';
+    display: block;
+    width: 0;
+    padding-top: 0;
+    margin-top: 15px;
+    height: 2px;
+    background: #313131;
+    transition: width 0.3s;
+}
+
+.tab a h3:hover::after {
+    width: 100%;
+}
+
+.tab a h3:hover::after {
+    width: 100%;
+}
+
+.tab.active a h3::after {
+    width: 100%;
+}
+
+.nav-pills>li>a>h3:hover {
+  color: #000;
+}

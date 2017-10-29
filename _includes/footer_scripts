@@ -2,6 +2,12 @@
 <script data-cfasync='false' src='/assets/js/twitterFetcher_min.js'></script>
 <script data-cfasync='false' src='/assets/js/recentTweets.js'></script>
 
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 {% if page.header.image_fullwidth %}
 <script>
     $("#masthead").backstretch("{{ site.urlimg }}/{{ page.header.image_fullwidth }}", {fade: 700});
@@ -26,9 +32,9 @@
 
 {% comment %}
 #  Start of Tawk.to Script
-#  
+#
 #  More information in _config.yml
-#  
+#
 {% endcomment %}
 {% if site.tawkto_embed_uri and page.tawkto == true %}
 <script type="text/javascript">
@@ -43,4 +49,3 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 {% endif %}
-

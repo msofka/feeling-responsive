@@ -16,6 +16,8 @@ tags:
 # Styling
 #
 header: no
+comments: true
+show_meta: false
 image:
     title: ML-Figure5-550x727.png
     thumb: ML-Figure5-550x727.png
