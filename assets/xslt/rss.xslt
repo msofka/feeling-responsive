@@ -225,6 +225,16 @@
 
                       
 
+                      <li><a  href="http://localhost:4000//projects/#imga">Image Analysis</a></li>
+                    
+
+                      
+
+                      <li><a  href="http://localhost:4000//projects/#nwsecu">Network Security</a></li>
+                    
+
+                      
+
                       <li><a  href="http://localhost:4000//projects/news/">News</a></li>
                     
 
@@ -435,8 +445,6 @@
             
               
             
-              
-            
 
             <ul class="no-bullet shadow-black">
             
@@ -460,11 +468,6 @@
                   <a href="http://jpswalsh.github.io/academicons/" target="_blank"  title="Academicons by James Walsh">Academicons by James Walsh</a>
                 </li>
             
-              
-                <li class="network-images" >
-                  <a href="http://unsplash.com/" target="_blank"  title="Header images by Unsplash">Header images by Unsplash</a>
-                </li>
-            
             </ul>
           </div><!-- /.large-3.columns -->
         </div><!-- /.row -->
@@ -485,9 +488,9 @@
             
               <li><a href="https://twitter.com/MichalSofka" target="_blank" class="icon-twitter" title="Twitter"></a></li>
             
-              <li><a href="https://www.linkedin.com/in/MichalSofka" target="_blank" class="icon-linkedin" title="LinkedIn"></a></li>
+              <li><a href="https://www.linkedin.com/in/sofka/" target="_blank" class="icon-linkedin" title="LinkedIn"></a></li>
             
-              <li><a href="https://scholar.google.com/citations?user=fyN3FbgAAAAJ" target="_blank" class="ai-google-scholar" title="Google Scholar"></a></li>
+              <li><a href="https://scholar.google.com/citations?user=fyN2FbgAAAAJ" target="_blank" class="ai-google-scholar" title="Google Scholar"></a></li>
             
               <li><a href="http://dblp.uni-trier.de/pers/hd/s/Sofka:Michal" target="_blank" class="icon-archive" title="dblp"></a></li>
             
