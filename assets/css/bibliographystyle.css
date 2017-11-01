@@ -111,3 +111,9 @@ ol li {
 .bibliography a {
   border: 0 !important;
 }
+
+@media (max-width: 480px) {
+  .cf img{
+    width: 50%;
+  }
+}

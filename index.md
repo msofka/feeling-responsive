@@ -10,11 +10,6 @@ layout: static-frontpage
 title: "Michal Sofka - Scientist and Leader"
 subheadline: ""
 show_meta: false
-teaser:
-    text: "Welcome to my homepage!
-    <BR><BR>For an overview of our results, have a look at my <BR> <a href='/publications/'>publication overview</a>."
-    image: "michal_sofka_range.jpg"
-    name: "Michal Sofka"
 header:
    image_fullwidth: "header_unsplash_river.jpg"
 widget-1:
@@ -31,14 +26,13 @@ widget-2:
 widget-3:
     title: "Recent Tweets"
     url: "https://twitter.com/intent/follow?screen_name=MichalSofka"
-    text: "<a class='twitter-timeline' data-width='220' data-chrome='nofooter noscrollbar transparent' data-height='640' data-dnt='true' href='https://twitter.com/MichalSofka'>Tweets by MichalSofka</a> <script async src='//platform.twitter.com/widgets.js' charset='utf-8'></script>"
+    text: "<a class='twitter-timeline' data-width='300' data-chrome='nofooter noscrollbar transparent' data-height='640' data-dnt='true' href='https://twitter.com/MichalSofka'>Tweets by MichalSofka</a> <script async src='//platform.twitter.com/widgets.js' charset='utf-8'></script>"
     alt-more: "« follow @MichalSofka on Twitter »"
 ---
-<hr>
 <div class="container">
   <div class="row">
     <div class="col-md-3">
-      <img src="/images/michal_sofka_small.jpg">
+      <img class="imgflip cust-padd" src="/images/michal_sofka_range.jpg">
     </div>
       <div class="col-md-8">
         <h2 class="no-marg myFont"><strong> About </strong></h2>

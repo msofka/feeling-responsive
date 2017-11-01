@@ -48,12 +48,40 @@ header:
   </div>
 </div>
 
-### Electronic
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-6">
+      <h2 class="col-sm-offset-2 col-sm-8 text-center">Get in touch</h2>
+      <div class="text-center">
+          <input class="text-center half" type="text" placeholder="First Name" id="fname" required />
+          <input class="text-center half" type="text" placeholder="Last Name" id="lname" required />
+          <br>
+          <br>
+          <input class="text-center" type="text" placeholder="Email Address" id="email-id" required />
+          <br>
+          <br>
+          <input class="text-center" type="text" placeholder="Message" id="msg" required />
+          <br>
+          <br>
+        <a class="btn btn-primary" id="send" onclick="form_submit()">Submit</a>
+      </div>
+    </div>
+  </div>
+</div>
 
-My unified email address is [michal.sofka@gmail.com][email].
 
-You can find me on Twitter as [@MichalSofka][twitter] and my main web address is [http://www.sofka.com/][web].
+<script>
+var xmlhttp = new XMLHttpRequest();
+function form_submit() {
+var form_fname = document.getElementById("fname").value;
+var form_lname = document.getElementById("lname").value;
+var form_email = document.getElementById("email-id").value;
+var form_msg = document.getElementById("msg").value;
+var a = "https://docs.google.com/forms/d/e/1FAIpQLScZAMo9ERTOTxT00GrfPHQaLgt9vVceV2H6iScWHySrms_P6A/formResponse?emailAddress="+form_email+"&entry.2005620554="+form_fname+"&entry.900168775="+form_lname+"&entry.839337160="+form_msg;
+xmlhttp.open("POST", a, false);
+xmlhttp.send();
+}
 
-[email]: mailto:michal.sofka@gmail.com
-[twitter]: https://twitter.com/MichalSofka
-[web]: http://www.sofka.com/
+
+</script>

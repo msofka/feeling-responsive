@@ -14,7 +14,7 @@
   title: "Twitter"
 
 - name: LinkedIn
-  url: https://www.linkedin.com/in/MichalSofka
+  url: https://www.linkedin.com/in/sofka/
   class: icon-linkedin
   title: "LinkedIn"
 
@@ -29,7 +29,7 @@
 #   title: "Mendeley"
 
 - name: GoogleScholar
-  url: https://scholar.google.com/citations?user=fyN3FbgAAAAJ
+  url: https://scholar.google.com/citations?user=fyN2FbgAAAAJ
   class: ai-google-scholar
   title: "Google Scholar"
 

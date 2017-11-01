@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: pagewide
 show_meta: false
 title: "Publications"
 subheadline: ""

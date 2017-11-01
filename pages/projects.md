@@ -9,16 +9,16 @@ header:
     image_fullwidth: "header_unsplash_coffee_beans.jpg"
 ---
 <div>
-  <ul class="nav nav-pills no-marg">
-    <li class="active tab"><a data-toggle="pill" href="#nwsecu"><h3 class="size-readjuster">Network Security</h3></a></li>
-    <li class="tab"><a data-toggle="pill" href="#imga"><h3 class="size-readjuster">Image Analysis</h3></a></li>
+  <ul class="nav nav-tabs no-marg">
+    <li class="active tab"><a data-toggle="tab" href="#imga"><h3 class="size-readjuster">Image Analysis</h3></a></li>
+    <li class="tab"><a data-toggle="tab" href="#nwsecu"><h3 class="size-readjuster">Network Security</h3></a></li>
   </ul>
   <div class="tab-content margin-adj-collectn">
-    <div id="nwsecu" class="tab-pane fade in active">
+    <div id="nwsecu" class="tab-pane fade">
          <h3>Malicious Network Traffic Detection</h3>
          <p>Malware is constantly evolving and changing. One way to identify malware is by analyzing the communication that the malware performs on the network. Using machine learning, these traffic patterns can be utilized to identify malicious software.</p>
       </div>
-    <div id="imga" class="tab-pane fade">
+    <div id="imga" class="tab-pane fade in active">
       <h3>Image Analysis for the Orthopedic Applications</h3>
       <p>This line of work focuses on building tools for automatic bone segmentation and landmark detection for joint replacement surgery. Using a 3D medical image of a target joint region of a patient, bone structures are automatically segmented and a set of landmarks are automatically detected. The boundaries of segmented bone structures can then be interactively refined based on user inputs.</p>
       <br>
@@ -42,3 +42,27 @@ header:
     </div>
   </div>
 </div>
+<script>
+// Javascript to enable link to tab
+var url = document.location.toString();
+if (url.match('#')) {
+    $('.nav-tabs a[href="#' + url.split('#')[1] + '"]').tab('show');
+    window.scrollTo(0, 0);
+}
+
+// Change hash for page-reload
+$('.nav-tabs a').on('shown.bs.tab', function (e) {
+    window.location.hash = e.target.hash;
+})
+
+    function locationHashChanged() {
+      var urla = document.location.toString();
+      if (urla.match('#')) {
+          $('.nav-tabs a[href="#' + url.split('#')[1] + '"]').tab('show');
+          window.scrollTo(0, 0);
+      }
+      console.log("hi");
+    }
+
+window.onhashchange = locationHashChanged;
+</script>

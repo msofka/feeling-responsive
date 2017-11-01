@@ -15,6 +15,10 @@
   url: "/projects/"
   side: left
   dropdown:
+  - title: "Image Analysis"
+    url: "/projects/#imga"
+  - title: "Network Security"
+    url: "/projects/#nwsecu"
   - title: "News"
     url: "/projects/news/"
   - title: "Activities"

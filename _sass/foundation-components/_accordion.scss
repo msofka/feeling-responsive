@@ -307,3 +307,24 @@ kbd {
 .nav-pills>li>a>h3:hover {
   color: #000;
 }
+
+.imgflip {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
+.cust-padd {
+  padding: 15px !important;
+}
+
+.half {
+  width: 49% !important;
+}
+
+input {
+  display: inline-block !important;
+}
