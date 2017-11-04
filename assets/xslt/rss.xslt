@@ -134,6 +134,12 @@
 
           
           
+        
+
+              
+
+          
+          
             
             
               <li class="divider"></li>
@@ -266,17 +272,32 @@
 
                       
 
-                      <li><a  href="http://localhost:4000//papers/">Papers</a></li>
+                      <li><a  href="http://localhost:4000//publications/#patents">Papers</a></li>
                     
 
                       
 
-                      <li><a  href="http://localhost:4000//patents/">Patents</a></li>
+                      <li><a  href="http://localhost:4000//publications/#papers">Patents</a></li>
                     
                   </ul>
 
               </li>
               <li class="divider"></li>
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="http://localhost:4000//inmedia/">In Media</a></li>
+              <li class="divider"></li>
+
+            
             
           
         
