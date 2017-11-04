@@ -29,9 +29,13 @@
   side: left
   dropdown:
   - title: "Papers"
-    url: "/papers/"
+    url: "/publications/#patents"
   - title: "Patents"
-    url: "/patents/"
+    url: "/publications/#papers"
+
+- title: "In Media"
+  url: "/inmedia/"
+  side: left
 
 - title: "Blog"
   url: "/blog/"

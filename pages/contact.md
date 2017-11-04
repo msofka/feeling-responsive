@@ -11,7 +11,7 @@ header:
 
 <h1>{{ page.title }}</h1>
 <br>
-<div class="container">
+<div class="container-fluid">
   <div class="row">
     <div class="col-md-6">
       <p><strong>Michal Sofka</strong></p>
@@ -28,7 +28,7 @@ header:
       <hr>
     </div>
     <div class="col-md-6">
-      <div id="map" style="width:500px;height:400px;"></div>
+      <div id="map"></div>
       <script>
         function initMap() {
           var uluru = {lat: 40.7494549, lng: -73.9964549};
@@ -48,24 +48,24 @@ header:
   </div>
 </div>
 
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-md-2"></div>
     <div class="col-md-6">
-      <h2 class="col-sm-offset-2 col-sm-8 text-center">Get in touch</h2>
-      <div class="text-center">
-          <input class="text-center half" type="text" placeholder="First Name" id="fname" required />
-          <input class="text-center half" type="text" placeholder="Last Name" id="lname" required />
+      <h2 class="down-margin">Get in touch</h2>
+      <div class="text-center" id="outerform">
+          <input class="half" type="text" placeholder="First Name" id="fname" required />
+          <input class="half" type="text" placeholder="Last Name" id="lname" required />
           <br>
           <br>
-          <input class="text-center" type="text" placeholder="Email Address" id="email-id" required />
+          <input class="" type="text" placeholder="Email Address" id="email-id" required />
           <br>
           <br>
-          <input class="text-center" type="text" placeholder="Message" id="msg" required />
+          <textarea class="long" type="text" placeholder="Message" id="msg" required ></textarea>
           <br>
           <br>
         <a class="btn btn-primary" id="send" onclick="form_submit()">Submit</a>
       </div>
+      <h4 id="response" style="display: none">Thanks for getting in touch. we'll get back to you soon.</h4>
     </div>
   </div>
 </div>
@@ -74,6 +74,8 @@ header:
 <script>
 var xmlhttp = new XMLHttpRequest();
 function form_submit() {
+$("#outerform").css("display","none");
+$("#response").css("display","block");
 var form_fname = document.getElementById("fname").value;
 var form_lname = document.getElementById("lname").value;
 var form_email = document.getElementById("email-id").value;

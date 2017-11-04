@@ -10,25 +10,47 @@ header:
 permalink: "/publications/"
 header_image_set: true
 ---
-
 My publications on <a href="https://scholar.google.com/citations?user=fyN2FbgAAAAJ">Google Scholar</a> and <a href="http://dblp.uni-trier.de/pers/hd/s/Sofka:Michal">DBLP</a>.
+<div>
+  <ul class="nav nav-tabs no-marg">
+    <li class="active tab"><a data-toggle="tab" href="#patents"><h3 class="size-readjuster">Patents</h3></a></li>
+    <li class="tab"><a data-toggle="tab" href="#papers"><h3 class="size-readjuster">Papers</h3></a></li>
+  </ul>
+  <div class="tab-content margin-adj-collectn">
+    <div id="patents" class="tab-pane fade in active">
+     <h2>Patents</h2>
 
-## Patents
+    {% bibliography --template bibtemplate-patents --query @misc %}
+    </div>
+      <div id="papers" class="tab-pane fade">
 
-{% bibliography --template bibtemplate-patents --query @misc %}
+        <ul class="top-margin">
+          <li>
+            <a href="#jpapers">Journal</a>
+          </li>
+          <li>
+            <a href="#bpapers">Book Chapters</a>
+          </li>
+          <li>
+            <a href="#cpapers">Conference</a>
+          </li>
+        </ul>
+        All publications in <a href="http://www.cs.rpi.edu/~sofka/pdfs/sofka-publications.bib" target="_blank">one bibtex</a> file.
+       <h2 id="jpapers">Journal Papers</h2>
 
-## Journal Papers
+      {% bibliography --query @article %}
 
-{% bibliography --query @article %}
+       <h2 id="bpapers">Book Chapters</h2>
 
-## Book Chapters
+      {% bibliography --query @incollection %}
 
-{% bibliography --query @incollection %}
+       <h2 id="cpapers">Conference Papers</h2>
 
-## Conference Papers
+      {% bibliography --query @inproceedings %}
+      </div>
 
-{% bibliography --query @inproceedings %}
-
+</div>
+</div>
 
 
 
