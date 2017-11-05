@@ -272,12 +272,12 @@
 
                       
 
-                      <li><a  href="http://localhost:4000//publications/#patents">Papers</a></li>
+                      <li><a  href="http://localhost:4000//publications/#papers">Papers</a></li>
                     
 
                       
 
-                      <li><a  href="http://localhost:4000//publications/#papers">Patents</a></li>
+                      <li><a  href="http://localhost:4000//publications/#patents">Patents</a></li>
                     
                   </ul>
 
