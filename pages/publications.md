@@ -13,16 +13,11 @@ header_image_set: true
 My publications on <a href="https://scholar.google.com/citations?user=fyN2FbgAAAAJ">Google Scholar</a> and <a href="http://dblp.uni-trier.de/pers/hd/s/Sofka:Michal">DBLP</a>.
 <div>
   <ul class="nav nav-tabs no-marg">
-    <li class="active tab"><a data-toggle="tab" href="#patents"><h3 class="size-readjuster">Patents</h3></a></li>
-    <li class="tab"><a data-toggle="tab" href="#papers"><h3 class="size-readjuster">Papers</h3></a></li>
+    <li class="active tab"><a data-toggle="tab" href="#papers"><h3 class="size-readjuster">Papers</h3></a></li>
+    <li class="tab"><a data-toggle="tab" href="#patents"><h3 class="size-readjuster">Patents</h3></a></li>
   </ul>
   <div class="tab-content margin-adj-collectn">
-    <div id="patents" class="tab-pane fade in active">
-     <h2>Patents</h2>
-
-    {% bibliography --template bibtemplate-patents --query @misc %}
-    </div>
-      <div id="papers" class="tab-pane fade">
+      <div id="papers" class="tab-pane fade in active">
 
         <ul class="top-margin">
           <li>
@@ -48,6 +43,11 @@ My publications on <a href="https://scholar.google.com/citations?user=fyN2FbgAAA
 
       {% bibliography --query @inproceedings %}
       </div>
+        <div id="patents" class="tab-pane fade">
+         <h2>Patents</h2>
+
+        {% bibliography --template bibtemplate-patents --query @misc %}
+        </div>
 
 </div>
 </div>
