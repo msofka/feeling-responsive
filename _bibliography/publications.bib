@@ -1,3 +1,51 @@
+@InProceedings{sofka:dlmia17,
+  author =	 {Michal Sofka and Fausto Milletari and Jimmy Jia and Alex Rothberg},
+  title =	 {Fully convolutional regression network for accurate detection of measurement points},
+  booktitle =    {Deep Learning in Medical Image Analysis and Multimodal Learning
+                  for Clinical Decision Support (DLMIA)},
+  year =         2017,
+  month =        {14} # sep,
+  address =      {Quebec City, Quebec, Canada},                  
+  abstract =	 {Accurate automatic detection of measurement points in ultrasound video
+                  sequences is challenging due to noise, shadows, anatomical differences,
+                  and scan plane variation. This paper proposes to address these challenges
+                  by a Fully Convolutional Neural Network (FCN) trained to regress the point
+                  locations. The series of convolutional and pooling layers is
+                  followed by a collection of upsampling and convolutional layers with
+                  feature forwarding from the earlier layers. The final location
+                  estimates are produced by computing the center of mass of the
+                  regression maps in the last layer. The temporal consistency of the
+                  estimates is achieved by a Long Short-Term memory cells which
+                  processes several previous frames in order to refine the estimate in
+                  the current frame. The results on automatic measurement of left
+                  ventricle in parasternal long axis view of the heart show detection
+                  errors below 5% of the measurement line which is within inter-observer
+                  variability.
+                  }
+}
+
+@InProceedings{milletari:miccai17,
+  author =       {Fausto Milletari and Alex Rothberg and Jimmy Jia and Michal Sofka},
+  title =        {Integrating statistical prior knowledge into convolutional neural networks},
+  booktitle =    {Proceedings of the 20th International Conference on
+                  Medical Image Computing and Computer-Assisted
+                  Intervention (MICCAI 2017)},
+  year =         2017,
+  month =        {11--13~} # sep,
+  address =      {Quebec City, Quebec, Canada},
+  abstract =     {In this work we show how to integrate prior statistical knowledge, obtained
+                  through principal components analysis (PCA), into a convolutional
+                  neural network in order to obtain robust predictions even when dealing
+                  with corrupted or noisy data. Our network architecture is trained end-to-end
+                  and includes a specifically designed layer which incorporates
+                  the dataset modes of variation discovered via PCA and produces predictions
+                  by linearly combining them. We also propose a mechanism to focus
+                  the attention of the CNN on specific regions of interest of the image
+                  in order to obtain refined predictions. We show that our method is effective
+                  in challenging segmentation and landmark localization tasks.}
+}
+
+
 @InProceedings{bartos:usenix16,
 	author =	 {Karel Bartos and Michal Sofka and Vojtech Franc},
 	title =	 {Optimized Invariant Representation of Network Traffic for Detecting 
@@ -22,16 +70,25 @@
 	abstract =	 {Statistical learning theory relies on an assumption that the joint distributions of observations and labels are the same in training and testing data. However, this assumption is violated in many real world problems, such as training a detector of malicious network traffic that can change over time as a result of attacker's detection evasion efforts. We propose to address this problem by creating an optimized representation, which significantly increases the robustness of detectors or classifiers trained under this distributional shift. The representation is created from bags of samples (e.g. network traffic logs) and is designed to be invariant under shifting and scaling of the feature values extracted from the logs and under permutation and size changes of the bags. The invariance is achieved by combining feature histograms with feature self-similarity matrices computed for each bag and significantly reduces the difference between the training and testing data. The parameters of the representation, such as histogram bin boundaries, are learned jointly with the classifier. We show that the representation is effective for training a detector of malicious traffic, achieving 90\% precision and 67\% recall on samples of previously unseen malware variants.}
 }
 
-@InProceedings{machlica:sap16,
+@Unpublished{machlica:arxiv17,
 	author =	 {Lukas Machlica and Michal Sofka and Karel Bartos},
 	title =	 {Learning detectors of malware behavior for intrusion detection in network traffic},
-	booktitle =    {},
-	year =         2015,
-	note =         {Submitted for review.},
+	booktitle =    {ArXiv},
+	year =         2017,
 	month =        {},
 	pages =        {},
 	address =      {},
-	abstract =	 {}
+	abstract =	 {This paper proposes a generic classification system designed to detect security threats based on the behavior of malware
+samples. The system relies on statistical features computed from proxy log fields to train detectors using a database of malware
+samples. The behavior detectors serve as basic reusable building blocks of the multi-level detection architecture. The detectors
+identify malicious communication exploiting encrypted URL strings and domains generated by a Domain Generation Algorithm
+(DGA) which are frequently used in Command and Control (C&C), phishing, and click fraud. Surprisingly, very precise detectors
+can be built given only a limited amount of information extracted from a single proxy log. This way, the computational requirements
+of the detectors are kept low which allows for deployment on a wide range of security devices and without depending on traffic
+context such as DNS logs, Whois records, webpage content, etc. Results on several weeks of live traffic from 100+ companies
+having 350k+ hosts show correct detection with a precision exceeding 95% of malicious flows, 95% of malicious URLs and
+90% of infected hosts. In addition, a comparison with a signature and rule-based solution shows that our system is able to detect
+significant amount of new threats.}
 }
 
 @InCollection{sofka:chapter15,

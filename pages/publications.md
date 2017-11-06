@@ -27,19 +27,26 @@ My publications on <a href="https://scholar.google.com/citations?user=fyN2FbgAAA
             <a href="#bpapers">Book Chapters</a>
           </li>
           <li>
+            <a href="#upapers">Unpublished Manuscripts</a>
+          </li>
+          <li>
             <a href="#cpapers">Conference</a>
           </li>
         </ul>
-        All publications in <a href="http://www.cs.rpi.edu/~sofka/pdfs/sofka-publications.bib" target="_blank">one bibtex</a> file.
-       <h2 id="jpapers">Journal Papers</h2>
+      All publications in <a href="http://www.cs.rpi.edu/~sofka/pdfs/sofka-publications.bib" target="_blank">one bibtex</a> file.
+      <h2 id="jpapers">Journal Papers</h2>
 
       {% bibliography --query @article %}
 
-       <h2 id="bpapers">Book Chapters</h2>
+      <h2 id="bpapers">Book Chapters</h2>
 
       {% bibliography --query @incollection %}
 
-       <h2 id="cpapers">Conference Papers</h2>
+      <h2 id="upapers">Unpublished Manuscripts</h2>
+
+      {% bibliography --query @unpublished %}
+
+      <h2 id="cpapers">Conference Papers</h2>
 
       {% bibliography --query @inproceedings %}
       </div>
