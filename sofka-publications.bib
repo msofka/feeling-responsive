@@ -1,12 +1,82 @@
+@InProceedings{bartos:usenix16,
+	author =	 {Karel Bartos and Michal Sofka and Vojtech Franc},
+	title =	 {Optimized Invariant Representation of Network Traffic for Detecting 
+	          Unseen Malware Variants},
+	booktitle =    {{USENIX} Security Symposium},
+	year =         2016,
+	month =        {10--12~} #aug,
+	note =           {\textbf{15.6\% acceptance rate.}},
+	pages =        {},
+	address =      {Austin, TX, USA},                  
+	abstract =	 {New and unseen polymorphic malware, zero-day attacks, or other types of advanced persistent threats are usually not detected by signature-based security devices, firewalls, or anti-viruses. This represents a challenge to the network security industry as the amount and variability of incidents has been increasing. Consequently, this complicates the design of learning-based detection systems relying on features extracted from network data. The problem is caused by different joint distribution of observation (features) and labels in the training and testing data sets. This paper proposes a classification system designed to detect both known as well as previously unseen security threats. The classifiers use statistical feature representation computed from the network traffic and learn to recognize malicious behavior. The representation is designed and optimized to be invariant to the most common changes of malware behaviors. This is achieved in part by a feature histogram constructed for each group of HTTP flows (proxy log records) of a user visiting a particular hostname and in part by a feature self-similarity matrix computed for each group. The parameters of the representation (histogram bins) are optimized and learned based on the training samples along with the classifiers. The proposed classification system was deployed on large corporate networks, where it detected 2,090 new and unseen variants of malware samples with 90\% precision (9 of 10 alerts were malicious), which is a considerable improvement when compared to the current flow-based approaches or existing signature-based web security devices.},
+	url =		 {http://www.sofka.com}
+}
+
+@InProceedings{bartos:ecai16,
+	author =	 {Karel Bartos and Michal Sofka and Vojtech Franc},
+	title =	 {Learning Invariant Representation for Malicious Network Traffic Detection},
+	booktitle =    {Proceedings of the European Conference on Artificial Intelligence},
+	year =         2016,
+    month =        {29~Aug -- 2~Sep},
+	pages =        {},
+	address =      {Hague, Holland},                  
+	abstract =	 {Statistical learning theory relies on an assumption that the joint distributions of observations and labels are the same in training and testing data. However, this assumption is violated in many real world problems, such as training a detector of malicious network traffic that can change over time as a result of attacker's detection evasion efforts. We propose to address this problem by creating an optimized representation, which significantly increases the robustness of detectors or classifiers trained under this distributional shift. The representation is created from bags of samples (e.g. network traffic logs) and is designed to be invariant under shifting and scaling of the feature values extracted from the logs and under permutation and size changes of the bags. The invariance is achieved by combining feature histograms with feature self-similarity matrices computed for each bag and significantly reduces the difference between the training and testing data. The parameters of the representation, such as histogram bin boundaries, are learned jointly with the classifier. We show that the representation is effective for training a detector of malicious traffic, achieving 90\% precision and 67\% recall on samples of previously unseen malware variants.},
+	url =		 {http://www.sofka.com}
+}
+
+@InProceedings{machlica:sap16,
+	author =	 {Lukas Machlica and Michal Sofka and Karel Bartos},
+	title =	 {Learning detectors of malware behavior for intrusion detection in network traffic},
+	booktitle =    {},
+	year =         2015,
+	note =         {Submitted for review.},
+	month =        {},
+	pages =        {},
+	address =      {},                  
+	abstract =	 {},
+	url =		 {http://www.sofka.com}
+}
+
+@InProceedings{tian:isbi16,
+	author =	 {Yu Tian and Kate O'Neill and Michal Sofka and Chao Chen and Bonnie Firestein
+	              and Dimitris Metaxas},
+	title =	 {Neuron Tracing with Connectivity Constraint},
+	note =         {Submitted for review.},
+	month =        {},
+	address =      {},                  
+	abstract =	 {}
+}
+#	booktitle =    {Proceedings of the 13th International Symposium on
+#		Biomedical Imaging (ISBI 2016)},
+#	year =         2016,
+	
+
+@InCollection{sofka:chapter15,
+	editor =	 {S.~Kevin Zhou},
+	booktitle =	 {Medical Image Recognition, Segmentation and Parsing},
+	author =	 {Michal Sofka},
+	title =	 {Integrated Detection Network for Multiple Object Recognition},
+	publisher =	 {Elsevier},
+	year =	 2015,
+	pages =	 {},
+	annote =	 {},
+	keywords =	 {},
+	doi={},
+	isbn={978-0-1280-2581-9},
+	abstract =	 {Recognizing multiple objects involves two inter-dependent tasks, object localization and classification. The goal of the object localization is to accurately find the object pose parameters relative to an established reference, such as the origin of the image coordinate system. The object classification assigns class labels to the objects according to the pre-specified categories. Multi-object recognition has been previously solved by designing a set of individual single-object detectors or by training a combined multi-object detection and classification system. In the medical domain, these models can be further improved by relying on strong spatial prior information present in medical images of a human body. This chapter describes, how the spatial prior can be used to recognize multiple anatomical structures which results in the Integrated Detection Network. The structures are recognized sequentially, one-by-one, using optimal order such that the later recognitions can benefit from constraints provided by previously recognized structures. The recognition relies on Sequential Estimation techniques, with the posterior distribution of the structure pose and label being approximated at each step by sequential Monte Carlo. The samples are propagated within the sequence across multiple structures and hierarchical levels. The system is general and provides accurate recognitions of anatomical structures in 3D images of various modalities.},
+	url =		 {},
+	paperloc =	 {}
+}
+
 @InProceedings{franc:ecml15,
   author =	 {Vojtech Franc and Michal Sofka and Karel Bartos},
   title =	 {Learning detector of malicious network traffic from weak labels},
   booktitle =    {Proceedings of the European Conference on Machine Learning
-  	and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD)},
+  	              and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD)},
   year =         2015,
   month =        {7--11~} # sep,
   pages =        {85--99},
-  address =      {Porto, Portugal},
+  address =      {Porto, Portugal},                  
   abstract =	 {We address the problem of learning a detector of malicious behavior in network
 	traffic. The malicious behavior is detected based on the analysis of network
 	proxy logs that capture malware communication between client and server
@@ -29,11 +99,11 @@
   author =	 {Karel Bartos and Michal Sofka,
   title =	 {Robust representation of network traffic for detecting malware variations},
   booktitle =    {Proceedings of the European Conference on Machine Learning
-  	and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD)},
+               	and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD)},
   year =         2015,
   month =        {7--11~} # sep,
   pages =        {116--132},
-  address =      {Porto, Portugal},
+  address =      {Porto, Portugal},                  
   abstract =	 {The goal of domain adaptation is to solve the problem of different joint
 	distribution of observation and labels in the training and testing data sets.
 	This problem happens in many practical situations such as when a malware
@@ -60,7 +130,7 @@
                   Intervention (MICCAI 2014)},
   year =         2014,
   month =        {14--18~} # sep,
-  address =      {Boston, MA, USA},
+  address =      {Boston, MA, USA},                  
   abstract =	 {The diversity in appearance of diseased lung
 	  tissue makes automatic segmentation of lungs from CT with
 	  severe pathologies challenging. To overcome this challenge, we
@@ -84,7 +154,7 @@
                   Intervention (MICCAI 2014)},
   year =         2014,
   month =        {14--18~} # sep,
-  address =      {Boston, MA, USA},
+  address =      {Boston, MA, USA},                  
   abstract =	 {Patient-specific orthopedic knee surgery
 	  planning requires precisely segmenting from 3D CT images
 	  multiple knee bones, namely femur, tibia, fibula, and patella,
@@ -114,7 +184,7 @@
                   Intervention (MICCAI 2013)},
   year =         2013,
   month =        {22--26~} # sep,
-  address =      {Nagoya, Japan},
+  address =      {Nagoya, Japan},                  
   abstract =	 {Automatic segmentation techniques, despite demonstrating excellent
 				  overall accuracy, can often produce inaccuracies in local regions. As a result,
 				  correcting segmentations remains an important task that is often laborious, especially
@@ -141,7 +211,7 @@
                   Intervention (MICCAI 2013)},
   year =         2013,
   month =        {22--26~} # sep,
-  address =      {Nagoya, Japan},
+  address =      {Nagoya, Japan},                  
   abstract =	 {This paper proposes a fully automatic approach for computing
 				  Nuchal Translucency (NT) measurement in an ultrasound scans of
 				  the mid-sagittal plane of a fetal head. This is an improvement upon current
@@ -152,7 +222,7 @@
 				  a robust anchoring structure and the NT region is estimated from the
 				  statistical relationship between the fetal head and the NT region. Next,
 				  the pose of the NT region is locally refined and its inner and outer edge
-				  approximately determined via Dijkstraâ€™s shortest path applied on the
+				  approximately determined via Dijkstra’s shortest path applied on the
 				  edge-enhanced image. Finally, these two region edges are used to define
 				  foreground and background seeds for accurate graph cut segmentation.
 				  The NT measurement is computed from the segmented region. Experiments
@@ -171,7 +241,7 @@
 				  and Decision-Making (HP-MICCAI 2010)},
   year =         2010,
   month =        {24~} # sep,
-  address =      {Bejing, China},
+  address =      {Bejing, China},                  
   pages =	 {},
   abstract =	 {In response to the growing need for image analysis services
                   in the cloud computing environment, this paper proposes an automatic
@@ -191,7 +261,7 @@
                   regions are lossy compressed with JPEG 2000. Together, these properties
                   amount to at least 50 times bandwidth reduction while achieving similar
                   accuracy when compared to an algorithm using the original data.},
-  note = {Michal Sofka},
+  note = {\textbf{Best paper award.}},
   url =		 {http://www.sofka.com/publications.html}
 }
 
@@ -765,11 +835,12 @@
 	Images},
 	author =   {Li Zhang and Michal Sofka and Ulf
 	Sch\"afer},
-	howpublished = {Application number: 11/185,603, Publication number: US 2006/0052686 A1, Patent number: US8265354},
+	howpublished = {US8265354},
 	note =     {},
-	month =    {Issued: 11~} # sep,
+	month =    {11~} # sep,  
 	year =     {2012}
 }
+% Appl.: 11/185,603, Publication number: US 2006/0052686 A1, 
 
 @misc{zhou:patent14,
 	title =    {Cloud-Based Processing of Medical Imaging Data},
@@ -777,25 +848,92 @@
 	howpublished = {Reference number: 2014P12500 US},
 	note =     {},
 	month =    {Filed: 8~} # sep,
-	year =     {2014}
+	year =     {2014}	
+}
+
+@misc{machlica:patent15,
+title =    {Hierarchical Feature Extraction for Malware Classification in Network Traffic},
+author =   {Lukas Machlica and Michal Sofka},
+howpublished = {Appl.: 14/934,492},
+note =     {},
+month =    {Filed: 6~} # nov,
+year =     {2015}	
+}
+
+@misc{sofka:patent15,
+title =    {Identifying Malware Communications with {DGA} Generated Domains by Discriminative Learning},
+author =   {Michal Sofka and Lukas Machlica and Karel Bartos and David McGrew},
+howpublished = {Appl.: 14/806,236},
+note =     {},
+month =    {Filed: 22~} # jul,
+year =     {2015}
+}
+
+@misc{havelka:patent16,
+	title =    {Detection of malicious domains using recurring patterns in domain names},
+	author =   {Jiri Havelka and Michal Sofka and Martin Rehak},
+	month =     {In filing.},
+	year =     {2016}	
+}
+
+@misc{machlica:patent16,
+	title =    {Joint anomaly detection across IoT devices},
+	author =   {Lukas Machlica and Michal Sofka},
+	month =     {In filing.},
+	year =     {2016}	
+}
+
+@misc{franc:patent16,
+	title =    {Learning data representation via convex programming},
+	author =   {Vojtech Franc and Karel Bartos and Michal Sofka},
+	month =     {In filing.},
+	year =     {2016}	
+}
+
+
+@misc{franc:patent15,
+title =    {Learning Detector of Malicious Network Traffic from Weak Labels},
+author =   {Vojtech Franc and Michal Sofka and Karel Bartos},
+howpublished = {Appl.: 62/211,368},
+note =     {},
+month =    {Filed: 28~} # aug,
+year =     {2015}
+}
+
+@misc{bartos:patent15rep,
+title =    {Robust Representation of Network Traffic for Detecting Malware Variations},
+author =   {Karel Bartos and Michal Sofka},
+howpublished = {Appl.: 62/211,363},
+note =     {},
+month =    {Filed: 28~} # aug,
+year =     {2015}
+}
+
+@misc{bartos:patent15comb,
+title =    {Method and Apparatus for Aggregating Indicators of Compromise for use in Network Security},
+author =   {Karel Bartos and Michal Sofka and Vojtech Franc and Jiri Havelka},
+howpublished = {Appl.: 14/977,444},
+note =     {},
+month =    {Filed: 21~} # dec,
+year =     {2015}
 }
 
 @misc{bartos:patent15,
-  title =    {Catching More Security Incidents: Global Clustering of Incidents Based on Malware Similarity and Online Trustfulness},
+  title =    {Global Clustering of Incidents Based on Malware Similarity and Online Trustfulness},
   author =   {Karel Bartos and Martin Rehak and Michal Sofka},
-  howpublished = {Application number: 14/612,623},
+  howpublished = {US9432393},
   note =     {},
-  month =    {Filed: 2~} # mar,
-  year =     {2015}
+  month =    {30~} # aug,
+  year =     {2016}	
 }
 
-@misc{bartos:patent14,
+@misc{bartos:patent16hier,
 	title =    {Identifying Threats Based on Hierarchical Classification},
 	author =   {Karel Bartos and Michal Sofka},
-	howpublished = {Application number: 14/519,444},
+	howpublished = {US9462008},
 	note =     {},
-	month =    {Filed: 21~} # oct,
-	year =     {2014}
+	month =    {4~} # oct,
+	year =     {2016}	
 }
 
 
@@ -803,11 +941,12 @@
   title =    {Method and System for Multiple Object Detection by Sequential {M}onte
              {C}arlo and {H}ierarchical {D}etection {N}etwork},
   author =   {Michal Sofka and Jingdan Zhang and S.~Kevin Zhou and Dorin Comaniciu},
-  howpublished = {Application number: 13/080,964, Publication number: US8605969 B2, Patent number: US8605969},
+  howpublished = {US8605969},
   note =     {},
-  month =    {Issued: 10~} # dec,
+  month =    {10~} # dec,
   year =     {2013}
 }
+% Appl.: 13/080,964, Publication number: US8605969 B2, 
 
 @InProceedings{birkbeck:cvprw11,
   author =	 {Neil Birkbeck and Michal Sofka and S.~Kevin Zhou},
@@ -816,7 +955,7 @@
                  (in conjunction with IEEE CVPR)},
   year =         2011,
   month =        {20~Jun},
-  address =      {Colorado Springs, CO},
+  address =      {Colorado Springs, CO},                  
   abstract =	 {Discriminative classifiers are often the computational
                   bottleneck in medical imaging applications such as foreground/
                   background classification, 3D pose detection, and
@@ -837,80 +976,88 @@
 @misc{birkbeck:patent14ev,
   title =    {Method and System for Evaluation Using Probabilistic Boosting Trees},
   author =   {Neil Birkbeck and Michal Sofka and S.~Kevin Zhou},
-  howpublished = {Application number: 13/228,505, Publication number: US 2012/0069003 A1, CN102592133A, EP2434435A2, EP2434435A3, Patent number: US8860715},
+  howpublished = {US8860715},
   note =     {},
-  month =    {Issued: 14~} # oct,
-  year =     {2014}
+  month =    {14~} # oct,
+  year =     {2014}	
 }
+% Appl.: 13/228,505, Publication number: US 2012/0069003 A1, CN102592133A, EP2434435A2, EP2434435A3, 
 
-@misc{wu:patent14,
+@misc{wu:patent16,
   title =    {Multi-Bone Segmentation for {3D} Computed Tomography},
   author =   {Dijia Wu and Neil Birkbeck and Michal Sofka and Meizhu Liu and S.~Kevin Zhou},
-  howpublished = {Application number: 13/953,825, Publication number: US20140086465 A1},
+  howpublished = {US9495752,
   note =     {},
-  month =    {Filed: 27~} # mar,
-  year =     {2014}
+  month =    {15~} # nov,
+  year =     {2016}	
 }
+% Publication number: US20140086465 A1
 
 @misc{sofka:patent14,
   title =    {Method and System for Bone Segmentation and Landmark Detection for Joint Replacement Surgery},
   author =   {Michal Sofka and Meizhu Liu and Dijia Wu and S.~Kevin Zhou},
-  howpublished = {Application number: 14/041,029, Publication number: US20140093153 A1},
+  howpublished = {Appl.: 14/041,029},
   note =     {},
   month =    {Filed: 3~} # apr,
-  year =     {2014}
+  year =     {2014}	
 }
+% Publication number: US20140093153 A1
 
-@misc{wu:patent13pelvis,
+@misc{{wu:patent17,
   title =    {Automatic Pelvis Unfolding from {3D} {CT} Images},
   author =   {Dijia Wu and Neil Birkbeck and Michal Sofka and Meizhu Liu and Grzegorz Soza and S.~Kevin Zhou},
-  howpublished = {201314579},
+  howpublished = {US9542741},
   note =     {},
-  month =    {Filed: },
-  year =     {2013}
+  month =    {10~} # jan,
+  year =     {2017}
 }
+% Publication number: US20150228070 A1
 
-@misc{kohlberger:patent12,
+@misc{kohlberger:patent15,
   title =    {Method and System for Multi-Organ Segmentation Using Learning-Based
               Segmentation and Level Set Optimization},
   author =   {Timo Kohlberger and Michal Sofka and Jens Wetzl and Jingdan Zhang
               S.~Kevin Zhou and Neil Birkbeck and Jens Kaftan and J{\'e}r{\^o}me Declerck},
-  howpublished = {Application number: 13/416,508, Publication number: US20120230572 A1},
+  howpublished = {US9042620},
   note =     {},
-  month =    {Filed: 9~} # mar,
-  year =     {2012}
+  month =    {26~} # may,
+  year =     {2015}	
 }
+% Appl.: 13/416,508, Publication number: US20120230572 A1, 
 
-@misc{el-zehiry:patent12,
+@misc{el-zehiry:patent15,
   title =    {Semi-Automated Preoperative Resection Planning},
   author =   {Noha Youssry El-Zehiry and Leo Grady and Michal Sofka and Christian
               Tietjen and Shaohua Kevin Zhou},
-  howpublished = {Application number: 13/622,393, Publication number: US 2011/0077842 A1, CN103049638A},
+  howpublished = {US9129391},
   note =     {},
-  month =    {Filed: 19~} # sep,
-  year =     {2012}
+  month =    {8~} # sep,
+  year =     {2015}
 }
+% Appl.: 13/622,393, Publication number: US 2011/0077842 A1, CN103049638A, 
 
 @misc{sofka:patent14pdt,
   title =    {Data Transmission in Remote Computer Assisted Detection},
   author =   {Michal Sofka and Kristof Ralovich and Jingdan Zhang and Shaohua Kevin Zhou
               and Gianluca Paladini and Dorin Comaniciu},
-  howpublished = {Application number: 13/080,891, Publication number: US 2011/0243407 A1, Patent number: US8811697},
+  howpublished = {US8811697},
   note =     {},
-  month =    {Issued: 19~} # aug,
+  month =    {19~} # aug,
   year =     {2014}
 }
+% Appl.: 13/080,891, Publication number: US 2011/0243407 A1, 
 
 @misc{sofka:patent10,
   title =    {Validation Scheme For Composing Magnetic Resonance
                   Images ({MRI})},
   author =   {Michal Sofka and Li Zhang and Ulf
                   Sch\"afer},
-  howpublished = {Application number: 11/204,790, Publication number: US 2006/0047197 A1, WO2006023216A3, Patent number: US7711161},
+  howpublished = {US7711161},
   note =     {},
-  month =    {Issued: 4~} # may,
+  month =    {4~} # may,
   year =     {2010}
 }
+% Appl.: 11/204,790, Publication number: US 2006/0047197 A1, WO2006023216A3, 
 
 @Article{sofka:mim12,
   author =	 {Michal Sofka and Kristof Ralovich and Jingdan Zhang and S.~Kevin Zhou
@@ -949,16 +1096,16 @@
                   Intervention (MICCAI 2011)},
   year =         2011,
   month =        {18--22~} # sep,
-  address =      {Toronto, Canada},
+  address =      {Toronto, Canada},                  
   abstract =	 {We present a novel generic segmentation system for the fully
                   automatic multi-organ segmentation from CT medical images. Thereby
                   we combine the advantages of learning-based approaches on point cloudbased
                   shape representation, such a speed, robustness, point correspondences,
                   with those of PDE-optimization-based level set approaches, such
                   as high accuracy and the straightforward prevention of segment overlaps.
-                  In a benchmark on 10â€“100 annotated datasets for the liver, the lungs,
+                  In a benchmark on 10–100 annotated datasets for the liver, the lungs,
                   and the kidneys we show that the proposed system yields segmentation
-                  accuracies of 1.17â€“2.89mm average surface errors. Thereby the level set
+                  accuracies of 1.17–2.89mm average surface errors. Thereby the level set
                   segmentation (which is initialized by the learning-based segmentations)
                   contributes with an 20\%-40\% increase in accuracy.},
   url =		 {http://www.sofka.com}
@@ -973,7 +1120,7 @@
                   Intervention (MICCAI 2011)},
   year =         2011,
   month =        {18--22~} # sep,
-  address =      {Toronto, Canada},
+  address =      {Toronto, Canada},                  
   abstract =	 {We propose an automatic algorithm for phase labeling that
                   relies on the intensity changes in anatomical regions due to the contrast
                   agent propagation. The regions (specified by aorta, vena cava, liver, and
@@ -999,7 +1146,7 @@
                   Intervention (MICCAI 2011)},
   year =         2011,
   month =        {18--22~} # sep,
-  address =      {Toronto, Canada},
+  address =      {Toronto, Canada},                  
   abstract =	 {Simple algorithms for segmenting healthy lung parenchyma
                   in CT are unable to deal with high density tissue common in pulmonary
                   diseases. To overcome this problem, we propose a multi-stage learning-
@@ -1043,7 +1190,7 @@
                   Information Processing in Medical Imaging (IPMI 2013)},
   year =         2013,
   month =        {29~Jun -- 3~Jul},
-  address =      {Asilomar, CA, USA},
+  address =      {Asilomar, CA, USA},                  
   abstract =	 {Detecting tubular structures such as airways or
 	  vessels in medical images is important for diagnosis and
 	  surgical planning. Many state-of-the-art approaches address
@@ -1076,7 +1223,7 @@
                   Biomedical Imaging (ISBI 2011)},
   year =         2011,
   month =        {30~Mar -- 2~Apr},
-  address =      {Chicago, IL},
+  address =      {Chicago, IL},                  
   abstract =	 {The expanding role of complex object detection
                   algorithms introduces a need for flexible architectures
 				  that simplify interfacing with machine learning
@@ -1103,8 +1250,8 @@
   title =	 {A Splice-Guided Data Driven Interactive Editing},
   booktitle =    {International Symposium on Biomedical Imaging: From Nano to Macro (ISBI 2013)},
   year =         2013,
-  month =        {7--11~} # apr,
-  address =      {San Francisco, CA, USA},
+  month =        {7--11~} # apr,  
+  address =      {San Francisco, CA, USA},                  
   abstract =	 {Image segmentation is one of the most challenging tasks in
 					the field of image processing. Even the best automatic segmentation
 					approaches cannot yet provide accurate segmentation in
@@ -1115,9 +1262,12 @@
 					splice (contour) in 2D to correct any 2D or 3D segmentation
 					that may have been obtained automatically or manually. The
 					algorithm integrates the image data, the existing segmentation
-					(presegmentation), and the userâ€™s input into an energy minimization
+					(presegmentation), and the user’s input into an energy minimization
 					framework. We will show that the proposed segmentation
 					editing approach is general and can be used in multiple
 					applications and for multiple imaging modalities.},
   url =		 {http://www.sofka.com}
 }
+
+
+
