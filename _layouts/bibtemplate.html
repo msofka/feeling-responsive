@@ -1,6 +1,8 @@
 ---
 ---
 
+{% assign keyval={{key | replace:':','-'}} %}
+
 <div class="cf">
 <img src="/assets/img/{{keyval}}-1.jpg" class="thumb"/>
 <img src="/assets/img/{{keyval}}-2.jpg" class="thumb"/>
@@ -10,8 +12,6 @@
 </div>
 
 <div id="{{key}}-materials">
-
-{% assign keyval={{key | replace:':','-'}} %}
 
 {% if entry.doi %}
     <a href="{{ entry.doi | prepend: 'http://doi.org/' }}"><input class="button1" type="button" value="publisher" /></a>
