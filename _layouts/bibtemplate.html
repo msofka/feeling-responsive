@@ -27,12 +27,15 @@
 
 <button class="button1" onclick="$('#{{keyval}}-bibtex').toggle();">bibtex</button>
 
+<a href="/pdfs/{{keyval}}.pdf"><input class="button4" type="button" value="pdf" /></a>
+
 {% if entry.abstract %}
-<p>
-  <small id="{{keyval}}-abstract" style="display: none;">{{ entry.abstract }}</small>
-</p>
+  <pre id="{{keyval}}-abstract" style="display: none;">{{ entry.abstract }}</small></pre>
 {% endif %}
 
+<p>
 <pre id="{{keyval}}-bibtex" style="display: none;"><small>{{ entry.bibtex }}</small></pre>
+</p>
+
 <br>
 </div>
