@@ -3,49 +3,33 @@ layout: pagewide
 title: "Vessels"
 subheadline: ""
 show_meta: false
+articlename: "Retinal Vessel Centerline Extraction"
 teaser: ""
 noheading: "true"
-permalink: "/vessels.html"
+permalink: "/projects/vessels/"
 header:
     image_fullwidth: "header_unsplash_railroad.jpg"
 ---
 
-<style>
-p.cap {
-    FONT-SIZE: 1.563em;
-    FONT-WEIGHT: bold;
-    text-align: left;
-}
- b a {
-   text-decoration: none;
-   color: #222;
-   cursor: default;
-   font-weight: bold;
-   border: 0;
- }
- article a {
-   border-bottom: 0;
- }
-</style>
-
+      <h5 class="navigatorButtons"><a href="/projects/">Projects</a> / <a href="/projects/#imga">Image Analysis</a> / {{ page.articlename }} </h5>
    <TABLE class="container-fluid" style="border:0;background-color:transparent;">
 
    <TR>
      <TD style="padding: 10 10 10 10; vertical-align: top">
-       <p class=cap>Retinal Vessel Centerline Extraction Using Multiscale Matched Filters, Confidence
-       and Edge Measures</p>
+       <h1 class=cap>Retinal Vessel Centerline Extraction Using Multiscale Matched Filters, Confidence
+       and Edge Measures</h1>
        <p class=text><i>This page gives a high level overview of our advances in the retinal extraction work.
-       For more details, please refer to <A HREF="vessels.html#sofka:tmi06">our article</A>
+       For more details, please refer to <A HREF="#sofka:tmi06">our article</A>
        in IEEE Transactions on Medical Imaging.</i></p>
 
        <p class=text><b>Contents</b></p>
        <UL class=text>
-       <LI type="square"><A HREF="vessels.html#overview">Overview</A>
-       <LI type="square"><A HREF="vessels.html#introduction">Introduction</A>
-       <LI type="square"><A HREF="vessels.html#algorithm">Algorithm</A>
-       <LI type="square"><A HREF="vessels.html#results">Results</A>
-       <LI type="square"><A HREF="vessels.html#conclusion">Conclusion</A>
-       <LI type="square"><A HREF="vessels.html#bibliography">Bibliography</A>
+       <LI type="square"><A HREF="#overview">Overview</A>
+       <LI type="square"><A HREF="#introduction">Introduction</A>
+       <LI type="square"><A HREF="#algorithm">Algorithm</A>
+       <LI type="square"><A HREF="#results">Results</A>
+       <LI type="square"><A HREF="#conclusion">Conclusion</A>
+       <LI type="square"><A HREF="#bibliography">Bibliography</A>
        <LI type="square"><A HREF="vessels_exec.html">Download Fast Tracing Executable</A>
        <LI type="square"><A HREF="vessels_classify.html">Download Pixel-wise Detection Executable</A>
 
@@ -127,7 +111,7 @@ p.cap {
          retina, all of which tend to cause false positives in vessel detection.
          Arrows drawn [in white / with solid lines] highlight narrow or
          low-contrast vessels which are difficult to detect. </CAPTION>
-       <TR><TD><DIV ALIGN="CENTER"><IMG ALT="Vessel extraction challenges" ALIGN="BOTTOM" BORDER="0" WIDTH="391" SRC="vessels/sofka01.jpg">
+       <TR><TD><DIV ALIGN="CENTER"><IMG ALT="Vessel extraction challenges" ALIGN="BOTTOM" BORDER="0" WIDTH="391" SRC="/vessels/sofka01.jpg">
        </DIV></TD></TR>
        </TABLE>
        </DIV>
@@ -150,12 +134,12 @@ p.cap {
          the image shown in Figure 1. <B>(a)</B> Matched
          filter response based on a Gaussian vessel profile; <B>(b)</B>
          Lindeberg's ridge measure&nbsp;[<A
-        HREF="vessels.html#lindeberg:ijcv-edge-98">4</A>];
+        HREF="#lindeberg:ijcv-edge-98">4</A>];
          <B>(c)</B> Frangi's Hessian-based vesselness
          measure&nbsp;[<A
-        HREF="vessels.html#frangi:miccai98">2</A>]; and <B>(d)</B> Mahadevan's
+        HREF="#frangi:miccai98">2</A>]; and <B>(d)</B> Mahadevan's
          robust model-based measure&nbsp;[<A
-        HREF="vessels.html#mahadevan:itbm04">5</A>].  All
+        HREF="#mahadevan:itbm04">5</A>].  All
          measures show spurious responses to non-vascular structures such
          as the fundus boundary, the optic disc boundary and pathologies.
          Edge response image <B>(e)</B> shows numerous edges to which
@@ -169,16 +153,16 @@ p.cap {
        <TR><TD><DIV ALIGN="CENTER">
        <TABLE CELLPADDING=3 ALIGN="CENTER">
        <TR>
-         <TD ALIGN="CENTER">(a) Matched filter<BR><IMG ALT="Matched filter vessel extraction" ALIGN="BOTTOM" BORDER="0" SRC="vessels/sofka02.png" WIDTH="200"></TD>
-         <TD ALIGN="CENTER">(b) Lindeberg<BR><IMG ALT="Lindeberg's measure vessel extraction" ALIGN="BOTTOM" BORDER="0" SRC="vessels/sofka03.png" WIDTH="200"></TD>
+         <TD ALIGN="CENTER">(a) Matched filter<BR><IMG ALT="Matched filter vessel extraction" ALIGN="BOTTOM" BORDER="0" SRC="/vessels/sofka02.png" WIDTH="200"></TD>
+         <TD ALIGN="CENTER">(b) Lindeberg<BR><IMG ALT="Lindeberg's measure vessel extraction" ALIGN="BOTTOM" BORDER="0" SRC="/vessels/sofka03.png" WIDTH="200"></TD>
        </TR>
        <TR>
-         <TD ALIGN="CENTER">(c) Frangi<BR><IMG ALT="Frangi's measure vessel extraction" ALIGN="BOTTOM" BORDER="0" SRC="vessels/sofka04.png" WIDTH="200"></TD>
-         <TD ALIGN="CENTER">(d) Mahadevan<BR><IMG ALT="" ALIGN="BOTTOM" BORDER="0" SRC="vessels/sofka05.png" WIDTH="200"></TD>
+         <TD ALIGN="CENTER">(c) Frangi<BR><IMG ALT="Frangi's measure vessel extraction" ALIGN="BOTTOM" BORDER="0" SRC="/vessels/sofka04.png" WIDTH="200"></TD>
+         <TD ALIGN="CENTER">(d) Mahadevan<BR><IMG ALT="" ALIGN="BOTTOM" BORDER="0" SRC="/vessels/sofka05.png" WIDTH="200"></TD>
        </TR>
        <TR>
-         <TD ALIGN="CENTER">(e) Edge responses<BR><IMG ALT="Edge responses on a retinal image" ALIGN="BOTTOM" BORDER="0" SRC="vessels/sofka06.png" WIDTH="200"></TD>
-         <TD ALIGN="CENTER">(f) LRV measure<BR><IMG ALT="LRV measure vessel extraction" ALIGN="BOTTOM" BORDER="0" SRC="vessels/sofka07.png" WIDTH="200">
+         <TD ALIGN="CENTER">(e) Edge responses<BR><IMG ALT="Edge responses on a retinal image" ALIGN="BOTTOM" BORDER="0" SRC="/vessels/sofka06.png" WIDTH="200"></TD>
+         <TD ALIGN="CENTER">(f) LRV measure<BR><IMG ALT="LRV measure vessel extraction" ALIGN="BOTTOM" BORDER="0" SRC="/vessels/sofka07.png" WIDTH="200">
        </TD>
        </TR>
        </TABLE>
@@ -196,13 +180,13 @@ p.cap {
        effectiveness of the matched filter in highlighting low-contrast
        and narrow vessels and by recent success in using matched filters
        for retina vessel segmentation [<A
-        HREF="vessels.html#hoover:tmi00">3</A>], we introduce a
+        HREF="#hoover:tmi00">3</A>], we introduce a
        multi-scale matched filter for vessels, using an appropriate
        normalizing multiplier to allow the combination of responses
        across scales. We then augment the matched-filter responses with a
        new vessel ``confidence'' measure, analogous to the edge-based
        measure presented in [<A
-        HREF="vessels.html#meer:pami01">6</A>]. It can be viewed as normalized
+        HREF="#meer:pami01">6</A>]. It can be viewed as normalized
        cross-correlation or cosine distnace between model and sample vectors and
        determines how closely
        an image region follows an ideal vessel profile.  Importantly,
@@ -293,8 +277,8 @@ p.cap {
        <TR><TD><DIV ALIGN="CENTER">
        <TABLE CELLPADDING=3 ALIGN="CENTER">
        <TR>
-         <TD ALIGN="CENTER">(a)<br><IMG ALT="Effectiveness of LRV measure components" WIDTH="300" ALIGN="BOTTOM" BORDER="0" SRC="vessels/sofka18.gif"></TD>
-         <TD ALIGN="CENTER">(b)<br><IMG ALT="Comparing LRV and other measures" WIDTH="300" ALIGN="BOTTOM" BORDER="0" SRC="vessels/sofka19.gif"></TD>
+         <TD ALIGN="CENTER">(a)<br><IMG ALT="Effectiveness of LRV measure components" WIDTH="300" ALIGN="BOTTOM" BORDER="0" SRC="/vessels/sofka18.gif"></TD>
+         <TD ALIGN="CENTER">(b)<br><IMG ALT="Comparing LRV and other measures" WIDTH="300" ALIGN="BOTTOM" BORDER="0" SRC="/vessels/sofka19.gif"></TD>
        </TR>
        </TABLE>
        </DIV></TD></TR>
@@ -326,40 +310,40 @@ p.cap {
          pixels that remain after thresholding the LRV measure at <!-- MATH
         $\tau = 2.0$ -->
        <B><IMG ALT="Threshold" WIDTH="14" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
-        SRC="vessels/img4.png"
+        SRC="/vessels/img4.png"
         ALT="$ \tau$"> = 2.0</B> in the <B>4th column</B>.
        </CAPTION>
        <TR><TD><DIV ALIGN="CENTER">
        <TABLE CELLPADDING=3 BORDER="1" ALIGN="CENTER">
        <TR>
-         <TD ALIGN="CENTER"><IMG ALT="Extensive pathologies" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka24.jpg"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="Matched filter" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka25.png"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka26.png"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="Thresholded LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka27.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Extensive pathologies" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka24.jpg"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Matched filter" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka25.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka26.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Thresholded LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka27.png"></TD>
        </TR>
        <TR>
-         <TD ALIGN="CENTER"><IMG ALT="Pathologies and thin vessels" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka28.jpg"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="Matched filter" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka29.png"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka30.png"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="Thresholded LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka31.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Pathologies and thin vessels" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka28.jpg"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Matched filter" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka29.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka30.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Thresholded LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka31.png"></TD>
        </TR>
        <TR>
-         <TD ALIGN="CENTER"><IMG ALT="Thin and low-contrast vessels" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka32.jpg"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="Matched filter" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka33.png"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka34.png"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="Thresholded LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka35.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Thin and low-contrast vessels" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka32.jpg"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Matched filter" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka33.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka34.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Thresholded LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka35.png"></TD>
        </TR>
        <TR>
-         <TD ALIGN="CENTER"><IMG ALT="Optic disc and retinal boundary" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka36.jpg"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="Matched filter" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka37.png"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka38.png"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="Thresholded LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka39.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Optic disc and retinal boundary" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka36.jpg"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Matched filter" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka37.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka38.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Thresholded LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka39.png"></TD>
        </TR>
        <TR>
-         <TD ALIGN="CENTER"><IMG ALT="Pathologies and low-contrast vessels" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka40.jpg"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="Matched filter" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka41.png"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka42.png"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="Thresholded LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka43.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Pathologies and low-contrast vessels" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka40.jpg"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Matched filter" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka41.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka42.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Thresholded LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka43.png"></TD>
        </TR>
        </TABLE>
        </DIV></TD></TR>
@@ -403,7 +387,7 @@ p.cap {
        <p class=text><STRONG>Figure: 5</STRONG>
          Source image <B>(1st column)</B>, tracing results using
          parallel edge algorithm&nbsp;[<A
-        HREF="vessels.html#can:itbm99">1</A>] <B>(2nd column)</B>,
+        HREF="#can:itbm99">1</A>] <B>(2nd column)</B>,
          Likelihood Ratio Vesselness (LRV) based tracing <B>(3rd
          column)</B> and the LRV after non-maximum suppression and
          thresholding  below <B>2.0</B> <B>(4th column)</B>.  True positives
@@ -424,34 +408,34 @@ p.cap {
        <TR><TD><DIV ALIGN="CENTER">
        <TABLE CELLPADDING=3 BORDER="1" ALIGN="CENTER">
        <TR>
-         <TD ALIGN="CENTER"><IMG ALT="Thin vessels near pathologies" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka47.jpg"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="Parallel edge tracing" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka48.png"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="LRV tracing" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka49.png"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="Thresholded LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka50.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Thin vessels near pathologies" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka47.jpg"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Parallel edge tracing" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka48.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="LRV tracing" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka49.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Thresholded LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka50.png"></TD>
        </TR>
        <TR>
-         <TD ALIGN="CENTER"><IMG ALT="Crossing of vessels" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka51.jpg"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="Parallel edge tracing" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka52.png"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="LRV tracing" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka53.png"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="Thresholded LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka54.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Crossing of vessels" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka51.jpg"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Parallel edge tracing" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka52.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="LRV tracing" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka53.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Thresholded LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka54.png"></TD>
        </TR>
        <TR>
-         <TD ALIGN="CENTER"><IMG ALT="Vessel branching and nonvascular structures" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka55.jpg"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="Parallel edge tracing" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka56.png"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="LRV tracing" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka57.png"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="Thresholded LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka58.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Vessel branching and nonvascular structures" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka55.jpg"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Parallel edge tracing" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka56.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="LRV tracing" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka57.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Thresholded LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka58.png"></TD>
        </TR>
        <TR>
-         <TD ALIGN="CENTER"><IMG ALT="Pathologies and vessels" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka59.jpg"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="Parallel edge tracing" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka60.png"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="LRV tracing" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka61.png"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="Thresholded LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka62.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Pathologies and vessels" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka59.jpg"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Parallel edge tracing" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka60.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="LRV tracing" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka61.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Thresholded LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka62.png"></TD>
        </TR>
        <TR>
-         <TD ALIGN="CENTER"><IMG ALT="Thin and low contrast vessels" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka63.jpg"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="Parallel edge tracing" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka64.png"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="LRV tracing" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka65.png"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="Thresholded LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="vessels/sofka66.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Thin and low contrast vessels" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka63.jpg"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Parallel edge tracing" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka64.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="LRV tracing" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka65.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Thresholded LRV measure" ALIGN="BOTTOM" BORDER="0" WIDTH="180" SRC="/vessels/sofka66.png"></TD>
        </TR>
        </TABLE>
        </DIV></TD></TR>
@@ -486,12 +470,12 @@ p.cap {
        <TR><TD><DIV ALIGN="CENTER">
        <TABLE CELLPADDING=3 ALIGN="CENTER">
        <TR>
-         <TD ALIGN="CENTER"><IMG ALT="Slit lamp image" ALIGN="BOTTOM" BORDER="0" WIDTH="360" SRC="vessels/sofka69.png"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="LRV measure image-wide" ALIGN="BOTTOM" BORDER="0" WIDTH="360" SRC="vessels/sofka70.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Slit lamp image" ALIGN="BOTTOM" BORDER="0" WIDTH="360" SRC="/vessels/sofka69.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="LRV measure image-wide" ALIGN="BOTTOM" BORDER="0" WIDTH="360" SRC="/vessels/sofka70.png"></TD>
        </TR>
        <TR>
-         <TD ALIGN="CENTER"><IMG ALT="Parallel edge tracing" ALIGN="BOTTOM" BORDER="0" WIDTH="360" SRC="vessels/sofka71.png"></TD>
-         <TD ALIGN="CENTER"><IMG ALT="LRV tracing" ALIGN="BOTTOM" BORDER="0" WIDTH="360" SRC="vessels/sofka72.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="Parallel edge tracing" ALIGN="BOTTOM" BORDER="0" WIDTH="360" SRC="/vessels/sofka71.png"></TD>
+         <TD ALIGN="CENTER"><IMG ALT="LRV tracing" ALIGN="BOTTOM" BORDER="0" WIDTH="360" SRC="/vessels/sofka72.png"></TD>
        </TR>
        </TABLE>
        </DIV></TD></TR>
@@ -526,8 +510,8 @@ p.cap {
        effectiveness of the LRV measure.  The new measure may be used in
        place of the Hessian and the matched filter in existing vessel
        detection and segmentation algorithms [<A
-        HREF="vessels.html#hoover:tmi00">2</A>,<A
-        HREF="vessels.html#staal:tmi04">7</A>]. Based on the experimental evaluations reported here,
+        HREF="#hoover:tmi00">2</A>,<A
+        HREF="#staal:tmi04">7</A>]. Based on the experimental evaluations reported here,
        this should lead to substantially-improved results. The fact that
        the Hessian may be used to steer the application of the
        matched-filter and confidence measures makes the computation

@@ -1,0 +1,276 @@
+---
+layout: pagewide
+title: "Location Registration and Recognition (LRR)"
+subheadline: ""
+show_meta: false
+articlename: "Location Registration and Recognition (LRR)"
+teaser: ""
+noheading: "true"
+permalink: "/projects/lrr/"
+header:
+    image_fullwidth: "header_unsplash_railroad.jpg"
+---
+
+<h5 class="navigatorButtons"><a href="/projects/">Projects</a> / <a href="/projects/#imga">Image Analysis</a> / {{ page.articlename }} </h5>
+   <TABLE class="container-fluid" style="border:0;background-color:transparent;">
+     <TR>
+       <TD style="padding: 10 10 10 10; vertical-align: top">
+         <p class=cap>Location Registration and Recognition (LRR)
+         for Longitudinal Evaluation of Corresponding Regions in CT Volumes</p>
+         <p class=text><i>This page gives a high level overview of our research on Location Registration and Recognition (LRR).
+         For more details, please refer to <A HREF="#sofka:miccai08">our article</A>
+        published in MICCAI 2008 proceedings.</i></p>
+
+         <p class=text><b>Contents</b></p>
+         <UL class=text>
+         <LI type="square"><A HREF="#overview">Overview</A>
+         <LI type="square"><A HREF="#motivation">Motivation and Intuition</A>
+         <LI type="square"><A HREF="#results">Results</A>
+         <LI type="square"><A HREF="#summary">Summary</A>
+         <LI type="square"><A HREF="#bibliography">Bibliography</A>
+    <LI type="square"><A HREF="LRR_src.html"><b>Download Source Code</b></A>
+         </UL>
+
+         <p class=text><b><A NAME="overview">Overview</A></b></p>
+         <p class=text>The algorithm described in this paper takes (a) two temporally separated
+         CT scans, <IMG style="margin: 0 0 -2 0" ALT="I1" HEIGHT="15" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/notation/i1.png"> and <IMG  style="margin: 0 0 -2 0" ALT="I2" HEIGHT="15" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/notation/i2.png">,
+         and (b) a series of locations in <IMG style="margin: 0 0 -2 0" ALT="I1" HEIGHT="15" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/notation/i1.png">, and
+         it produces, for each location, an affine transformation mapping the locations
+         and their immediate neighborhood from <IMG style="margin: 0 0 -2 0" ALT="I1" HEIGHT="15" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/notation/i1.png"> to <IMG style="margin: 0 0 -2 0" ALT="I2" HEIGHT="15" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/notation/i2.png">. It does this
+         without deformable registration by using a combination of feature extraction,
+         indexing, refinement and decision processes. Together these essentially
+         "recognize" the neighborhoods. We show on lung CT scans that
+         this works at near interactive speeds, and is at least as accurate as the
+         Diffeomorphic Demons algorithm [<A HREF="#vercauteren:miccai07">1</A>]. The algorithm may be used both
+        for diagnosis and treatment monitoring.
+
+
+        <p class=text><b><A NAME="motivation">Motivation and Intuition</A></b>
+
+         <UL class=text>
+         <LI>
+           <table class=text>
+           <tr>
+           <td><b>Given:&nbsp;</b></td> <td>image volumes <IMG style="margin: 0 0 -2 0" ALT="I1" HEIGHT="15" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/notation/i1r.png"> and
+           <IMG style="margin: 0 0 -2 0" ALT="I2" HEIGHT="15" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/notation/i2b.png"></td>
+           </tr>
+           <tr><td></td><td>
+           set of locations <IMG style="margin: 0 0 -2 0" ALT="L = {x_1, ..., x_N}" HEIGHT="18" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/notation/L.png"> from <IMG style="margin: 0 0 -2 0" ALT="I1" HEIGHT="15" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/notation/i1r.png">.</td>
+           </tr>
+           </table>
+         <IMG ALT="Diagram" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/motivation.png">
+         <LI><b>Goal:</b> find, for each <IMG style="margin: 0 0 -2 0" ALT="x_k" HEIGHT="12" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/notation/xkr.png">,
+         the affine transformation <IMG style="margin: 0 0 -2 0" ALT="Tk" HEIGHT="17" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/notation/TkRR.png">,
+         which best aligns neighborhood <IMG style="margin: 0 0 -2 0" ALT="N(x_k)" HEIGHT="17" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/notation/nxkr.png">
+         with a region of <IMG style="margin: 0 0 -2 0" ALT="I2" HEIGHT="15" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/notation/i2b.png">.
+         </UL>
+
+         <p class=text><b><A NAME="outline">Algorithm Outline</A></b></p>
+
+         <DIV ALIGN="CENTER">
+         <table><tr><td style="border-style: solid; border-left-width: 0px; border-right-width: 0px; border-color: #ffff00; padding: 3 3 3 3">
+         <p class=text>
+         Repeat for each pre-selected location <IMG style="margin: 0 0 -2 0" ALT="x_k" HEIGHT="12" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/notation/xk.png">:
+         <OL class=text>
+         <LI>Gather keypoints within <IMG style="margin: 0 0 -2 0" ALT="N(x_k)" HEIGHT="17" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/notation/nxk.png">.
+         <LI>Indexing: for keypoint in <IMG style="margin: 0 0 -2 0" ALT="N(x_k)" HEIGHT="17" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/notation/nxk.png">, find match in <IMG style="margin: 0 0 -2 0" ALT="I2" HEIGHT="15" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/notation/i2.png">.
+         <LI>Order matches by increasing descriptor distance. Consider the best M=20.
+         <LI>Repeat
+         <OL type=a>
+           <LI style="BACKGROUND-COLOR: rgb(187,224,227)">Pick next match and generate initial transform.
+           <LI style="BACKGROUND-COLOR: rgb(255,204,155)">Estimate local affine transform parameters.
+           <LI style="BACKGROUND-COLOR: rgb(255,151,153)">Apply the verification classifier.
+         </OL>
+         <LI>Until all matches from the list have been processed.
+         <LI>No transformation has been found for <IMG style="margin: 0 0 -2 0" ALT="x_k" HEIGHT="13" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/notation/xk.png">.
+         </OL>
+         </td></tr></table>
+         </DIV>
+
+         <DIV ALIGN="CENTER">
+         <TABLE>
+         <CAPTION ALIGN="BOTTOM">
+         <p class=text><STRONG>Figure 1:</STRONG>
+         Diagram of the Location Registration and Recognition system. The initial
+         transform <IMG style="margin: 0 0 -2 0" ALT="Tk" HEIGHT="15" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/notation/Tk.png"> maps the region surrounding the location
+         <IMG style="margin: 0 0 -2 0" ALT="x_k" HEIGHT="12" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/notation/xk.png"> from image <IMG style="margin: 0 0 -2 0" ALT="I1" HEIGHT="15" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/notation/i1.png"> into
+         image <IMG style="margin: 0 0 -2 0" ALT="I2" HEIGHT="15" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/notation/i2.png">. The transform <IMG style="margin: 0 0 -2 0" ALT="Tk" HEIGHT="15" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/notation/Tk.png"> is refined into accurate alignment in the estimation
+         stage using correspondences between image features. If the verification step decides
+         that the alignment is correct, the algorithm finishes. Otherwise, new initialization
+         is generated.
+         </CAPTION>
+         <TR><TD>
+         <IMG ALT="Diagram" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/diagram.png">
+         </TD></TR>
+         </TABLE>
+         </DIV>
+
+         <p class=text><b><A NAME="results">Results</A></b></p>
+
+         <DIV ALIGN="CENTER">
+         <TABLE>
+         <CAPTION ALIGN="BOTTOM">
+         <p class=text><STRONG>Figure 2:</STRONG>
+         Examples of LRR (1st and 3rd column) vs. deformable registration (2nd and
+         4th column). Agreement of both results (a), and examples where LRR alignment is
+         better (b). Features detected in fixed (blue) and moving (red)
+         images drive the registration and robust estimation handles outliers
+         (e.g. the case with changes on the bottom right which is partially
+         aligned in the lower half). </CAPTION>
+
+         <TR><TD><IMG ALT="Lung CT Neighborhood 1" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/4754_2cropped-4755_2cropped000009_02.png"></TD><TD><IMG ALT="Lung CT Neighborhood 5" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/4741_000002cropped-4742_000002cropped000082_00.png"></TD></TR>
+         <TR><TD><IMG ALT="Lung CT Neighborhood 2" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/4754_2cropped-4755_2cropped000042_01.png"></TD><TD><IMG ALT="Lung CT Neighborhood 6" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/4725_2cropped-4727_2cropped000028_00.png"></TD></TR>
+         <TR><TD><IMG ALT="Lung CT Neighborhood 3" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/4754_2cropped-4755_2cropped000041_01.png"></TD><TD><IMG ALT="Lung CT Neighborhood 7" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/4725_2cropped-4727_2cropped000043_02.png"></TD></TR>
+         <TR><TD><IMG ALT="Lung CT Neighborhood 4" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/4754_2cropped-4755_2cropped000048_00.png"></TD><TD><IMG ALT="Lung CT Neighborhood 8" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/4754_2cropped-4755_2cropped000066_01.png"></TD></TR>
+         <TR><TD ALIGN="CENTER">(a)</TD><TD ALIGN="CENTER">(b)</TD></TR>
+         </TABLE>
+         </DIV>
+
+         <DIV ALIGN="CENTER">
+         <TABLE>
+         <CAPTION ALIGN="BOTTOM">
+         <p class=text><STRONG>Figure 3:</STRONG>
+         Examples of nodule alignments shown as a checkerboard image alternating
+         fixed and mapped moving axial slices. Images in the upper row have superimposed
+         fixed features (blue) and mapped moving features (red). LRR correctly
+         aligns nodules of various shapes and sizes in neighborhoods with different structural
+         complexity.
+          </CAPTION>
+
+         <TR>
+         <TD><IMG ALT="Nodule Neighborhood 1" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/nodules/nodulesreg11381_000002whole-9960_000002whole000002_00-LRR.png"></TD>
+         <TD><IMG ALT="Nodule Neighborhood 5" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/nodules/nodulesreg11381_000002whole-9960_000002whole000006_00-LRR.png"></TD>
+         <TD><IMG ALT="Nodule Neighborhood 2" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/nodules/nodulesreg11381_000002whole-9960_000002whole000010_00-LRR.png"></TD>
+         <TD><IMG ALT="Nodule Neighborhood 6" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/nodules/nodulesreg11381_000002whole-9960_000002whole000008_00-LRR.png"></TD>
+         </TR>
+         <TR>
+         <TD><IMG ALT="Nodule Neighborhood 3" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/nodules/nodulesreg4721_000003whole-4722_000002whole000000_00.png"></TD>
+         <TD><IMG ALT="Nodule Neighborhood 7" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/nodules/nodulesreg4750_2whole-4748_2whole000000_06.png"></TD>
+         <TD><IMG ALT="Nodule Neighborhood 4" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/nodules/nodulesreg8949_000002whole-14063_000003whole000000_03.png"></TD>
+         <TD><IMG ALT="Nodule Neighborhood 8" ALIGN="BOTTOM" BORDER="0" SRC="/LRR/nodules/nodulesreg16867_000002whole-16332_000002whole000000_01.png"></TD>
+         </TR>
+         </TABLE>
+         </DIV>
+
+         <!--
+         <style type="text/css">
+         table.quantitative {
+                 border-width: 0px 0px 0px 0px;
+                 border-spacing: 0px;
+                 border-style: none none none none;
+                 border-color: gray gray gray gray;
+                 border-collapse: separate
+         }
+         table.quantitative th {
+                 border-width: 1px 1px 1px 1px;
+                 padding: 2px 2px 2px 2px;
+                 border-style: solid solid solid solid;
+                 border-color: gray gray gray gray
+         }
+         table.quantitative td {
+                 border-width: 0px 0px 0px 1px;
+                 padding: 2px 6px 2px 6px;
+                 border-style: solid solid solid solid;
+                 border-color: gray gray gray gray;
+                 text-align: center
+         }
+         </style>
+
+         <DIV ALIGN="CENTER">
+         <TABLE class=quantitative>
+         <CAPTION ALIGN="BOTTOM">
+         <p class=text><STRONG>Table 1:</STRONG>
+         Errors between the corresponding nodule locations and locations aligned with Diffeomorphic
+         Demons [<A HREF="#vercauteren:miccai07">1</A>] (2nd column) and LRR (3rd column). Median, 25th, and 75th
+         percentile errors are lower for the LRR algorithm. Errors between the nodule locations
+         mapped using the Demons algorithm and the locations mapped with LRR
+         (4th column). On average, the differences agree with the amount of improvement by LRR.
+          </CAPTION>
+
+         <tr class=text>
+         <td style="border-left: 0px; border-bottom: 1px solid gray">Error [mm] / Algorithm</td> <td style=" border-bottom: 1px solid gray">Demons - nodules</td> <td style="border-bottom: 1px solid gray">LRR - nodules</td> <td style=" border-bottom: 1px solid gray">Demons - LRR</td>
+         </tr>
+         <tr class=text>
+         <td style="border-left: 0px">25th percentile</td> <td>1.43</td> <td>1.25</td> <td>0.33</td>
+         </tr>
+         <tr class=text>
+         <td style="border-left: 0px">median</td> <td>2.14</td> <td>1.70</td> <td>0.55</td>
+         </tr>
+         <tr class=text>
+         <td style="border-left: 0px">75th percentile</td> <td>3.40</td> <td>2.94</td> <td>1.63</td>
+         </tr>
+         </table>
+         </div>
+         -->
+
+
+         <p class=text><b><A NAME="summary">Summary</A></b></p>
+         <UL class=text>
+         <LI type="circle">Algorithm for Location Registration and Recognition (LRR) without solving deformable registration first or simultaneously
+         <LI type="circle">Technique to obtain initial transform using shape contexts
+         <LI type="circle">Novel verification algorithm
+         <LI type="circle">Handle changes within the local regions
+         <LI type="circle">At least as accurate as the deformable registration
+         <LI type="circle">Fast algorithm runs at near interactive speeds
+         </UL>
+         <p class=text>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Future work:
+         <UL class=text>
+         <LI type="circle">Combining results from multiple locations, exploring other applications
+         </UL>
+
+
+
+         <br>
+         <p class=text><b><A NAME="bibliography">Publications and Further Reading</A></b></p>
+
+         <TABLE>
+         <TR>
+           <TD style="padding: 0 0 15 0; vertical-align: top">
+             <p class=text>
+            Location Registration and Recognition (LRR) for Serial Analysis of Nodules in
+            Lung CT Scans <BR>
+            Michal Sofka and Charles V. Stewart<BR>
+             <I>In Medical Image Analysis, vol. 14, no. 3, pp. 407--428, Jun. 2010.</I>
+             <BR>
+             <A HREF="/pdfs/sofka-mia10.pdf">[pdf]</A>
+             <A HREF="/pdfs/sofka-mia10.bib">[bibtex]</A>
+        <A HREF="LRR_src.html">[code]</A>
+             <A HREF="http://dx.doi.org/10.1016/j.media.2010.02.006">[publisher]</A>
+             </p>
+           </TD>
+         </TR>
+
+         <TR>
+           <TD style="padding: 0 0 15 0; vertical-align: top">
+           <p class=text><A NAME="sofka:miccai08">
+            Location Registration and Recognition (LRR) for Longitudinal Evaluation of Corresponding
+           Regions in CT Volumes</A><BR>
+            Michal Sofka and Charles V. Stewart<BR>
+           <I>In Proceedings of the International Conference on Medical Image Computing
+           and Computer Assisted Intervention (MICCAI), vol. 2, pp. 989-997, New York, NY, 6-10 Sep. 2008.</I>
+           <BR>
+           <A HREF="/pdfs/sofka-miccai08.pdf">[pdf]</A>
+           <A HREF="/pdfs/sofka-miccai08.bib">[bibtex]</A>
+           <A HREF="LRR_src.html">[code]</A>
+           <A HREF="http://dx.doi.org/10.1007/978-3-540-85990-1_119">[publisher]</A>
+           </p>
+           </TD>
+         </TR>
+
+         </TABLE>
+
+         <br>
+         <p class=text><b>Bibliography</b></p>
+
+         <p class=text><A NAME="vercauteren:miccai07">[1] </A>
+         Vercauteren, T., Pennec, X., Perchant, A., Ayache, N.: Non-parametric diffeomorphic
+         image registration with the demons algorithm. In: Proceedings of the 10th
+         International Conference of Medical Image Computing and Computer-Assisted
+         Intervention (MICCAI 2007), Brisbane, Australia (2007) 319-326.
+         <BR>
+         <BR>
+       </TD>
+     </TR>
+
+
+     </TABLE>

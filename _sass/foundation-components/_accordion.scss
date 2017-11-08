@@ -347,3 +347,25 @@ input {
     height: 400px;
     width: 100%;
    }
+
+
+   p.cap {
+       FONT-SIZE: 1.563em;
+       FONT-WEIGHT: bold;
+       text-align: left;
+   }
+    b a {
+      text-decoration: none;
+      color: #222;
+      cursor: default;
+      font-weight: bold;
+      border: 0;
+    }
+    article a {
+      border-bottom: 0 !important;
+    }
+    .navigatorButtons {
+       font-size: 12px;
+       margin-left: 10px;
+       text-transform: capitalize;
+   }

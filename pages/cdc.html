@@ -1,0 +1,509 @@
+---
+layout: pagewide
+title: "Covariance Driven Correspondences (CDC)"
+subheadline: ""
+show_meta: false
+articlename: "Covariance Driven Correspondences (CDC)"
+teaser: ""
+noheading: "true"
+permalink: "/projects/cdc/"
+header:
+    image_fullwidth: "header_unsplash_railroad.jpg"
+---
+
+      <h5 class="navigatorButtons"><a href="/projects/">Projects</a> / <a href="/projects/#imga">Image Analysis</a> / {{ page.articlename }} </h5>
+   <TABLE class="container-fluid" style="border:0;background-color:transparent;">
+     <TR>
+       <TD style="padding: 10 10 10 10; vertical-align: top">
+         <p class=cap>Simultaneous Covariance Driven Correspondence (CDC) and Transformation Estimation in the Expectation Maximization Framework</p>
+         <p class=text><i>This page gives a high level overview of our research on Covariance Driven Correspondences (CDC).
+         For more details, please refer to <A HREF="#sofka:cvpr07">our article</A>
+         published in CVPR 2007 proceedings.</i></p>
+
+         <p class=text><b>Contents</b></p>
+         <UL class=text>
+         <LI type="square"><A HREF="#overview">Overview</A>
+         <LI type="square"><A HREF="#introduction">Introduction</A>
+         <LI type="square"><A HREF="#covariance">Covariance of the Alignment Error</A>
+         <LI type="square"><A HREF="#algorithm">Algorithm Outline</A>
+         <LI type="square"><A HREF="#results">Results</A>
+         <LI type="square"><A HREF="#summary">Summary</A>
+         <LI type="square"><A HREF="#bibliography">Bibliography</A>
+         </UL>
+
+         <br>
+         <p class=text><b><A NAME="overview">Overview</A></b></p>
+         <p class=text>
+         <UL class=text>
+         <LI type="circle">Novel registration algorithm, that depends fundamentally
+                           on the estimation of uncertainty in point correspondences
+         <LI type="circle">Uncertainty derived from the covariance matrices of the individual
+                          point locations and from the covariance matrix of the estimated
+                          transformation parameters
+         <LI type="circle">Robust objective function and an EM-like algorithm to simultaneously
+                          estimate the transformation parameters, their covariance matrix, and
+                          the likely correspondences
+         <LI type="circle">No annealing schedule nor an explicit outlier process needed
+         <LI type="circle">Broader domain of convergence than the Iterative Closest
+                           Point (ICP) algorithm and is more robust to missing or extraneous
+                           structures in the data than Robust Point Matching (RPM) [<A
+                           HREF="#chui:pami04">1</A>]
+         </UL>
+
+         <br>
+         <p class=text><b><A NAME="introduction">Introduction</A></b></p>
+
+         <p class=text>
+         Iterative closest point (ICP) algorithm starts from an initial estimate of the transformation
+         parameters, uses this to generate an initial set of correspondences,
+         re-estimates the parameters, and iterates.
+
+         <p class=text>
+         Problem of standard ICP (illustrated in Figure 1)
+         <UL class=text>
+         <LI>for moving points (red circles) along the horizontal line of the �H�,
+             the closest fixed points (blue crosses) are along one of the two vertical lines
+         <LI>noise in the locations and surface normals of points along the sides
+             of the �H� produces constraints that resist changes in the transformation
+         </UL>
+
+         <DIV ALIGN="CENTER">
+         <TABLE>
+         <CAPTION ALIGN="BOTTOM">
+         <p class=text><STRONG>Figure 1:</STRONG>
+           Difficulties in correspondence estimation and alignment
+           of two �H� shapes. Points on the moving �H� are shown as red circles,
+           while points on the fixed �H� are shown blue x�s. In (a), ICP
+           correspondences are shown for points on the cross-bar of the �H�
+           as red line segments. These mismatches prevent ICP from properly
+           aligning the shapes. When alignment uncertainty is properly
+           accounted for (b) these same points preferentially establish correspondence
+           with points on the opposing cross-bar. </CAPTION>
+
+         <TR>
+         <TD><IMG ALT="CDC introduction: ICP fails" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/Hintro/iteration0000.png"></TD>
+         <TD><IMG ALT="CDC introduction: alignment uncertainty" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/Hintro/iteration0006.png"></TD>
+         </TR>
+         </TABLE>
+         </DIV>
+
+         <p class=text>
+         Robust Point Matching Algorithm (RPM) [<A HREF="#chui:pami04">1</A>]
+         starts by initially considering all possible matches, and then, using an annealing
+         schedule, gradually moves toward unique correspondences
+         as the transformation is refined.
+
+         <br>
+         <p class=text>
+         Problem of RPM
+         <UL class=text>
+         <LI>works poorly, when there are missing or extraneous
+         structures (Figure 2(a))
+         <LI>in the early stages of its computation
+         RPM tends toward aligning the centers of mass of the
+         points, producing a bias in the estimate when there are extraneous
+         structures that can not be overcome in later stages of the computation
+         </UL>
+
+         <DIV ALIGN="CENTER">
+         <TABLE>
+         <CAPTION ALIGN="BOTTOM">
+         <p class=text><STRONG>Figure 2:</STRONG>
+           (a) The extra lengths at the top of the red `H' and the red
+           outliers prevent RPM [<A HREF="#chui:pami04">1</A>] from properly aligning these
+           two shapes.  The CDC correspondence uncertainties --- the initial
+           uncertainties are in (b) ---eventual narrow as the algorithm
+           converges, allowing it to ignore incorrect correspondences due to
+           these extraneous structures. </CAPTION>
+         <TR><TD><DIV ALIGN="CENTER"><IMG ALT="Problem of RPM: noisy shapes" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/RPMfailed/noise/initial.png">
+         </DIV></TD><TD><IMG ALT="CDC uncertainties" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/RPMfailed/noise/CDCiteration0006.png"></TD></TR>
+         </TABLE>
+         </DIV>
+
+
+         <br>
+         <p class=text>
+         CDC fixes the problems
+
+         <UL class=text>
+         <LI>uncertainty in the transformation estimate produces uncertainty
+             in the mapped point positions that is predominantly in the vertical direction
+             which allows correspondences between points on the crossbars of the two H�s
+             to be preferentially established
+         <LI>correspondences between points along the two sides of the �H� indicate
+             large uncertainty in the vertical direction so they do not work against
+             the changes in the transformation
+         </UL>
+
+
+         <br>
+         <p class=text><b><A NAME="covariance">Covariance of the Alignment Error</A></b></p>
+
+         <p class=text>
+         Alignment Error<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IMG ALT="Alignment error" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/alignment_error.png">
+
+         <p class=text>
+         Covariance of a Correspondence<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IMG ALT="Covariance of a Correspondence" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/covariance_of_a_correspondence.png">
+
+         <p class=text>
+         Residual<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IMG ALT="Residual" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/residual.png">
+
+         <p class=text>
+         Error<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IMG ALT="Error" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/error.png">
+
+         <br>
+         <p class=text>
+         <b>Robust Objective Function</b>
+
+         <br>
+         <p class=text>
+         Distribution of Error<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IMG ALT="Distribution of Error" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/distribution_of_error.png">
+
+         <p class=text>
+         Log Likelihood<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IMG ALT="Log Likelihood" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/log_likelihood.png">
+
+         <p class=text>
+         Robust Function<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IMG ALT="Robust Function" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/robust_function.png">
+
+         <p class=text>
+         where<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IMG ALT="Beaton-Tukey robust function" ALIGN="MIDDLE" BORDER="0" SRC="/CDC/rho.png">&nbsp;......Constant Multiplied Beaton-Tukey
+         <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IMG ALT="Competitive weights" ALIGN="MIDDLE" BORDER="0" SRC="/CDC/competitive_weights.png">&nbsp;......Competitive Weights
+         <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IMG ALT="Robust weights" ALIGN="MIDDLE" BORDER="0" SRC="/CDC/robust_weights.png">&nbsp;......Robust Weights
+
+
+         <DIV ALIGN="CENTER">
+         <TABLE>
+         <CAPTION ALIGN="BOTTOM">
+         <p class=text><STRONG>Figure 3:</STRONG>
+           Robust function and robust weight function. </CAPTION>
+         <TR><TD><DIV ALIGN="CENTER"><IMG ALT="Beaton-Tukey robust function and robust weight function" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/function_plots.png">
+         </DIV></TD></TR>
+         </TABLE>
+         </DIV>
+
+
+         <br>
+         <p class=text><b><A NAME="algorithm">Algorithm Outline</A></b></p>
+         <p class=text>
+         Starting from an initial transformation parameter vector <IMG ALT="Initial parameters" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/theta_zero.png">,
+         the point sets <IMG ALT="Moving points" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/p.png">
+         and <IMG ALT="Fixed points" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/q.png">, and the point covariances:
+         <OL>
+           <LI class=text>Compute an initial estimate of transformation parameter covariance matrix <IMG ALT="Parameter covariance" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/covariance.png">.
+           <LI class=text>Iterate until convergence
+              <UL>
+                <LI class=text>(a) Recompute the weights <IMG ALT="Weights" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/weights.png"> for all correspondences keeping <IMG ALT="Parameter estimate" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/theta.png"> and <IMG "Covariance estimate" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/covariance.png"> fixed.
+                <LI class=text>(b) Update the parameter estimate <IMG ALT="Parameter estimate" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/theta.png"> holding <IMG ALT="Covariance estimate" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/covariance.png"> and <IMG ALT="Weights" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/weights.png"> fixed.
+                <LI class=text>(c) Recompute the weights <IMG ALT="Weights" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/weights.png"> as in Step 2(a).
+                <LI class=text>(d) Update the covariance matrix estimate <IMG ALT="Covariance estimate" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/covariance.png"> holding <IMG ALT="Parameter estimate" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/theta.png"> and <IMG ALT="Weights" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/weights.png"> fixed.
+              </UL>
+         </OL>
+
+
+         <br>
+         <p class=text><b><A NAME="results">Results</A></b></p>
+
+         <p class=text>
+         Example of alignment of two H-like shapes:
+         <OL class=text>
+         <LI>Initial transformation and matches
+         <LI>Initial covariance estimate
+         <LI>Covariance estimate after a few iterations
+         <LI>Most uncertainty in vertical direction
+         <LI>Lower uncertainty of the parameter estimate
+         <LI>Fully aligned
+         </OL>
+
+
+         <DIV ALIGN="CENTER">
+         <TABLE>
+         <CAPTION ALIGN="BOTTOM">
+         <p class=text><STRONG>Figure 4:</STRONG>
+           Example of aligning two H shapes using a similarity
+           transformation. Correspondence covariance matrices Sij are
+           shown as oriented uncertainty ellipses. The initial alignment and
+           CDC covariances are shown in (a). Frames (b) through (d) illustrate
+           intermediate results, ending in convergence.</CAPTION>
+         <TR>
+         <TD><IMG ALT="Initial transformation and matches" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/Halignment/iteration8888.png"></TD>
+         <TD><IMG ALT="Initial covariance estimate" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/Halignment/iteration0000.png"></TD>
+         </TR>
+         <TR>
+         <TD ALIGN="CENTER">(1)</TD>
+         <TD ALIGN="CENTER">(2)</TD>
+         </TR>
+         <TR>
+         <TD><IMG ALT="Covariance estimate after a few iterations" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/Halignment/iteration0006.png"></TD>
+         <TD><IMG ALT="Most uncertainty in vertical direction" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/Halignment/iteration0019.png"></TD>
+         </TR>
+         <TR>
+         <TD ALIGN="CENTER">(3)</TD>
+         <TD ALIGN="CENTER">(4)</TD>
+         </TR>
+         <TR>
+         <TD><IMG ALT="Lower uncertainty of the parameter estimate" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/Halignment/iteration0025.png"></TD>
+         <TD><IMG ALT="Fully aligned" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/Halignment/iteration0077.png"></TD>
+         </TR>
+         <TR>
+         <TD ALIGN="CENTER">(5)</TD>
+         <TD ALIGN="CENTER">(6)</TD>
+         </TR>
+         </TABLE>
+         </DIV>
+
+         <DIV ALIGN="CENTER">
+         <TABLE>
+         <CAPTION ALIGN="BOTTOM">
+         <p class=text><STRONG>Figure 5:</A></STRONG>
+           <A HREF="/CDC/Hexample.avi">Click to download a movie</A> (~5MB) of aligning two H shapes using a similarity
+           transformation. The <A HREF="/CDC/Hexample.avi">movie</A> shows progress from initialization to alignment.</CAPTION>
+         <TR>
+         <TD>
+         <A HREF="/CDC/Hexample.avi"><IMG ALT="Aligning shapes with CDC" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/Hexample.gif"></A>
+         </TD>
+         </TR>
+         </TABLE>
+         </DIV>
+
+         <br>
+         <p class=text>
+         Convergence analysis with different initializations
+
+         <UL class=text>
+         <LI>moving shape (red circles) initialized at the marked locations around a circle with five different orientations
+         <LI>green line segment indicates a location and orientation from which the algorithm converged correctly
+         <LI>red segment indicates a failure
+         </UL>
+
+         <DIV ALIGN="CENTER">
+         <TABLE>
+         <CAPTION ALIGN="BOTTOM">
+         <p class=text><STRONG>Figure 6:</STRONG>
+           Convergence analysis for two H shapes using ICP with normal distances (a),
+           RPM (b), and the CDC algorithm proposed here (c). The moving shape (red circles)
+           was initialized at the marked locations around a circle with five different
+           orientations, shown by the orientations of the green/red line segments, at each location.
+           A green line segment indicates a location and
+           orientation from which the algorithm converged correctly, while a red segment
+           indicates a failure.</CAPTION>
+         <TR>
+         <TD><IMG ALT="Convergence ICP" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/convergence/normalICP.png"></TD>
+         <TD><IMG ALT="Convergence RPM" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/convergence/RPM.png"></TD>
+         </TR>
+         <TR>
+         <TD ALIGN="CENTER">(a)</TD><TD ALIGN="CENTER">(b)</TD>
+         </TR>
+         <TR>
+         <TD><IMG ALT="Convergence CDC" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/convergence/MahalanobisEM.png"></TD>
+         </TD>
+         </TR>
+         <TR>
+         <TD ALIGN="CENTER">(c)</TD><TD ALIGN="CENTER"> </TD>
+         </TR>
+         </TABLE>
+         </DIV>
+
+
+         <br>
+         <p class=text>
+         The effect of noise and structural changes and the way RPM and CDC handles them.
+
+         <DIV ALIGN="CENTER">
+         <TABLE>
+         <CAPTION ALIGN="BOTTOM">
+         <p class=text><STRONG>Figure 7:</STRONG>
+           Example of aligning two H shapes with noise (a) and
+           structural (b). Robust Point Matching (RPM) fails
+           because of the correspondences generated with extraneous structures
+           (c),(d), while the proposed CDC algorithm locks onto the
+           correct correspondences and correctly aligns the shapes (e),(f).</CAPTION>
+         <TR>
+         <TD><IMG ALT="Noisy shapes" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/RPMfailed/noise/initial.png"></TD>
+         <TD><IMG ALT="Shapes with structural changes" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/RPMfailed/structure/initial.png"></TD>
+         </TR>
+         <TR>
+         <TD ALIGN="CENTER">(a) Noisy shapes</TD><TD ALIGN="CENTER">(b) Structural changes</TD>
+         </TR>
+         <TR>
+         <TD><IMG ALT="RPM alignment of noisy shapes" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/RPMfailed/noise/final-RPM.png"></TD>
+         <TD><IMG ALT="RPM alignment of shapes with structural changes" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/RPMfailed/structure/final-RPM.png"></TD>
+         </TR>
+         <TR>
+         <TD ALIGN="CENTER">(c) RPM alignment</TD><TD ALIGN="CENTER">(d) RPM alignment</TD>
+         </TR>
+         <TR>
+         <TD><IMG ALT="CDC alignment of noisy shapes" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/RPMfailed/noise/final-CDC.png"></TD>
+         <TD><IMG ALT="CDC alignment of shapes with structural changes" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/RPMfailed/structure/final-CDC.png"></TD>
+         </TR>
+         <TR>
+         <TD ALIGN="CENTER">(e) CDC alignment</TD><TD ALIGN="CENTER">(f) CDC alignment</TD>
+         </TR>
+         </TABLE>
+         </DIV>
+
+
+         <br>
+         <p class=text>
+         Dual-Bootstrap ICP Algorithm (DBICP) [<A HREF="#yang:pami07">1</A>]
+         <UL>
+         <LI class=text>DBICP
+           <UL>
+             <LI class=text>(a) initial transforms accurate over a small region
+             <LI class=text>(b) ICP estimation, refinement and region growth
+             <LI class=text>(c) sophisticated set of decision criteria
+          </UL>
+         <LI class=text>81% of initial estimates refined to an accurate transform
+         <LI class=text>Step (b) based on CDC: correct alignment of 36% of the initializations that
+         failed when using ICP
+         </UL>
+
+         <DIV ALIGN="CENTER">
+         <TABLE>
+         <CAPTION ALIGN="BOTTOM">
+         <p class=text><STRONG>Figure 8:</STRONG>
+           Images from different viewpoints aligned with CDC that failed with DBICP.</CAPTION>
+         <TR>
+         <TD><IMG ALT="Image 1" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/gdbicp/img1.png"></TD>
+         <TD rowspan="2"><IMG ALT="Alignment of a pair with a viewpoint change" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/gdbicp/img1-2-img5.png"></TD>
+         </TR>
+         <TR>
+         <TD><IMG ALT="Image 2" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/gdbicp/img5.png"></TD>
+         </TR>
+         </TABLE>
+         </DIV>
+
+         <br>
+         <br>
+         <br>
+
+         <DIV ALIGN="CENTER">
+         <TABLE>
+         <CAPTION ALIGN="BOTTOM">
+         <p class=text><STRONG>Figure 9:</STRONG>
+           Enlarging the region to include more matches during convergence of the
+                     CDC algorithm.</CAPTION>
+         <TR>
+         <TD><IMG ALT="Aligning images with CDC, initialization" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/gdbicp/iteration9000.png"></TD>
+         <TD><IMG ALT="Aligning images with CDC, uncertainty" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/gdbicp/iteration9006.png"></TD>
+         </TR>
+         <TR>
+         <TD><IMG ALT="Aligning images with CDC, correct matches" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/gdbicp/iteration9110.png"></TD>
+         <TD><IMG ALT="Aligning images with CDC, convergence" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/gdbicp/iteration9419.png"></TD>
+         </TR>
+         </TABLE>
+         </DIV>
+
+         <br>
+         <p class=text>
+         3D Rigid Registration
+
+         <UL>
+           <LI>Align scans with different viewpoints and pairs with different overlaps (more difficult than prerotating data to register against itself)
+           <LI>Initialize with identity transform
+           <LI>ICP aligned 9 scan pairs
+           <LI>CDC aligned 16, including the 9 ICP aligned
+           <LI>CDC failed on only two pairs with inter-scan rotation angle less than 80 degrees (failures: 56 and 59 degree rotations)
+           <LI>ICP failed on most pairs rotated by more than 45 degrees.
+         </UL>
+
+         <DIV ALIGN="CENTER">
+         <TABLE>
+         <CAPTION ALIGN="BOTTOM">
+         <p class=text><STRONG>Figure 10:</STRONG>
+           Example initial transformations (left column) and final
+           CDC alignments (right column) on the Stanford bunny
+           dataset (best seen in color). In both cases robust ICP using normal
+           distance constraints failed to converge.</CAPTION>
+         <TR>
+         <TD><IMG ALT="Bunny 090 ear back" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/bunny-examples/090-ear_back-init.png"></TD>
+         <TD><IMG ALT="Bunny 090 ear back, CDC aligned" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/bunny-examples/090-ear_back-aligned.png"></TD>
+         </TR>
+         <TR>
+         <TD><IMG ALT="Bunny 000 chin" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/bunny-examples/000-chin-init.png"></TD>
+         <TD><IMG ALT="Bunny 000 chin, CDC aligned" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/bunny-examples/000-chin-aligned.png"></TD>
+         </TR>
+         <TR>
+         <TD><IMG ALT="Bunny 315 chin" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/bunny-examples/315-chin-init.png"></TD>
+         <TD><IMG ALT="Bunny 315 chin, CDC aligned" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/bunny-examples/315-chin-aligned.png"></TD>
+         </TR>
+         </TABLE>
+         </DIV>
+
+
+         <br>
+         <br>
+         <br>
+
+         <DIV ALIGN="CENTER">
+         <TABLE>
+         <CAPTION ALIGN="BOTTOM">
+         <p class=text><STRONG>Figure 11:</STRONG>
+           <A HREF="/CDC/090-ear_back.avi">Click to download a movie</A> (~16MB) of aligning two scans of the bunny. Notice the change of the
+           resolution throught the alignment (uncertainty gets lower) and sliding
+           into complete alignment.</CAPTION>
+         <TR>
+         <TD><A HREF="/CDC/090-ear_back.avi"><IMG ALT="Bunny alignement with CDC, movie" ALIGN="BOTTOM" BORDER="0" SRC="/CDC/bunny-movie.png"></A>
+         </TD>
+         </TR>
+         </TABLE>
+         </DIV>
+
+         <br>
+         <p class=text><b><A NAME="summary">Summary</A></b></p>
+         <UL>
+           <LI>Uncertainty in correspondences drives matching and parameter estimation
+           <LI>Parameter covariance estimated as a free variable
+           <LI>Robust EM algorithm
+           <LI>Broader domain of convergence than ICP, local characteristic of ICP removed
+           <LI>Euclidean and normal distance ICP are special cases -> generalizing (replacing) ICP
+           <LI>More robust to noise and missing or extraneous structures than RPM
+         </UL>
+
+         <br>
+         <p class=text><b><A NAME="bibliography">Publications and Further Reading</A></b></p>
+
+         <TABLE>
+         <TR>
+           <TD style="padding: 0 0 15 0; vertical-align: top">
+           <p class=text><A NAME="sofka:cvpr07">
+       	   Simultaneous Covariance Driven Correspondence (CDC) and Transformation Estimation in the Expectation Maximization Framework<BR>
+       	   Michal Sofka, Gehua Yang and Charles V. Stewart<BR>
+           <I>In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, Minneapolis, MN, USA, 2007.</I>
+           <BR>
+           <A HREF="/pdfs/sofka-cvpr07.pdf">[pdf]</A>
+           <A HREF="/pdfs/sofka-cvpr07.bib">[bibtex]</A>
+           </p>
+           </TD>
+         </TR>
+         </TABLE>
+
+         <br>
+         <p class=text><b>Bibliography</b></p>
+
+         <p class=text><A NAME="chui:pami04">[1] </A>
+         H. Chui, A. Rangarajan, J. Zhang, and C. M. Leonard.
+         Unsupervised learning of an atlas from unlabeled point-sets.
+         <EM>IEEE Pattern Analysis and Machine Intelligence.</EM>, 26(2):160�172, 2004.
+
+         <p class=text><A NAME="yang:pami07">[2] </A>
+         G. Yang, C. V. Stewart, M. Sofka, and C.-L. Tsai.
+         Registration of Challenging Image Pairs: Initialization, Estimation, and Decision.
+         <EM>IEEE Pattern Analysis and Machine Intelligence</EM>, 23(11):1973-1989, November 2007.
+
+         <BR>
+         <BR>
+       </TD>
+     </TR>
+
+
+     </TABLE>
