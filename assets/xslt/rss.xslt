@@ -248,6 +248,11 @@
 
                       <li><a  href="http://localhost:4000//activities/">Activities</a></li>
                     
+
+                      
+
+                      <li><a  href="http://localhost:4000//downloads/">Downloads</a></li>
+                    
                   </ul>
 
               </li>
