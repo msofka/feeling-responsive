@@ -1,0 +1,42 @@
+---
+layout: pagewide
+title: "Downloads"
+subheadline: ""
+show_meta: false
+articlename: "Downloads"
+teaser: ""
+noheading: "true"
+permalink: "/downloads/"
+header:
+    image_fullwidth: "header_unsplash_railroad.jpg"
+---
+
+<div class="container-fluid t30">
+  <div class="row t30">
+    <div class="col-xs-12">
+      <h1>Downloads</h1><br>
+      <a href="/projects/lrr_src/"><h4 class="no-marg"><strong> Location Registration and Recognition (LRR) Source Code  </strong></h4></a>
+      <p> The <a href="/projects/lrr/">LRR algorithm</a> takes (a) two temporally separated CT scans, I1 and I2, and (b) a series of locations in I1, and it produces, for each location, an affine transformation mapping the locations and their immediate neighborhood from I1 to I2. </P>
+    </div>
+    </div>
+    <div class="row t30">
+      <div class="col-xs-12">
+        <a href="/projects/vessels_exec/"><h4 class="no-marg"><strong>Vessel Extraction Command-Line Executable</strong></h4></a>
+        <p>This executable will run <a href="/projects/vessels/">Likelihood Ratio Vesselness (LRV)</a> tracing to extract vessel centerlines. It will also extract landmarks (vessel branching and cross over points) which are repeatable features that could be used for registration or tracking.  </P>
+      </div>
+  </div>
+  <div class="row t30">
+    <div class="col-xs-12">
+      <a href="/gdbicp_exec/"><h4 class="no-marg"><strong>Generalized Dual Bootstrap-ICP executable</strong></h4></a>
+      <p>Fully-automated 2D image registration algorithm which can can handle substantial illumination differences between images and substantial physical changes in the scene. When given two images that do not overlap or do not contain sufficient common structure, the algorithm indicates that the images can not be registered.   </P>
+    </div>
+</div>
+<div class="row t30">
+  <div class="col-xs-12">
+    <h4 class="no-marg"><strong>Image Data Sets</strong></h4>
+    <UL class=text>
+    <LI type="square"><A HREF="/keyponts/">Test suite of 22 image pairs</A> for testing multimodal registration and for keypoint analysis.</LI>
+    <LI type="square"><A HREF="/gdbicp_dataset/">Test suite of 18 challenging pairs of images </A> for testing registration algorithms.</LI>
+    </UL>
+  </div>
+</div>

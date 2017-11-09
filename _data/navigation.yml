@@ -23,6 +23,8 @@
     url: "/projects/news/"
   - title: "Activities"
     url: "/activities/"
+  - title: "Downloads"
+    url: "/downloads/"
 
 - title: Publications
   url: "/publications/"

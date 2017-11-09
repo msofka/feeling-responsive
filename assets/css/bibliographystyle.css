@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 .cf img {float:left;}
 .cf div  {float:left;}
 
@@ -20,88 +21,111 @@ ol li {
 }
 
 .button0 {
-    background-color: #4CAF50;
+    background-color: #008CBA;
+    text-transform: uppercase;
     border: none;
+    letter-spacing: normal;
+    font-family: 'Open Sans', sans-serif;
     color: white;
-    padding: 4px 8px;
+    padding: 6px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 10px;
-    font-weight: bold;
+    font-size: 13px;
+    font-weight: 100;
     margin: 2px 1px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 .button0:hover, .button0:focus, .button0:hover, .button0:focus {
-  background-color: #3a7935;
+  background-color: #017398;
 }
 
 .button1 {
-    background-color: #bebebe;
+    background-color: #e7e7e7;
+    text-transform: uppercase;
     border: none;
-    color: white;
-    padding: 4px 8px;
+    letter-spacing: normal;
+    font-family: 'Open Sans', sans-serif;
+    color: #242424;
+    padding: 6px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 10px;
-    font-weight: bold;
+    font-size: 13px;
+    font-weight: 100;
     margin: 2px 1px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 .button1:hover, .button1:focus, .button1:hover, .button1:focus {
-  background-color: #979797;
+  background-color: #c7c7c7;
+  color: #242424;
 }
 
 .button2 {
     background-color: #777777;
+    text-transform: uppercase;
     border: none;
+    letter-spacing: normal;
     color: white;
-    padding: 4px 8px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 6px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 10px;
-    font-weight: bold;
+    font-size: 13px;
+    font-weight: 100;
     margin: 2px 1px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 .button3 {
     background-color: #444444;
+    text-transform: uppercase;
     border: none;
+    letter-spacing: normal;
     color: white;
-    padding: 4px 8px;
+    padding: 6px 10px;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 10px;
-    font-weight: bold;
+    font-size: 13px;
+    font-weight: 100;
     margin: 2px 1px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 2px;
+}
+
+.button3:hover, .button3:focus, .button3:hover, .button3:focus {
+  background-color: #222222;
 }
 
 .button4 {
-    background-color: #CC33DD;
+    background-color: #4CAF50;
+    text-transform: uppercase;
     border: none;
+    letter-spacing: normal;
     color: white;
-    padding: 4px 8px;
+    padding: 6px 10px;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 10px;
-    font-weight: bold;
+    font-size: 13px;
+    font-weight: 100;
     margin: 2px 1px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
+.button4:hover, .button4:focus, .button4:hover, .button4:focus {
+  background-color: #3a7935;
+}
 .thumb {
     width: 100;
     vspace: 5;

@@ -16,7 +16,7 @@ header:
   <div class="tab-content margin-adj-collectn">
     <div id="nwsecu" class="tab-pane fade">
          <div class="cf">
-           <h3 class="no-marg">Malicious Network Traffic Detection</h3>
+           <a href="/projects/malware/"><h3 class="no-marg">Malicious Network Traffic Detection</h3></a>
            <p class="down-margin">Malware is constantly evolving and changing. One way to identify malware is by analyzing the communication that the malware performs on the network. Using machine learning, these traffic patterns can be utilized to identify malicious software.</p>
          </div>
       </div>
