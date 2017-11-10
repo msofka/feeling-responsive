@@ -172,12 +172,21 @@ $accordion-content-active-bg-color: $white !default;
 }
 
 .carousel-caption {
-    right: 0;
+    right: 10%;
     left: 0;
     padding-bottom: 0;
     top: 0;
     text-align: right;
     padding-top: 0;
+}
+
+@media (max-width: 550px) {
+  .carousel-caption {
+    font-size: 7px;
+}
+  .carousel-caption p {
+    font-size: 7px;
+}
 }
 
 a:focus, a:hover {
@@ -354,18 +363,25 @@ input {
        FONT-WEIGHT: bold;
        text-align: left;
    }
-    b a {
+    table b a {
       text-decoration: none;
       color: #222;
       cursor: default;
       font-weight: bold;
       border: 0;
     }
-    article a {
-      border-bottom: 0 !important;
+    article a, article a:visited {
+      border-color: #334D5C !important;
     }
     .navigatorButtons {
        font-size: 12px;
        margin-left: 10px;
        text-transform: capitalize;
+   }
+   .text img {
+     float: none !important;
+     vertical-align: middle;
+     margin-top: -10px;
+     margin-bottom: -10px;     
+    filter: invert(16%);
    }

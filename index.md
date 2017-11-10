@@ -20,7 +20,7 @@ widget-1:
     text-close: "<em>Email me if you would like to get in touch.</em><p />"
 widget-2:
     title: "News"
-    url: 'research/news/'
+    url: '/projects/news/'
     text-open: ""
     text-close: "<p />"
 widget-3:

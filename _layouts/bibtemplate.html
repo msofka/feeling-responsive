@@ -22,7 +22,7 @@
 {% endif %}
 
 {% if entry.abstract %}
-  <button class="button0" onclick="$('#{{keyval}}-abstract').toggle();">abstract</button> 
+  <button class="button0" onclick="$('#{{keyval}}-abstract').toggle();">abstract</button>
 {% endif %}
 
 <button class="button1" onclick="$('#{{keyval}}-bibtex').toggle();">bibtex</button>
@@ -30,7 +30,7 @@
 <a href="/pdfs/{{keyval}}.pdf"><input class="button4" type="button" value="pdf" /></a>
 
 {% if entry.abstract %}
-  <pre id="{{keyval}}-abstract" style="display: none;">{{ entry.abstract }}</small></pre>
+  <p class="likepre" id="{{keyval}}-abstract" style="display: none;">{{ entry.abstract }}</p>
 {% endif %}
 
 <p>
