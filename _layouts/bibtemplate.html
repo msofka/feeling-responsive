@@ -13,6 +13,14 @@
 
 <div id="{{key}}-materials">
 
+{% if entry.abstract %}
+  <button class="button0" onclick="$('#{{keyval}}-abstract').toggle();">abstract</button>
+{% endif %}
+
+<a href="/pdfs/{{keyval}}.pdf"><input class="button4" type="button" value="pdf" /></a>
+
+<button class="button1" onclick="$('#{{keyval}}-bibtex').toggle();">bibtex</button>
+
 {% if entry.doi %}
     <a href="{{ entry.doi | prepend: 'http://doi.org/' }}"><input class="button1" type="button" value="publisher" /></a>
 {% endif %}
@@ -20,14 +28,6 @@
 {% if entry.url %}
     <a href="{{ entry.url }}"><input class="button3" type="button" value="website" /></a>
 {% endif %}
-
-{% if entry.abstract %}
-  <button class="button0" onclick="$('#{{keyval}}-abstract').toggle();">abstract</button>
-{% endif %}
-
-<button class="button1" onclick="$('#{{keyval}}-bibtex').toggle();">bibtex</button>
-
-<a href="/pdfs/{{keyval}}.pdf"><input class="button4" type="button" value="pdf" /></a>
 
 </div>
 <div class="dispinline">
