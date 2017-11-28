@@ -520,20 +520,8 @@ image:
 
        <p class=text><b><A NAME="bibliography">Publications and Further Reading</A></b></p>
 
-       <TABLE>
-       <TR>
-         <TD style="padding: 0 0 15 0; vertical-align: top">
-         <p class=text><A NAME="sofka:tmi06">
-         Retinal Vessel Centerline Extraction Using Multiscale Matched Filters, Confidence and Edge Measures</A><BR>
-         Michal Sofka and Charles V. Stewart<BR>
-         <I>IEEE Transactions on Medical Imaging, vol. 25, no. 12, pp. 1531-1546, Dec. 2006.</I>
-         <BR>
-         <A HREF="pdfs/sofka-tmi06.pdf">[pdf with erratum]</A>
-         <A HREF="pdfs/sofka-tmi06.bib">[bibtex]</A>
-         </p>
-         </TD>
-       </TR>
-       </TABLE>
+       {% bibliography --query @*[key ^= sofka:tmi06] %}
+
 
        <p class=text><b>Bibliography</b></p>
 

@@ -223,41 +223,10 @@ image:
          <br>
          <p class=text><b><A NAME="bibliography">Publications and Further Reading</A></b></p>
 
-         <TABLE>
-         <TR>
-           <TD style="padding: 0 0 15 0; vertical-align: top">
-             <p class=text>
-            Location Registration and Recognition (LRR) for Serial Analysis of Nodules in
-            Lung CT Scans <BR>
-            Michal Sofka and Charles V. Stewart<BR>
-             <I>In Medical Image Analysis, vol. 14, no. 3, pp. 407--428, Jun. 2010.</I>
-             <BR>
-             <A HREF="/pdfs/sofka-mia10.pdf">[pdf]</A>
-             <A HREF="/pdfs/sofka-mia10.bib">[bibtex]</A>
-        <A HREF="LRR_src.html">[code]</A>
-             <A HREF="http://dx.doi.org/10.1016/j.media.2010.02.006">[publisher]</A>
-             </p>
-           </TD>
-         </TR>
+         {% bibliography --query @*[key ^= sofka:mia10] %}
 
-         <TR>
-           <TD style="padding: 0 0 15 0; vertical-align: top">
-           <p class=text><A NAME="sofka:miccai08">
-            Location Registration and Recognition (LRR) for Longitudinal Evaluation of Corresponding
-           Regions in CT Volumes</A><BR>
-            Michal Sofka and Charles V. Stewart<BR>
-           <I>In Proceedings of the International Conference on Medical Image Computing
-           and Computer Assisted Intervention (MICCAI), vol. 2, pp. 989-997, New York, NY, 6-10 Sep. 2008.</I>
-           <BR>
-           <A HREF="/pdfs/sofka-miccai08.pdf">[pdf]</A>
-           <A HREF="/pdfs/sofka-miccai08.bib">[bibtex]</A>
-           <A HREF="LRR_src.html">[code]</A>
-           <A HREF="http://dx.doi.org/10.1007/978-3-540-85990-1_119">[publisher]</A>
-           </p>
-           </TD>
-         </TR>
+         {% bibliography --query @*[key ^= sofka:miccai08] %}
 
-         </TABLE>
 
          <br>
          <p class=text><b>Bibliography</b></p>

@@ -18,12 +18,8 @@ header:
       <p class=text><b><A NAME="overview">Abstract</A></b></p>
        <p class=text>We present a novel generic segmentation system for the fully automatic multi-organ segmentation from CT medical images. Thereby we combine the advantages of learning-based approaches on point cloud-based shape representation, such a speed, robustness, point correspondences, with those of PDE-optimization-based level set approaches, such as high accuracy and the straightforward prevention of segment overlaps. In a benchmark on 10-100 annotated datasets for the liver, the lungs, and the kidneys we show that the proposed system yields segmentation accuracies of 1.17-2.89mm average surface errors. Thereby the level set segmentation (which is initialized by the learning-based segmentations) contributes with an 20%-40% increase in accuracy. </p>
        <p class=text><b><A NAME="overview">Publications and Further Reading</A></b></p>
-       <p class=text>Automatic Multi-Organ Segmentation Using Learning-based Segmentation and Level Set Optimization<br>
+       
+       {% bibliography --query @*[key ^= kohlberger:miccai11] %}
 
-          Timo Kohlberger, Michal Sofka, Jingdan Zhang, Neil Birkbeck, Jens Wetzl, Jens Kaftan, Jérôme Declerck, and S.Kevin Zhou
-        <br>
-        In Proceedings of the International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), Toronto, Canada, 18-22 Sep. 2011. <br>
-        </p>
-        <A HREF="/pdfs/kohlberger-miccai11.pdf">[pdf]</A>
-        <A HREF="/pdfs/kohlberger-miccai11.bib">[bibtex]</A>
-    </div>
+  </div>
+</div>
