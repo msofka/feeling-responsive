@@ -51,9 +51,28 @@ My publications on <a href="https://scholar.google.com/citations?user=fyN2FbgAAA
       {% bibliography --query @inproceedings %}
       </div>
         <div id="patents" class="tab-pane fade">
-         <h2>Patents</h2>
+        <ul class="top-margin">
+          <li>
+            <a href="#gpatents">Granted</a>
+          </li>
+          <li>
+            <a href="#ppatents">Pending</a>
+          </li>
+        </ul>
 
-        {% bibliography --template bibtemplate-patents --query @misc %}
+        <h2 id="gpatents">Granted</h2>
+      
+        <br> 
+        <a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&u=%2Fnetahtml%2FPTO%2Fsearch-adv.htm&r=0&p=1&f=S&l=50&Query=in%2FMichal+and+%0D%0Ain%2FSofka&d=PTXT">USPTO Granted</a>
+ 
+        {% bibliography --style apa --template bibtemplate-patents --query @misc[howpublished !~ US\w\w\w\w\w\w\w\w\w\w\w] %}
+       
+        <h2 id="ppatents">Pending</h2>
+
+        <br>       
+        <a href="http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&u=%2Fnetahtml%2FPTO%2Fsearch-adv.html&r=1&p=1&f=S&l=50&Query=in%2FSofka+and+in%2FMichal&d=PG01">USPTO Applications</a>
+ 
+        {% bibliography --style apa --template bibtemplate-patents --query @misc[howpublished ^= US\w\w\w\w\w\w\w\w\w\w\w] %}
         </div>
 
 </div>

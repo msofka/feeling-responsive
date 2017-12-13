@@ -93,20 +93,13 @@ collections:
 
 # BIBLIOGRAPHY
 
-#scholar:
-#    style: apa
-#    bibliography: publications.bib
-#    bibliography_template: bibtemplate
-#    replace_strings: true
-#    query: "@*"
-
 scholar:
   #style: chicago-fullnote-bibliography
-  style: apa
+  style: ./_bibliography/elsevier-harvard2
   locale: en
 
-  sort_by: none
-  order: ascending
+  sort_by: year,month 
+  order: descending 
 
   source: ./_bibliography
   bibliography: publications.bib
