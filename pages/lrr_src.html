@@ -18,11 +18,9 @@ header:
          <p class=cap>Download Source Code of the Location Registration and Recognition</p>
 
          <p class=text>This source code implements <a href="/projects/lrr/">Location Registration and Recognition (LRR)</a> algorithm. The algorithm includes feature extraction,
-         estimation, and decision components. The code is distributed under the Apache 2.0 license approved by the <a href="http://www.opensource.org">Open Source Initiative</a> (OSI).
+         estimation, and decision components. The code and documentation has been moved to <a href="https://github.com/msofka/LRR/">LRR Github</a>.
          <br>
          <br>
-
-        <p class=text><font color=red>Note 12/12/2013: Updated code to work with ITK version 4.</font></p>
 
         <table>
          <tr>
@@ -31,7 +29,7 @@ header:
          </tr>
          <tr class=text>
            <td style="BACKGROUND-COLOR: rgb(206,206,206); padding: 5 5 5 5;">LRR Source Code</td>
-           <td style="BACKGROUND-COLOR: rgb(206,206,206); padding: 5 5 5 5; text-align: center;"><a href="http://www.cs.rpi.edu/~sofka/cgi-bin/downloadvw.cgi?lrr_src">sofka-lrr_src.zip</a> (0.5 MB)</td>
+           <td style="BACKGROUND-COLOR: rgb(206,206,206); padding: 5 5 5 5; text-align: center;"><a href="https://github.com/msofka/LRR/">LRR Github</a></td>
          </tr>
          <tr class=text>
            <td style="BACKGROUND-COLOR: rgb(206,206,206); padding: 5 5 5 5;">LRR Win32 binaries</td>
@@ -50,105 +48,6 @@ header:
            * The volume pair comes from the <a href="https://wiki.nci.nih.gov/display/Imaging/RIDER/">RIDER database</a> of the <a href="https://imaging.nci.nih.gov/ncia/">National Cancer Imaging Archives</a>.
            </td>
          </table>
-
-         <p class=text><b>Build</b></p>
-                 <p class=text><a href="http://www.cmake.org/">CMake build system</a> is recommended for creating make files and project files. CMake files are included with the source code distribution.
-         
-         <p class=text><b>Run</b></p>
-         <p class=text>The algorithm components are run separately without including them in one executable.
-         This makes the components easier to debug, evaluate, and integrate in other projects. The disadvantage is that data is loaded and saved multiple times.
-         What follows are the steps to run the LRR algorithm. The steps consists of calling each executable from simple bash scripts (use directly in Linux or
-         <a href="http://www.cygwin.com">download Cygwin</a> to use on Windows). In the scripts, you will need to modify path to your binaries.
-         You can also run the executables directly (see below).
-         <br><br>
-         
-         <h4>Step 1. &nbsp;</h4>
-         <p>Extract features, keypoints, and descriptors:
-         <pre> ./extract_features.bash volumes_with_nodules.txt</pre>
-         <br>
-         
-         <p>The script also calls a script that computes a Voronoi map for each feature set:
-         <pre> ./compute_distance_map.bash volumes_with_nodules.txt</pre>
-         <br>
-         
-         <p>In addition, the script also computes watershed oversegmentations by running:
-         <pre> ./watershed_segmentation.bash volumes_with_nodules.txt</pre>
-         <br>        
-         
-         <p>Features, keypoints, and descriptors are stored in a VTK format.
-
-         <p>Alternatively, you can run the command line executables directly for each volume (CMD> denotes command line):
-         
-         <pre>
- CMD> cd 0009/4893
- CMD> ExtractFeatures 4978whole 4978whole_00.vtk
- CMD> ExtractKeypoints 4978whole_00.vtk 4978wholekeypoints.vtk
- CMD> ComputeDescriptors 4978wholekeypoints.vtk 4978whole_00.vtk 4978wholedesc.vtk
- CMD> compute_distance_map 4978whole
- CMD> WatershedSegmentation1 4978whole 4978wholewatershed 2.0 10 0.001 0.10</pre>
-
-         <p>
-         <p>Repeat the steps for volume in 0009/4717.
-         <br>
-         <br>
-         
-         <h4>Step 2. &nbsp;</h4>
-         <p>Generate initializations by keypoint indexing:
-         <pre> ./invariant_indexing.bash pairs_with_nodules.txt</pre>
-         <br>
-         
-         <p>This creates a directory ``nodules'' which contains: 1) moving and fixed
-         descriptors for each match, 2) images surrounding fixed and moving keypoints,
-         3) the query location and its neighborhood within fixed image.
-         <br><br>
-         
-         <p>Running the executable directly:
- <pre>
- CMD> cd 0009
- CMD> indexing_one_descriptor.exe 4717/4722wholedesc.vtk 4893/4978wholedesc.vtk \
-  -mov 4717/4722whole -fix 4893/4978whole \
-  -trans 4893_4978whole-4717_4722wholediff.vtk -locs  4893/4978nodules.txt</pre>
-         <br>
-         (Note: Images are specified for debugging purposes. They are not used in the algorithm.)
-         <br>
-         <br>
-         
-         <h4>Step 3. &nbsp;</h4>
-         <p>Use the initializations generated in the previous step to refine the estimate and output the verified transform:
-         <pre> ./location_registration.bash pairs_with_nodules.txt</pre>
-         <br>
-         
-         <p>This creates a directory ``nodulesreg'' that contains: 1) a text file with
-         the final estimated transform and various statistics, and 2) a transform
-         and its inverse in VTK format. If LAST_ITER is defined as 1 in the code,
-         the executable will also produce a panel of 9 images containing fixed, moving,
-         and checkerboard images of axial, sagittal, and coronal slices.
-         <br>
-         
-         Running the executable directly:
- <pre>
- CMD> cd 0009     
- CMD> location_registration.exe 4893/4978whole 4717/4722whole \
- -trans 4893_4978whole-4717_4722wholediff.vtk \
- -matches 4893/4978nodules.txt -segment watershed</pre>
-
-         <p>(Note: Images are specified for debugging purposes. They are not used in the algorithm.)
-         <!-- If location_registration_warping is
-         used in this script the executable also saves a panel of 9 images which
-         includes axial, sagittal, and coronal slices of neighborhoods surrounding
-         the corresponding nodules and checkerboards composed of those images.-->
-         <br>
-         <br>
-         <br> 
-         
-         
-
-         
-         <p class=text><b><A NAME="bibliography">Publications and Further Reading</A></b></p>
-
-         {% bibliography --query @*[key ^= sofka:mia10] %}
-
-         {% bibliography --query @*[key ^= sofka:miccai08] %}
 
                   
          <BR>
