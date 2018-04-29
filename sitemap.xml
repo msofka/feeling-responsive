@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<!-- Pages: 47 links with priority=0.3, changefreq=monthly -->
+<!-- Pages: 46 links with priority=0.3, changefreq=monthly -->
 
 	
 	<url>
-	<loc>http://localhost:4000//404.html</loc>
+	<loc>//404.html</loc>
 	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -20,24 +20,9 @@
 
 	
 	<url>
-	<loc>http://localhost:4000//404.html</loc>
+	<loc>//activities/</loc>
 	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000//activities/</loc>
-	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -50,9 +35,9 @@
 
 	
 	<url>
-	<loc>http://localhost:4000//affiliation/</loc>
+	<loc>//affiliation/</loc>
 	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -65,9 +50,9 @@
 
 	
 	<url>
-	<loc>http://localhost:4000//blog/archive/</loc>
+	<loc>//blog/archive/</loc>
 	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -82,9 +67,9 @@
 
 	
 	<url>
-	<loc>http://localhost:4000//atom.xml</loc>
+	<loc>//atom.xml</loc>
 	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -99,24 +84,9 @@
 
 	
 	<url>
-	<loc>http://localhost:4000//about/</loc>
+	<loc>//about/</loc>
 	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000//projects/cdc/</loc>
-	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -129,24 +99,9 @@
 
 	
 	<url>
-	<loc>http://localhost:4000//changelog/</loc>
+	<loc>//projects/cdc/</loc>
 	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000//contact/</loc>
-	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -159,24 +114,9 @@
 
 	
 	<url>
-	<loc>http://localhost:4000//design/</loc>
+	<loc>//changelog/</loc>
 	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000//projects/dic/</loc>
-	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -189,24 +129,9 @@
 
 	
 	<url>
-	<loc>http://localhost:4000//documentation/</loc>
+	<loc>//contact/</loc>
 	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000//downloads/</loc>
-	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -219,24 +144,9 @@
 
 	
 	<url>
-	<loc>http://localhost:4000//feed.xml</loc>
+	<loc>//design/</loc>
 	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000//getting-started/</loc>
-	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -249,24 +159,9 @@
 
 	
 	<url>
-	<loc>http://localhost:4000//projects/hdn/</loc>
+	<loc>//projects/dic/</loc>
 	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000//headers/</loc>
-	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -279,24 +174,9 @@
 
 	
 	<url>
-	<loc>http://localhost:4000//humans.txt</loc>
+	<loc>//documentation/</loc>
 	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000//projects/i2i/</loc>
-	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -309,24 +189,9 @@
 
 	
 	<url>
-	<loc>http://localhost:4000//blog/</loc>
+	<loc>//downloads/</loc>
 	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000//</loc>
-	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -339,24 +204,9 @@
 
 	
 	<url>
-	<loc>http://localhost:4000//</loc>
+	<loc>//feed.xml</loc>
 	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000//info/</loc>
-	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -369,24 +219,9 @@
 
 	
 	<url>
-	<loc>http://localhost:4000//inmedia/</loc>
+	<loc>//getting-started/</loc>
 	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000//projects/lrr/</loc>
-	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -399,24 +234,9 @@
 
 	
 	<url>
-	<loc>http://localhost:4000//projects/lrr_src/</loc>
+	<loc>//projects/hdn/</loc>
 	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000//projects/malware/</loc>
-	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -429,24 +249,9 @@
 
 	
 	<url>
-	<loc>http://localhost:4000//activities/media</loc>
+	<loc>//headers/</loc>
 	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000//projects/news/</loc>
-	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -459,24 +264,9 @@
 
 	
 	<url>
-	<loc>http://localhost:4000//projects/organs/</loc>
+	<loc>//humans.txt</loc>
 	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000//projects/</loc>
-	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -489,24 +279,9 @@
 
 	
 	<url>
-	<loc>http://localhost:4000//publications/</loc>
+	<loc>//projects/i2i/</loc>
 	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000//research/</loc>
-	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -519,9 +294,9 @@
 
 	
 	<url>
-	<loc>http://localhost:4000//roadmap/</loc>
+	<loc>//blog/</loc>
 	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -534,9 +309,219 @@
 
 	
 	<url>
-	<loc>http://localhost:4000//robots.txt</loc>
+	<loc>//</loc>
 	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>//</loc>
+	
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>//info/</loc>
+	
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>//inmedia/</loc>
+	
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>//projects/lrr/</loc>
+	
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>//projects/lrr_src/</loc>
+	
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>//projects/malware/</loc>
+	
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>//activities/media</loc>
+	
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>//projects/news/</loc>
+	
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>//projects/organs/</loc>
+	
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>//projects/</loc>
+	
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>//publications/</loc>
+	
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>//research/</loc>
+	
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>//roadmap/</loc>
+	
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>//robots.txt</loc>
+	
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -553,41 +538,9 @@
 
 	
 	<url>
-	<loc>http://localhost:4000//search/</loc>
+	<loc>//search/</loc>
 	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000//sitemap.xml</loc>
-	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-
-	
-	<url>
-	<loc>http://localhost:4000//activities/upcoming/</loc>
-	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -600,9 +553,26 @@
 
 	
 	<url>
-	<loc>http://localhost:4000//projects/vessels/</loc>
+	<loc>//sitemap.xml</loc>
 	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+
+	
+	<url>
+	<loc>//activities/upcoming/</loc>
+	
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -615,9 +585,9 @@
 
 	
 	<url>
-	<loc>http://localhost:4000//projects/vessels_classify/</loc>
+	<loc>//vessels.html</loc>
 	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -630,9 +600,24 @@
 
 	
 	<url>
-	<loc>http://localhost:4000//projects/vessels_exec/</loc>
+	<loc>//projects/vessels_classify/</loc>
 	
-		<lastmod>2017-12-12T19:03:45-05:00</lastmod>
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>//projects/vessels_exec/</loc>
+	
+		<lastmod>2018-04-28T22:01:20-04:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -648,7 +633,7 @@
 
 	
 	<url>
-	<loc>http://localhost:4000//2015/09/03/first_blog</loc>
+	<loc>//2015/09/03/Learning-Detectors-of-Malicious-Network-Traffic</loc>
 	
 		<lastmod>2015-09-03T00:00:00-04:00</lastmod>
 	
