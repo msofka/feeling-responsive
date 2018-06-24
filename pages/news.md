@@ -9,10 +9,9 @@ header:
 permalink: "/projects/news/"
 news:
 
--  "4/27/2017 Paper on our work accepted to [MICCAI 2017](http://http://www.miccai2017.org/)."
--  "3/15/2017 Paper on learning discretizations via convex optimization accepted to the Machine Learning journal."
--  "2/15/2017 Butterfly Network sponsors 2017 Medical Image Computing and Computer Assisted Intervention (MICCAI) conference."
--  "10/17/2017 Butterfly Network sponsors Deep Learning in Medical Imaging at MICCAI 2016."
+-  "6/17/2018 Butterfly Network exhibits at Computer Vision and Pattern Recognition (CVPR) 2018 conference."
+-  "5/15/2018 Hyperfine Research sponsors Deep Learning at Medical Image Analysis Workshop at MICCAI 2018."
+-  "3/16/2018 Butterfly launches iQ, world's first whole body imaging ultrasound platform that plugs into an iPhone and costs under $2,000." 
 
 ---
 
