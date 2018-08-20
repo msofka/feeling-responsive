@@ -73,7 +73,7 @@ header:
         <div class="col-md-4"><img src="/assets/img/sofka63.jpg" class="thumb">
         <img src="/assets/img/sofka65.gif" class="thumb"></div>
       <div class="col-md-8">
-        <h3 class="no-marg"><a href="/projects/vessels/">Retinal Vessel Centerline Extraction</a></h3>
+        <h3 class="no-marg"><a href="/projects/vessels.html">Retinal Vessel Centerline Extraction</a></h3>
       <p class="down-margin">We propose a new technique motivated by the goals of improving detection of low-contrast and narrow vessels and eliminating false detections at non-vascular structures. Novel low level vesselness measure is embedded into a vessel tracing framework, resulting in an efficient and effective vessel centerline extraction algorithm.</p>
     </div></div>
     <br>
