@@ -202,11 +202,6 @@
 
                       <li><a  href="//about/">Bio</a></li>
                     
-
-                      
-
-                      <li><a  href="//affiliation/">Affiliation</a></li>
-                    
                   </ul>
 
               </li>
