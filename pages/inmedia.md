@@ -81,7 +81,7 @@ header:
     <div class="col-xs-12">
     <span id="jnj">February 20th, 2014</span>
       <h3 class="no-marg"><strong> 2013 Johnson &amp; Johnson Supplier Enabled Innovation Award  </strong></h3>
-      <p class="down-margin">Johnson &amp; Johnson recognized TRUMATCH Personalized Solutions Fast3D as <a href="http://www.blogjnj.com/2014/02/2013-johnson-and-johnson-supplier-enabled-innovation-awards/" target="_blank">Supplier Enabled Innovation of the Year &amp; Best Product Supplier Enabled Innovation</a>. Fast3D is a product from DePuy Synthes Joint Reconstruction &amp; Siemens PLM Software. Michal Sofka was the main architect, technical leader, and primary contributor to the solution developed at Siemens Corporate Technology. See also <a href="http://www.plm.automation.siemens.com/en_us/about_us/newsroom/press/press_release.cfm?Component=223639&ComponentTemplate=822" target="_blank">Siemens PLM press release</a>.</p>
+      <p class="down-margin">Johnson &amp; Johnson recognized TRUMATCH Personalized Solutions Fast3D as <a href="https://www.jnj.com/innovation/2013-johnson-johnson-supplier-enabled-innovation-awards" target="_blank">Supplier Enabled Innovation of the Year &amp; Best Product Supplier Enabled Innovation</a>. Fast3D is a product from DePuy Synthes Joint Reconstruction &amp; Siemens PLM Software. Michal Sofka was the main architect, technical leader, and primary contributor to the solution developed at Siemens Corporate Technology. See also <a href="http://www.plm.automation.siemens.com/en_us/about_us/newsroom/press/press_release.cfm?Component=223639&ComponentTemplate=822" target="_blank">Siemens PLM press release</a>.</p>
     </div>
     </div>
 

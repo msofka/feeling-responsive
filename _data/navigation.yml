@@ -8,8 +8,6 @@
   dropdown:
   - title: "Bio"
     url: "/about/"
-  - title: "Affiliation"
-    url: "/affiliation/"
 
 - title: Projects
   url: "/projects/"
