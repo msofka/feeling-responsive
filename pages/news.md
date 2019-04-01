@@ -9,7 +9,7 @@ header:
 permalink: "/projects/news/"
 news:
 
--  "3/11/2019 The [video](https://www.youtube.com/watch?v=2djGATBc_eE) of my talk on our work on ``Deep MR image reconstruction across k­-space and image domain`` has been posted on [i2i Workshop](http://cai2r.net/i2i) 2018 web site."
+-  "3/11/2019 The [video](https://www.youtube.com/watch?v=2djGATBc_eE) of my talk on our work on ``Deep MR image reconstruction across k­-space and image domain'' has been posted on [i2i Workshop](http://cai2r.net/i2i) 2018 web site."
 -  "3/4/2019 Hyperfine launches a new website. The company envisions MR systems that are portable at the Point of Care. Imagine MR directly at the bedside - no need for a shielded room."
 -  "2/28/2019 I am presenting a talk on ``Deep Learning and Medical Imaging for Streamlining MRI Exams'' at Stony Brook's Biomedical Informatics Grand Rounds."
 -  "8/20/2018 Hyperfine Research will present in the ``Maximum overdrive: the AI revolution'' session at the [i2i Workshop](http://cai2r.net/i2i) in NYC."
