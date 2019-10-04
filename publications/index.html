@@ -141,14 +141,25 @@
   pages = {},
   address = {}
 }
-</small></pre></p> <br /> </div> </li></ol> <h2 id="cpapers">Conference Papers</h2> <ol class="bibliography"><li> <div class="cf"> <img src="/assets/img/sofka-dlmia17-1.jpg" class="thumb" /> <img src="/assets/img/sofka-dlmia17-2.jpg" class="thumb" /> <span id="sofka:dlmia17">Sofka, M., Milletari, F., Jia, J., Rothberg, A., 2017. Fully convolutional regression network for accurate detection of measurement points. In: Deep Learning in Medical Image Analysis and Multimodal Learning for Clinical Decision Support (DLMIA). Quebec City, Quebec, Canada.</span> </div> <div id="sofka:dlmia17-materials"> <button class="button0" onclick="$('#sofka-dlmia17-abstract').toggle();">abstract</button> <a href="/pdfs/sofka-dlmia17.pdf"><input class="button4" type="button" value="pdf" /></a> <button class="button1" onclick="$('#sofka-dlmia17-bibtex').toggle();">bibtex</button> </div> <div class="dispinline"> <p class="likepre" id="sofka-dlmia17-abstract" style="display: none;">Accurate automatic detection of measurement points in ultrasound video sequences is challenging due to noise, shadows, anatomical differences, and scan plane variation. This paper proposes to address these challenges by a Fully Convolutional Neural Network (FCN) trained to regress the point locations. The series of convolutional and pooling layers is followed by a collection of upsampling and convolutional layers with feature forwarding from the earlier layers. The final location estimates are produced by computing the center of mass of the regression maps in the last layer. The temporal consistency of the estimates is achieved by a Long Short-Term memory cells which processes several previous frames in order to refine the estimate in the current frame. The results on automatic measurement of left ventricle in parasternal long axis view of the heart show detection errors below 5% of the measurement line which is within inter-observer variability. </p> <p><pre id="sofka-dlmia17-bibtex" style="display: none;"><small>@inproceedings{sofka:dlmia17,
-  author = {Sofka, Michal and Milletari, Fausto and Jia, Jimmy and Rothberg, Alex},
-  title = {Fully convolutional regression network for accurate detection of measurement points},
-  booktitle = {Deep Learning in Medical Image Analysis and Multimodal Learning
-                    for Clinical Decision Support (DLMIA)},
-  year = {2017},
-  month = "14" # sep,
-  address = {Quebec City, Quebec, Canada}
+</small></pre></p> <br /> </div> </li></ol> <h2 id="cpapers">Conference Papers</h2> <ol class="bibliography"><li> <div class="cf"> <img src="/assets/img/milletari-miccaisusi19-1.jpg" class="thumb" /> <img src="/assets/img/milletari-miccaisusi19-2.jpg" class="thumb" /> <span id="milletari:miccaisusi19">Fausto Milletari, V.B., Sofka, M., 2019. Straight to the point: reinforcement learning for user guidance in ultrasound. In: Proceedings of the MICCAI 2019 Workshop on MICCAI 2019 Workshop on Smart UltraSound Imaging. Shenzhen, China.</span> </div> <div id="milletari:miccaisusi19-materials"> <button class="button0" onclick="$('#milletari-miccaisusi19-abstract').toggle();">abstract</button> <a href="/pdfs/milletari-miccaisusi19.pdf"><input class="button4" type="button" value="pdf" /></a> <button class="button1" onclick="$('#milletari-miccaisusi19-bibtex').toggle();">bibtex</button> </div> <div class="dispinline"> <p class="likepre" id="milletari-miccaisusi19-abstract" style="display: none;">Point of care ultrasound (POCUS) consists in the use of ultrasound imaging in critical or emergency situations to support clinical decisions by healthcare professionals and first responders. In this setting it is essential to be able to provide means to obtain diagnostic data to potentially inexperienced users who did not receive an extensive medical training. Interpretation and acquisition of ultrasound images is not trivial. First, the user needs to find a suitable sound window which can be used to get a clear image, and then he needs to correctly interpret it to perform a diagnosis. Although many recent approaches focus on developing smart ultrasound devices that add interpretation capabilities to existing systems, our goal in this paper is to present a reinforcement learning (RL) strategy which is capable to guide novice users to the correct sonic window and enable them to obtain clinically relevant pictures of the anatomy of interest. We apply our approach to cardiac images acquired from the parasternal long axis (PLAx) view of the left ventricle of the heart.</p> <p><pre id="milletari-miccaisusi19-bibtex" style="display: none;"><small>@inproceedings{milletari:miccaisusi19,
+  author = {Fausto Milletari, Vighnesh Birodkar and Sofka, Michal},
+  title = {Straight to the point: reinforcement learning for user guidance in ultrasound},
+  booktitle = {Proceedings of the MICCAI 2019 Workshop on MICCAI 2019 Workshop on Smart
+                    UltraSound Imaging},
+  year = {2019},
+  month = "13" # oct,
+  address = {Shenzhen, China}
+}
+</small></pre></p> <br /> </div> </li> <li> <div class="cf"> <img src="/assets/img/schlemper-miccai19-1.jpg" class="thumb" /> <img src="/assets/img/schlemper-miccai19-2.jpg" class="thumb" /> <span id="schlemper:miccai19">Schlemper, J., Salehi, S.S.M., Kundu, P., Lazarus, C., Dyvorne, H., Sofka, M., 2019. Nonuniform Variational Network: Deep Learning for Accelerated Nonuniform MR Image Reconstruction. In: Proceedings of the 22th International Conference On Medical Image Computing and Computer-Assisted Intervention (MICCAI 2019). Shenzhen, China.</span> </div> <div id="schlemper:miccai19-materials"> <button class="button0" onclick="$('#schlemper-miccai19-abstract').toggle();">abstract</button> <a href="/pdfs/schlemper-miccai19.pdf"><input class="button4" type="button" value="pdf" /></a> <button class="button1" onclick="$('#schlemper-miccai19-bibtex').toggle();">bibtex</button> </div> <div class="dispinline"> <p class="likepre" id="schlemper-miccai19-abstract" style="display: none;">Deep learning for accelerated magnetic resonance (MR) image reconstruction is a fast growing field, which has so far shown promising results. However, most works are limited in the sense that they assume equidistant rectilinear (Cartesian) data acquisition in 2D or 3D. In practice, a reconstruction from nonuniform samplings such as radial and spiral is an attractive choice for more efficient acquisitions. Nevertheless, it has less been explored as the reconstructi on process is complicated by the necessity to handle non-Cartesian samples. In this work, we present a novel approach for reconstructing from nonuniform undersampled MR data. The proposed approach, termed nonuniform variational network (NVN), is a convolutional neural network architecture based on the unrolling of a traditional iterative nonlinear reconstruction, where the knowledge of the nonuniform forward and adjoint sampling operators are efficiently incorporated. Our extensive evaluation shows that the proposed method outperforms existing state-of-the-art deep learning methods, hence offering a method that is widely applicable to different imaging protocols for both research and clinical deployments.</p> <p><pre id="schlemper-miccai19-bibtex" style="display: none;"><small>@inproceedings{schlemper:miccai19,
+  author = {Schlemper, Jo and Salehi, Seyed Sadegh Mohseni and Kundu, Prantik and Lazarus, Carole and Dyvorne, Hadrien and Sofka, Michal},
+  title = {Nonuniform Variational Network: Deep Learning for Accelerated Nonuniform
+                    MR Image Reconstruction},
+  booktitle = {Proceedings of the 22th International Conference on
+                    Medical Image Computing and Computer-Assisted
+                    Intervention (MICCAI 2019)},
+  year = {2019},
+  month = "13--19~" # oct,
+  address = {Shenzhen, China}
 }
 </small></pre></p> <br /> </div> </li> <li> <div class="cf"> <img src="/assets/img/milletari-miccai17-1.jpg" class="thumb" /> <img src="/assets/img/milletari-miccai17-2.jpg" class="thumb" /> <span id="milletari:miccai17">Milletari, F., Rothberg, A., Jia, J., Sofka, M., 2017. Integrating statistical prior knowledge into convolutional neural networks. In: Proceedings of the 20th International Conference On Medical Image Computing and Computer-Assisted Intervention (MICCAI 2017). Quebec City, Quebec, Canada.</span> </div> <div id="milletari:miccai17-materials"> <button class="button0" onclick="$('#milletari-miccai17-abstract').toggle();">abstract</button> <a href="/pdfs/milletari-miccai17.pdf"><input class="button4" type="button" value="pdf" /></a> <button class="button1" onclick="$('#milletari-miccai17-bibtex').toggle();">bibtex</button> </div> <div class="dispinline"> <p class="likepre" id="milletari-miccai17-abstract" style="display: none;">In this work we show how to integrate prior statistical knowledge, obtained through principal components analysis (PCA), into a convolutional neural network in order to obtain robust predictions even when dealing with corrupted or noisy data. Our network architecture is trained end-to-end and includes a specifically designed layer which incorporates the dataset modes of variation discovered via PCA and produces predictions by linearly combining them. We also propose a mechanism to focus the attention of the CNN on specific regions of interest of the image in order to obtain refined predictions. We show that our method is effective in challenging segmentation and landmark localization tasks.</p> <p><pre id="milletari-miccai17-bibtex" style="display: none;"><small>@inproceedings{milletari:miccai17,
   author = {Milletari, Fausto and Rothberg, Alex and Jia, Jimmy and Sofka, Michal},
@@ -160,6 +171,24 @@
   month = "11--13~" # sep,
   address = {Quebec City, Quebec, Canada}
 }
+</small></pre></p> <br /> </div> </li> <li> <div class="cf"> <img src="/assets/img/sofka-dlmia17-1.jpg" class="thumb" /> <img src="/assets/img/sofka-dlmia17-2.jpg" class="thumb" /> <span id="sofka:dlmia17">Sofka, M., Milletari, F., Jia, J., Rothberg, A., 2017. Fully convolutional regression network for accurate detection of measurement points. In: Deep Learning in Medical Image Analysis and Multimodal Learning for Clinical Decision Support (DLMIA). Quebec City, Quebec, Canada.</span> </div> <div id="sofka:dlmia17-materials"> <button class="button0" onclick="$('#sofka-dlmia17-abstract').toggle();">abstract</button> <a href="/pdfs/sofka-dlmia17.pdf"><input class="button4" type="button" value="pdf" /></a> <button class="button1" onclick="$('#sofka-dlmia17-bibtex').toggle();">bibtex</button> </div> <div class="dispinline"> <p class="likepre" id="sofka-dlmia17-abstract" style="display: none;">Accurate automatic detection of measurement points in ultrasound video sequences is challenging due to noise, shadows, anatomical differences, and scan plane variation. This paper proposes to address these challenges by a Fully Convolutional Neural Network (FCN) trained to regress the point locations. The series of convolutional and pooling layers is followed by a collection of upsampling and convolutional layers with feature forwarding from the earlier layers. The final location estimates are produced by computing the center of mass of the regression maps in the last layer. The temporal consistency of the estimates is achieved by a Long Short-Term memory cells which processes several previous frames in order to refine the estimate in the current frame. The results on automatic measurement of left ventricle in parasternal long axis view of the heart show detection errors below 5% of the measurement line which is within inter-observer variability. </p> <p><pre id="sofka-dlmia17-bibtex" style="display: none;"><small>@inproceedings{sofka:dlmia17,
+  author = {Sofka, Michal and Milletari, Fausto and Jia, Jimmy and Rothberg, Alex},
+  title = {Fully convolutional regression network for accurate detection of measurement points},
+  booktitle = {Deep Learning in Medical Image Analysis and Multimodal Learning
+                    for Clinical Decision Support (DLMIA)},
+  year = {2017},
+  month = "14" # sep,
+  address = {Quebec City, Quebec, Canada}
+}
+</small></pre></p> <br /> </div> </li> <li> <div class="cf"> <img src="/assets/img/bartos-ecai16-1.jpg" class="thumb" /> <img src="/assets/img/bartos-ecai16-2.jpg" class="thumb" /> <span id="bartos:ecai16">Bartos, K., Sofka, M., Franc, V., 2016. Learning Invariant Representation for Malicious Network Traffic Detection. In: Proceedings of the European Conference on Artificial Intelligence. Hague, Holland.</span> </div> <div id="bartos:ecai16-materials"> <button class="button0" onclick="$('#bartos-ecai16-abstract').toggle();">abstract</button> <a href="/pdfs/bartos-ecai16.pdf"><input class="button4" type="button" value="pdf" /></a> <button class="button1" onclick="$('#bartos-ecai16-bibtex').toggle();">bibtex</button> </div> <div class="dispinline"> <p class="likepre" id="bartos-ecai16-abstract" style="display: none;">Statistical learning theory relies on an assumption that the joint distributions of observations and labels are the same in training and testing data. However, this assumption is violated in many real world problems, such as training a detector of malicious network traffic that can change over time as a result of attacker’s detection evasion efforts. We propose to address this problem by creating an optimized representation, which significantly increases the robustness of detectors or classifiers trained under this distributional shift. The representation is created from bags of samples (e.g. network traffic logs) and is designed to be invariant under shifting and scaling of the feature values extracted from the logs and under permutation and size changes of the bags. The invariance is achieved by combining feature histograms with feature self-similarity matrices computed for each bag and significantly reduces the difference between the training and testing data. The parameters of the representation, such as histogram bin boundaries, are learned jointly with the classifier. We show that the representation is effective for training a detector of malicious traffic, achieving 90% precision and 67% recall on samples of previously unseen malware variants.</p> <p><pre id="bartos-ecai16-bibtex" style="display: none;"><small>@inproceedings{bartos:ecai16,
+  author = {Bartos, Karel and Sofka, Michal and Franc, Vojtech},
+  title = {Learning Invariant Representation for Malicious Network Traffic Detection},
+  booktitle = {Proceedings of the European Conference on Artificial Intelligence},
+  year = {2016},
+  month = {29~Aug -- 2~Sep},
+  pages = {},
+  address = {Hague, Holland}
+}
 </small></pre></p> <br /> </div> </li> <li> <div class="cf"> <img src="/assets/img/bartos-usenix16-1.jpg" class="thumb" /> <img src="/assets/img/bartos-usenix16-2.jpg" class="thumb" /> <span id="bartos:usenix16">Bartos, K., Sofka, M., Franc, V., 2016. Optimized Invariant Representation of Network Traffic for Detecting Unseen Malware Variants. In: USENIX Security Symposium. Austin, TX, USA.</span> </div> <div id="bartos:usenix16-materials"> <button class="button0" onclick="$('#bartos-usenix16-abstract').toggle();">abstract</button> <a href="/pdfs/bartos-usenix16.pdf"><input class="button4" type="button" value="pdf" /></a> <button class="button1" onclick="$('#bartos-usenix16-bibtex').toggle();">bibtex</button> </div> <div class="dispinline"> <p class="likepre" id="bartos-usenix16-abstract" style="display: none;">New and unseen polymorphic malware, zero-day attacks, or other types of advanced persistent threats are usually not detected by signature-based security devices, firewalls, or anti-viruses. This represents a challenge to the network security industry as the amount and variability of incidents has been increasing. Consequently, this complicates the design of learning-based detection systems relying on features extracted from network data. The problem is caused by different joint distribution of observation (features) and labels in the training and testing data sets. This paper proposes a classification system designed to detect both known as well as previously unseen security threats. The classifiers use statistical feature representation computed from the network traffic and learn to recognize malicious behavior. The representation is designed and optimized to be invariant to the most common changes of malware behaviors. This is achieved in part by a feature histogram constructed for each group of HTTP flows (proxy log records) of a user visiting a particular hostname and in part by a feature self-similarity matrix computed for each group. The parameters of the representation (histogram bins) are optimized and learned based on the training samples along with the classifiers. The proposed classification system was deployed on large corporate networks, where it detected 2,090 new and unseen variants of malware samples with 90% precision (9 of 10 alerts were malicious), which is a considerable improvement when compared to the current flow-based approaches or existing signature-based web security devices.</p> <p><pre id="bartos-usenix16-bibtex" style="display: none;"><small>@inproceedings{bartos:usenix16,
   author = {Bartos, Karel and Sofka, Michal and Franc, Vojtech},
   title = {Optimized Invariant Representation of Network Traffic for Detecting
@@ -170,15 +199,6 @@
   note = {\textbf{15.6\% acceptance rate.}},
   pages = {},
   address = {Austin, TX, USA}
-}
-</small></pre></p> <br /> </div> </li> <li> <div class="cf"> <img src="/assets/img/bartos-ecai16-1.jpg" class="thumb" /> <img src="/assets/img/bartos-ecai16-2.jpg" class="thumb" /> <span id="bartos:ecai16">Bartos, K., Sofka, M., Franc, V., 2016. Learning Invariant Representation for Malicious Network Traffic Detection. In: Proceedings of the European Conference on Artificial Intelligence. Hague, Holland.</span> </div> <div id="bartos:ecai16-materials"> <button class="button0" onclick="$('#bartos-ecai16-abstract').toggle();">abstract</button> <a href="/pdfs/bartos-ecai16.pdf"><input class="button4" type="button" value="pdf" /></a> <button class="button1" onclick="$('#bartos-ecai16-bibtex').toggle();">bibtex</button> </div> <div class="dispinline"> <p class="likepre" id="bartos-ecai16-abstract" style="display: none;">Statistical learning theory relies on an assumption that the joint distributions of observations and labels are the same in training and testing data. However, this assumption is violated in many real world problems, such as training a detector of malicious network traffic that can change over time as a result of attacker’s detection evasion efforts. We propose to address this problem by creating an optimized representation, which significantly increases the robustness of detectors or classifiers trained under this distributional shift. The representation is created from bags of samples (e.g. network traffic logs) and is designed to be invariant under shifting and scaling of the feature values extracted from the logs and under permutation and size changes of the bags. The invariance is achieved by combining feature histograms with feature self-similarity matrices computed for each bag and significantly reduces the difference between the training and testing data. The parameters of the representation, such as histogram bin boundaries, are learned jointly with the classifier. We show that the representation is effective for training a detector of malicious traffic, achieving 90% precision and 67% recall on samples of previously unseen malware variants.</p> <p><pre id="bartos-ecai16-bibtex" style="display: none;"><small>@inproceedings{bartos:ecai16,
-  author = {Bartos, Karel and Sofka, Michal and Franc, Vojtech},
-  title = {Learning Invariant Representation for Malicious Network Traffic Detection},
-  booktitle = {Proceedings of the European Conference on Artificial Intelligence},
-  year = {2016},
-  month = {29~Aug -- 2~Sep},
-  pages = {},
-  address = {Hague, Holland}
 }
 </small></pre></p> <br /> </div> </li> <li> <div class="cf"> <img src="/assets/img/franc-ecml15-1.jpg" class="thumb" /> <img src="/assets/img/franc-ecml15-2.jpg" class="thumb" /> <span id="franc:ecml15">Franc, V., Sofka, M., Bartos, K., 2015. Learning detector of malicious network traffic from weak labels. In: Proceedings of the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD). Porto, Portugal, pp. 85–99.</span> </div> <div id="franc:ecml15-materials"> <button class="button0" onclick="$('#franc-ecml15-abstract').toggle();">abstract</button> <a href="/pdfs/franc-ecml15.pdf"><input class="button4" type="button" value="pdf" /></a> <button class="button1" onclick="$('#franc-ecml15-bibtex').toggle();">bibtex</button> </div> <div class="dispinline"> <p class="likepre" id="franc-ecml15-abstract" style="display: none;">We address the problem of learning a detector of malicious behavior in network traffic. The malicious behavior is detected based on the analysis of network proxy logs that capture malware communication between client and server computers. The conceptual problem in using the standard supervised learning methods is the lack of sufficiently representative training set containing examples of malicious and legitimate communication. Annotation of individual proxy logs is an expensive process involving security experts and does not scale with constantly evolving malware. However, weak supervision can be achieved on the level of properly defined bags of proxy logs by leveraging internet domain black lists, security reports, and sandboxing analysis. We demonstrate that an accurate detector can be obtained from the collected security intelligence data by using a Multiple Instance Learning algorithm tailored to the Neyman-Pearson problem. We provide a thorough experimental evaluation on a large corpus of network communications collected from various company network environments.</p> <p><pre id="franc-ecml15-bibtex" style="display: none;"><small>@inproceedings{franc:ecml15,
   author = {Franc, Vojtech and Sofka, Michal and Bartos, Karel},
@@ -424,7 +444,107 @@
   address = {Marrakesh, Marocco},
   keywords = {registration, feature based}
 }
-</small></pre></p> <br /> </div> </li></ol> </div> <div id="patents" class="tab-pane fade"> <ul class="top-margin"> <li> <a href="#gpatents">Granted</a> </li> <li> <a href="#ppatents">Pending</a> </li> </ul> <h2 id="gpatents">Granted</h2> <br /> <a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&amp;Sect2=HITOFF&amp;u=%2Fnetahtml%2FPTO%2Fsearch-adv.htm&amp;r=0&amp;p=1&amp;f=S&amp;l=50&amp;Query=in%2FMichal+and+%0D%0Ain%2FSofka&amp;d=PTXT">USPTO Granted</a> <ol class="bibliography"><li><span id="wu:patent17">Wu, D., Birkbeck, N., Sofka, M., Liu, M., Soza, G., &amp; Zhou, S. K. (2017). Method and system for automatic pelvis unfolding from 3D computed tomography images. US9542741.</span> <br /> <div id="wu:patent17-materials"> <button class="button1" onclick="$('#wu-patent17-bibtex').toggle();">bibtex</button> <a href="/pdfs/wu-patent17.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US9542741"><input class="button2" type="button" value="Google" /></a> <a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&amp;Sect2=HITOFF&amp;d=PALL&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&amp;r=1&amp;f=G&amp;l=50&amp;s1=9542741.PN."><input class="button3" type="button" value="USPTO" /></a><pre id="wu-patent17-bibtex" style="display: none;"><small>@misc{wu:patent17,
+</small></pre></p> <br /> </div> </li></ol> </div> <div id="patents" class="tab-pane fade"> <ul class="top-margin"> <li> <a href="#gpatents">Granted</a> </li> <li> <a href="#ppatents">Pending</a> </li> </ul> <h2 id="gpatents">Granted</h2> <br /> <a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&amp;Sect2=HITOFF&amp;u=%2Fnetahtml%2FPTO%2Fsearch-adv.htm&amp;r=0&amp;p=1&amp;f=S&amp;l=50&amp;Query=in%2FMichal+and+%0D%0Ain%2FSofka&amp;d=PTXT">USPTO Granted</a> <ol class="bibliography"><li><span id="bartos:patent20">Bartos, K., &amp; Sofka, M. (2019). Robust Representation of Network Traffic for Detecting Malware Variations. US10187412.</span> <br /> <div id="bartos:patent20-materials"> <button class="button1" onclick="$('#bartos-patent20-bibtex').toggle();">bibtex</button> <a href="/pdfs/bartos-patent20.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US10187412"><input class="button2" type="button" value="Google" /></a> <a href="http://appft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&amp;Sect2=HITOFF&amp;d=PG01&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.html&amp;r=1&amp;f=G&amp;l=50&amp;s1=10187412.PGNR."><input class="button3" type="button" value="USPTO" /></a><pre id="bartos-patent20-bibtex" style="display: none;"><small>@misc{bartos:patent20,
+  title = {Robust Representation of Network Traffic for Detecting Malware Variations},
+  author = {Bartos, Karel and Sofka, Michal},
+  howpublished = {US10187412},
+  month = "Filed: 29~" # jan,
+  year = {2019}
+}
+</small></pre></div><pre id="bartos-patent20-bibtex" style="display: none;"><small>@misc{bartos:patent20,
+  title = {Robust Representation of Network Traffic for Detecting Malware Variations},
+  author = {Bartos, Karel and Sofka, Michal},
+  howpublished = {US10187412},
+  month = "Filed: 29~" # jan,
+  year = {2019}
+}
+</small></pre></li> <li><span id="machlica:patent20">Machlica, L., &amp; Sofka, M. (2019). Joint anomaly detection across IOT devices.</span> <br /> <div id="machlica:patent20-materials"> <button class="button1" onclick="$('#machlica-patent20-bibtex').toggle();">bibtex</button> <a href="/pdfs/machlica-patent20.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/"><input class="button2" type="button" value="Google" /></a> <a href="http://appft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&amp;Sect2=HITOFF&amp;d=PG01&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.html&amp;r=1&amp;f=G&amp;l=50&amp;s1=.PGNR."><input class="button3" type="button" value="USPTO" /></a><pre id="machlica-patent20-bibtex" style="display: none;"><small>@misc{machlica:patent20,
+  title = {Joint anomaly detection across IOT devices},
+  author = {Machlica, Lukas and Sofka, Michal},
+  howpublished = {},
+  month = "Filed: 29~" # nov,
+  year = {2019}
+}
+</small></pre></div><pre id="machlica-patent20-bibtex" style="display: none;"><small>@misc{machlica:patent20,
+  title = {Joint anomaly detection across IOT devices},
+  author = {Machlica, Lukas and Sofka, Michal},
+  howpublished = {},
+  month = "Filed: 29~" # nov,
+  year = {2019}
+}
+</small></pre></li> <li><span id="machlica:patent19">Machlica, L., &amp; Sofka, M. (2019). Hierarchical Feature Extraction for Malware Classification in Network Traffic. US10187401.</span> <br /> <div id="machlica:patent19-materials"> <button class="button1" onclick="$('#machlica-patent19-bibtex').toggle();">bibtex</button> <a href="/pdfs/machlica-patent19.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US10187401"><input class="button2" type="button" value="Google" /></a> <a href="http://appft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&amp;Sect2=HITOFF&amp;d=PG01&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.html&amp;r=1&amp;f=G&amp;l=50&amp;s1=10187401.PGNR."><input class="button3" type="button" value="USPTO" /></a><pre id="machlica-patent19-bibtex" style="display: none;"><small>@misc{machlica:patent19,
+  title = {Hierarchical Feature Extraction for Malware Classification in Network Traffic},
+  author = {Machlica, Lukas and Sofka, Michal},
+  howpublished = {US10187401},
+  note = {},
+  month = "Filed: 22~" # jan,
+  year = {2019}
+}
+</small></pre></div><pre id="machlica-patent19-bibtex" style="display: none;"><small>@misc{machlica:patent19,
+  title = {Hierarchical Feature Extraction for Malware Classification in Network Traffic},
+  author = {Machlica, Lukas and Sofka, Michal},
+  howpublished = {US10187401},
+  note = {},
+  month = "Filed: 22~" # jan,
+  year = {2019}
+}
+</small></pre></li> <li><span id="havelka:patent19">Havelka, J., Sofka, M., &amp; Rehak, M. (2019). Detection of malicious domains using recurring patterns in domain names.</span> <br /> <div id="havelka:patent19-materials"> <button class="button1" onclick="$('#havelka-patent19-bibtex').toggle();">bibtex</button> <a href="/pdfs/havelka-patent19.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/"><input class="button2" type="button" value="Google" /></a> <a href="http://appft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&amp;Sect2=HITOFF&amp;d=PG01&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.html&amp;r=1&amp;f=G&amp;l=50&amp;s1=.PGNR."><input class="button3" type="button" value="USPTO" /></a><pre id="havelka-patent19-bibtex" style="display: none;"><small>@misc{havelka:patent19,
+  title = {Detection of malicious domains using recurring patterns in domain names},
+  author = {Havelka, Jiri and Sofka, Michal and Rehak, Martin},
+  howpublished = {},
+  month = "Filed: 8~" # jan,
+  year = {2019}
+}
+</small></pre></div><pre id="havelka-patent19-bibtex" style="display: none;"><small>@misc{havelka:patent19,
+  title = {Detection of malicious domains using recurring patterns in domain names},
+  author = {Havelka, Jiri and Sofka, Michal and Rehak, Martin},
+  howpublished = {},
+  month = "Filed: 8~" # jan,
+  year = {2019}
+}
+</small></pre></li> <li><span id="franc:patent18">Franc, V., Sofka, M., &amp; Bartos, K. (2018). Learning Detector of Malicious Network Traffic from Weak Labels. US9923912.</span> <br /> <div id="franc:patent18-materials"> <button class="button1" onclick="$('#franc-patent18-bibtex').toggle();">bibtex</button> <a href="/pdfs/franc-patent18.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US9923912"><input class="button2" type="button" value="Google" /></a> <a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&amp;Sect2=HITOFF&amp;d=PALL&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&amp;r=1&amp;f=G&amp;l=50&amp;s1=9923912.PN."><input class="button3" type="button" value="USPTO" /></a><pre id="franc-patent18-bibtex" style="display: none;"><small>@misc{franc:patent18,
+  title = {Learning Detector of Malicious Network Traffic from Weak Labels},
+  author = {Franc, Vojtech and Sofka, Michal and Bartos, Karel},
+  howpublished = {US9923912},
+  month = "Filed: 20~" # mar,
+  year = {2018}
+}
+</small></pre></div><pre id="franc-patent18-bibtex" style="display: none;"><small>@misc{franc:patent18,
+  title = {Learning Detector of Malicious Network Traffic from Weak Labels},
+  author = {Franc, Vojtech and Sofka, Michal and Bartos, Karel},
+  howpublished = {US9923912},
+  month = "Filed: 20~" # mar,
+  year = {2018}
+}
+</small></pre></li> <li><span id="bartos:patent18">Sofka, M. (2018). Automatic detection of network threats based on modeling sequential behavior in network traffic. US10154051.</span> <br /> <div id="bartos:patent18-materials"> <button class="button1" onclick="$('#bartos-patent18-bibtex').toggle();">bibtex</button> <a href="/pdfs/bartos-patent18.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US10154051"><input class="button2" type="button" value="Google" /></a> <a href="http://appft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&amp;Sect2=HITOFF&amp;d=PG01&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.html&amp;r=1&amp;f=G&amp;l=50&amp;s1=10154051.PGNR."><input class="button3" type="button" value="USPTO" /></a><pre id="bartos-patent18-bibtex" style="display: none;"><small>@misc{bartos:patent18,
+  title = {Automatic detection of network threats based on modeling sequential behavior in network traffic},
+  author = {Sofka, Michal},
+  howpublished = {US10154051},
+  month = "Filed: 11~" # dec,
+  year = {2018}
+}
+</small></pre></div><pre id="bartos-patent18-bibtex" style="display: none;"><small>@misc{bartos:patent18,
+  title = {Automatic detection of network threats based on modeling sequential behavior in network traffic},
+  author = {Sofka, Michal},
+  howpublished = {US10154051},
+  month = "Filed: 11~" # dec,
+  year = {2018}
+}
+</small></pre></li> <li><span id="bartos:patent19">Karel Bartos, V. F., Michal Sofka, &amp; Havelka, J. (2018). Method and apparatus for aggregating indicators of compromise for use in network security. US9985982.</span> <br /> <div id="bartos:patent19-materials"> <button class="button1" onclick="$('#bartos-patent19-bibtex').toggle();">bibtex</button> <a href="/pdfs/bartos-patent19.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US9985982"><input class="button2" type="button" value="Google" /></a> <a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&amp;Sect2=HITOFF&amp;d=PALL&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&amp;r=1&amp;f=G&amp;l=50&amp;s1=9985982.PN."><input class="button3" type="button" value="USPTO" /></a><pre id="bartos-patent19-bibtex" style="display: none;"><small>@misc{bartos:patent19,
+  title = {Method and apparatus for aggregating indicators of compromise for use in network security},
+  author = {Karel Bartos, Michal Sofka, Vojtech Franc and Havelka, Jiri},
+  howpublished = {US9985982},
+  month = "Filed: 29~" # may,
+  year = {2018}
+}
+</small></pre></div><pre id="bartos-patent19-bibtex" style="display: none;"><small>@misc{bartos:patent19,
+  title = {Method and apparatus for aggregating indicators of compromise for use in network security},
+  author = {Karel Bartos, Michal Sofka, Vojtech Franc and Havelka, Jiri},
+  howpublished = {US9985982},
+  month = "Filed: 29~" # may,
+  year = {2018}
+}
+</small></pre></li> <li><span id="wu:patent17">Wu, D., Birkbeck, N., Sofka, M., Liu, M., Soza, G., &amp; Zhou, S. K. (2017). Method and system for automatic pelvis unfolding from 3D computed tomography images. US9542741.</span> <br /> <div id="wu:patent17-materials"> <button class="button1" onclick="$('#wu-patent17-bibtex').toggle();">bibtex</button> <a href="/pdfs/wu-patent17.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US9542741"><input class="button2" type="button" value="Google" /></a> <a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&amp;Sect2=HITOFF&amp;d=PALL&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&amp;r=1&amp;f=G&amp;l=50&amp;s1=9542741.PN."><input class="button3" type="button" value="USPTO" /></a><pre id="wu-patent17-bibtex" style="display: none;"><small>@misc{wu:patent17,
   title = {Method and system for automatic pelvis unfolding from {3D} computed tomography images},
   author = {Wu, Dijia and Birkbeck, Neil and Sofka, Michal and Liu, Meizhu and Soza, Grzegorz and Zhou, S.~Kevin},
   howpublished = {US9542741},
@@ -440,20 +560,20 @@
   month = "10~" # jan,
   year = {2017}
 }
-</small></pre></li> <li><span id="wu:patent16">Wu, D., Birkbeck, N., Sofka, M., Liu, M., &amp; Zhou, S. K. (2016). Multi-Bone Segmentation for 3D Computed Tomography. US9495752.</span> <br /> <div id="wu:patent16-materials"> <button class="button1" onclick="$('#wu-patent16-bibtex').toggle();">bibtex</button> <a href="/pdfs/wu-patent16.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US9495752"><input class="button2" type="button" value="Google" /></a> <a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&amp;Sect2=HITOFF&amp;d=PALL&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&amp;r=1&amp;f=G&amp;l=50&amp;s1=9495752.PN."><input class="button3" type="button" value="USPTO" /></a><pre id="wu-patent16-bibtex" style="display: none;"><small>@misc{wu:patent16,
-  title = {Multi-Bone Segmentation for {3D} Computed Tomography},
-  author = {Wu, Dijia and Birkbeck, Neil and Sofka, Michal and Liu, Meizhu and Zhou, S.~Kevin},
-  howpublished = {US9495752},
+</small></pre></li> <li><span id="bartos:patent16clust">Bartos, K., Rehak, M., &amp; Sofka, M. (2016). Global Clustering of Incidents Based on Malware Similarity and Online Trustfulness. US9432393.</span> <br /> <div id="bartos:patent16clust-materials"> <button class="button1" onclick="$('#bartos-patent16clust-bibtex').toggle();">bibtex</button> <a href="/pdfs/bartos-patent16clust.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US9432393"><input class="button2" type="button" value="Google" /></a> <a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&amp;Sect2=HITOFF&amp;d=PALL&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&amp;r=1&amp;f=G&amp;l=50&amp;s1=9432393.PN."><input class="button3" type="button" value="USPTO" /></a><pre id="bartos-patent16clust-bibtex" style="display: none;"><small>@misc{bartos:patent16clust,
+  title = {Global Clustering of Incidents Based on Malware Similarity and Online Trustfulness},
+  author = {Bartos, Karel and Rehak, Martin and Sofka, Michal},
+  howpublished = {US9432393},
   note = {},
-  month = "15~" # nov,
+  month = "30~" # aug,
   year = {2016}
 }
-</small></pre></div><pre id="wu-patent16-bibtex" style="display: none;"><small>@misc{wu:patent16,
-  title = {Multi-Bone Segmentation for {3D} Computed Tomography},
-  author = {Wu, Dijia and Birkbeck, Neil and Sofka, Michal and Liu, Meizhu and Zhou, S.~Kevin},
-  howpublished = {US9495752},
+</small></pre></div><pre id="bartos-patent16clust-bibtex" style="display: none;"><small>@misc{bartos:patent16clust,
+  title = {Global Clustering of Incidents Based on Malware Similarity and Online Trustfulness},
+  author = {Bartos, Karel and Rehak, Martin and Sofka, Michal},
+  howpublished = {US9432393},
   note = {},
-  month = "15~" # nov,
+  month = "30~" # aug,
   year = {2016}
 }
 </small></pre></li> <li><span id="bartos:patent16hier">Bartos, K., &amp; Sofka, M. (2016). Identifying Threats Based on Hierarchical Classification. US9462008.</span> <br /> <div id="bartos:patent16hier-materials"> <button class="button1" onclick="$('#bartos-patent16hier-bibtex').toggle();">bibtex</button> <a href="/pdfs/bartos-patent16hier.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US9462008"><input class="button2" type="button" value="Google" /></a> <a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&amp;Sect2=HITOFF&amp;d=PALL&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&amp;r=1&amp;f=G&amp;l=50&amp;s1=9462008.PN."><input class="button3" type="button" value="USPTO" /></a><pre id="bartos-patent16hier-bibtex" style="display: none;"><small>@misc{bartos:patent16hier,
@@ -472,20 +592,20 @@
   month = "4~" # oct,
   year = {2016}
 }
-</small></pre></li> <li><span id="bartos:patent16clust">Bartos, K., Rehak, M., &amp; Sofka, M. (2016). Global Clustering of Incidents Based on Malware Similarity and Online Trustfulness. US9432393.</span> <br /> <div id="bartos:patent16clust-materials"> <button class="button1" onclick="$('#bartos-patent16clust-bibtex').toggle();">bibtex</button> <a href="/pdfs/bartos-patent16clust.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US9432393"><input class="button2" type="button" value="Google" /></a> <a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&amp;Sect2=HITOFF&amp;d=PALL&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&amp;r=1&amp;f=G&amp;l=50&amp;s1=9432393.PN."><input class="button3" type="button" value="USPTO" /></a><pre id="bartos-patent16clust-bibtex" style="display: none;"><small>@misc{bartos:patent16clust,
-  title = {Global Clustering of Incidents Based on Malware Similarity and Online Trustfulness},
-  author = {Bartos, Karel and Rehak, Martin and Sofka, Michal},
-  howpublished = {US9432393},
+</small></pre></li> <li><span id="wu:patent16">Wu, D., Birkbeck, N., Sofka, M., Liu, M., &amp; Zhou, S. K. (2016). Multi-Bone Segmentation for 3D Computed Tomography. US9495752.</span> <br /> <div id="wu:patent16-materials"> <button class="button1" onclick="$('#wu-patent16-bibtex').toggle();">bibtex</button> <a href="/pdfs/wu-patent16.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US9495752"><input class="button2" type="button" value="Google" /></a> <a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&amp;Sect2=HITOFF&amp;d=PALL&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&amp;r=1&amp;f=G&amp;l=50&amp;s1=9495752.PN."><input class="button3" type="button" value="USPTO" /></a><pre id="wu-patent16-bibtex" style="display: none;"><small>@misc{wu:patent16,
+  title = {Multi-Bone Segmentation for {3D} Computed Tomography},
+  author = {Wu, Dijia and Birkbeck, Neil and Sofka, Michal and Liu, Meizhu and Zhou, S.~Kevin},
+  howpublished = {US9495752},
   note = {},
-  month = "30~" # aug,
+  month = "15~" # nov,
   year = {2016}
 }
-</small></pre></div><pre id="bartos-patent16clust-bibtex" style="display: none;"><small>@misc{bartos:patent16clust,
-  title = {Global Clustering of Incidents Based on Malware Similarity and Online Trustfulness},
-  author = {Bartos, Karel and Rehak, Martin and Sofka, Michal},
-  howpublished = {US9432393},
+</small></pre></div><pre id="wu-patent16-bibtex" style="display: none;"><small>@misc{wu:patent16,
+  title = {Multi-Bone Segmentation for {3D} Computed Tomography},
+  author = {Wu, Dijia and Birkbeck, Neil and Sofka, Michal and Liu, Meizhu and Zhou, S.~Kevin},
+  howpublished = {US9495752},
   note = {},
-  month = "30~" # aug,
+  month = "15~" # nov,
   year = {2016}
 }
 </small></pre></li> <li><span id="el-zehiry:patent15">El-Zehiry, N. Y., Grady, L., Sofka, M., Tietjen, C., &amp; Zhou, S. K. (2015). Semi-Automated Preoperative Resection Planning. US9129391.</span> <br /> <div id="el-zehiry:patent15-materials"> <button class="button1" onclick="$('#el-zehiry-patent15-bibtex').toggle();">bibtex</button> <a href="/pdfs/el-zehiry-patent15.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US9129391"><input class="button2" type="button" value="Google" /></a> <a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&amp;Sect2=HITOFF&amp;d=PALL&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&amp;r=1&amp;f=G&amp;l=50&amp;s1=9129391.PN."><input class="button3" type="button" value="USPTO" /></a><pre id="el-zehiry-patent15-bibtex" style="display: none;"><small>@misc{el-zehiry:patent15,
@@ -538,6 +658,22 @@
   month = "26~" # may,
   year = {2015}
 }
+</small></pre></li> <li><span id="birkbeck:patent14ev">Birkbeck, N., Sofka, M., &amp; Zhou, S. K. (2014). Method and System for Evaluation Using Probabilistic Boosting Trees. US8860715.</span> <br /> <div id="birkbeck:patent14ev-materials"> <button class="button1" onclick="$('#birkbeck-patent14ev-bibtex').toggle();">bibtex</button> <a href="/pdfs/birkbeck-patent14ev.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US8860715"><input class="button2" type="button" value="Google" /></a> <a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&amp;Sect2=HITOFF&amp;d=PALL&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&amp;r=1&amp;f=G&amp;l=50&amp;s1=8860715.PN."><input class="button3" type="button" value="USPTO" /></a><pre id="birkbeck-patent14ev-bibtex" style="display: none;"><small>@misc{birkbeck:patent14ev,
+  title = {Method and System for Evaluation Using Probabilistic Boosting Trees},
+  author = {Birkbeck, Neil and Sofka, Michal and Zhou, S.~Kevin},
+  howpublished = {US8860715},
+  note = {},
+  month = "14~" # oct,
+  year = {2014}
+}
+</small></pre></div><pre id="birkbeck-patent14ev-bibtex" style="display: none;"><small>@misc{birkbeck:patent14ev,
+  title = {Method and System for Evaluation Using Probabilistic Boosting Trees},
+  author = {Birkbeck, Neil and Sofka, Michal and Zhou, S.~Kevin},
+  howpublished = {US8860715},
+  note = {},
+  month = "14~" # oct,
+  year = {2014}
+}
 </small></pre></li> <li><span id="sofka:patent14">Sofka, M., Liu, M., Wu, D., &amp; Zhou, S. K. (2014). Method and System for Bone Segmentation and Landmark Detection for Joint Replacement Surgery. US9646229.</span> <br /> <div id="sofka:patent14-materials"> <button class="button1" onclick="$('#sofka-patent14-bibtex').toggle();">bibtex</button> <a href="/pdfs/sofka-patent14.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US9646229"><input class="button2" type="button" value="Google" /></a> <a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&amp;Sect2=HITOFF&amp;d=PALL&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&amp;r=1&amp;f=G&amp;l=50&amp;s1=9646229.PN."><input class="button3" type="button" value="USPTO" /></a><pre id="sofka-patent14-bibtex" style="display: none;"><small>@misc{sofka:patent14,
   title = {Method and System for Bone Segmentation and Landmark Detection for Joint Replacement Surgery},
   author = {Sofka, Michal and Liu, Meizhu and Wu, Dijia and Zhou, S.~Kevin},
@@ -568,22 +704,6 @@
   howpublished = {US8811697},
   note = {},
   month = "19~" # aug,
-  year = {2014}
-}
-</small></pre></li> <li><span id="birkbeck:patent14ev">Birkbeck, N., Sofka, M., &amp; Zhou, S. K. (2014). Method and System for Evaluation Using Probabilistic Boosting Trees. US8860715.</span> <br /> <div id="birkbeck:patent14ev-materials"> <button class="button1" onclick="$('#birkbeck-patent14ev-bibtex').toggle();">bibtex</button> <a href="/pdfs/birkbeck-patent14ev.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US8860715"><input class="button2" type="button" value="Google" /></a> <a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&amp;Sect2=HITOFF&amp;d=PALL&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&amp;r=1&amp;f=G&amp;l=50&amp;s1=8860715.PN."><input class="button3" type="button" value="USPTO" /></a><pre id="birkbeck-patent14ev-bibtex" style="display: none;"><small>@misc{birkbeck:patent14ev,
-  title = {Method and System for Evaluation Using Probabilistic Boosting Trees},
-  author = {Birkbeck, Neil and Sofka, Michal and Zhou, S.~Kevin},
-  howpublished = {US8860715},
-  note = {},
-  month = "14~" # oct,
-  year = {2014}
-}
-</small></pre></div><pre id="birkbeck-patent14ev-bibtex" style="display: none;"><small>@misc{birkbeck:patent14ev,
-  title = {Method and System for Evaluation Using Probabilistic Boosting Trees},
-  author = {Birkbeck, Neil and Sofka, Michal and Zhou, S.~Kevin},
-  howpublished = {US8860715},
-  note = {},
-  month = "14~" # oct,
   year = {2014}
 }
 </small></pre></li> <li><span id="sofka:patent13">Sofka, M., Zhang, J., Zhou, S. K., &amp; Comaniciu, D. (2013). Method and System for Multiple Object Detection by Sequential Monte Carlo and Hierarchical Detection Network. US8605969.</span> <br /> <div id="sofka:patent13-materials"> <button class="button1" onclick="$('#sofka-patent13-bibtex').toggle();">bibtex</button> <a href="/pdfs/sofka-patent13.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US8605969"><input class="button2" type="button" value="Google" /></a> <a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&amp;Sect2=HITOFF&amp;d=PALL&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&amp;r=1&amp;f=G&amp;l=50&amp;s1=8605969.PN."><input class="button3" type="button" value="USPTO" /></a><pre id="sofka-patent13-bibtex" style="display: none;"><small>@misc{sofka:patent13,
@@ -640,21 +760,7 @@
   month = "4~" # may,
   year = {2010}
 }
-</small></pre></li></ol> <h2 id="ppatents">Pending</h2> <br /> <a href="http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&amp;Sect2=HITOFF&amp;u=%2Fnetahtml%2FPTO%2Fsearch-adv.html&amp;r=1&amp;p=1&amp;f=S&amp;l=50&amp;Query=in%2FSofka+and+in%2FMichal&amp;d=PG01">USPTO Applications</a> <ol class="bibliography"><li><span id="machlica:patent18">Machlica, L., &amp; Sofka, M. (2018). Joint Anomaly Detection Across IoT Devices. US20180041528.</span> <br /> <div id="machlica:patent18-materials"> <button class="button1" onclick="$('#machlica-patent18-bibtex').toggle();">bibtex</button> <a href="/pdfs/machlica-patent18.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US20180041528"><input class="button2" type="button" value="Google" /></a> <a href="http://appft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&amp;Sect2=HITOFF&amp;d=PG01&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.html&amp;r=1&amp;f=G&amp;l=50&amp;s1=20180041528.PGNR."><input class="button3" type="button" value="USPTO" /></a><pre id="machlica-patent18-bibtex" style="display: none;"><small>@misc{machlica:patent18,
-  title = {Joint Anomaly Detection Across {IoT} Devices},
-  author = {Machlica, Lukas and Sofka, Michal},
-  howpublished = {US20180041528},
-  month = "Filed: 8~" # feb,
-  year = {2018}
-}
-</small></pre></div><pre id="machlica-patent18-bibtex" style="display: none;"><small>@misc{machlica:patent18,
-  title = {Joint Anomaly Detection Across {IoT} Devices},
-  author = {Machlica, Lukas and Sofka, Michal},
-  howpublished = {US20180041528},
-  month = "Filed: 8~" # feb,
-  year = {2018}
-}
-</small></pre></li> <li><span id="jusko:patent18">Jusko, J., &amp; Sofka, M. (2018). Network Security Classification. US20180034838.</span> <br /> <div id="jusko:patent18-materials"> <button class="button1" onclick="$('#jusko-patent18-bibtex').toggle();">bibtex</button> <a href="/pdfs/jusko-patent18.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US20180034838"><input class="button2" type="button" value="Google" /></a> <a href="http://appft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&amp;Sect2=HITOFF&amp;d=PG01&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.html&amp;r=1&amp;f=G&amp;l=50&amp;s1=20180034838.PGNR."><input class="button3" type="button" value="USPTO" /></a><pre id="jusko-patent18-bibtex" style="display: none;"><small>@misc{jusko:patent18,
+</small></pre></li></ol> <h2 id="ppatents">Pending</h2> <br /> <a href="http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&amp;Sect2=HITOFF&amp;u=%2Fnetahtml%2FPTO%2Fsearch-adv.html&amp;r=1&amp;p=1&amp;f=S&amp;l=50&amp;Query=in%2FSofka+and+in%2FMichal&amp;d=PG01">USPTO Applications</a> <ol class="bibliography"><li><span id="jusko:patent18">Jusko, J., &amp; Sofka, M. (2018). Network Security Classification. US20180034838.</span> <br /> <div id="jusko:patent18-materials"> <button class="button1" onclick="$('#jusko-patent18-bibtex').toggle();">bibtex</button> <a href="/pdfs/jusko-patent18.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US20180034838"><input class="button2" type="button" value="Google" /></a> <a href="http://appft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&amp;Sect2=HITOFF&amp;d=PG01&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.html&amp;r=1&amp;f=G&amp;l=50&amp;s1=20180034838.PGNR."><input class="button3" type="button" value="USPTO" /></a><pre id="jusko-patent18-bibtex" style="display: none;"><small>@misc{jusko:patent18,
   title = {Network Security Classification},
   author = {Jusko, Jan and Sofka, Michal},
   howpublished = {US20180034838},
@@ -668,47 +774,19 @@
   month = "Filed: 1~" # feb,
   year = {2018}
 }
-</small></pre></li> <li><span id="havelka:patent17">Havelka, J., Sofka, M., &amp; Rehak, M. (2017). Detection of malicious domains using recurring patterns in domain names. US20170295187.</span> <br /> <div id="havelka:patent17-materials"> <button class="button1" onclick="$('#havelka-patent17-bibtex').toggle();">bibtex</button> <a href="/pdfs/havelka-patent17.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US20170295187"><input class="button2" type="button" value="Google" /></a> <a href="http://appft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&amp;Sect2=HITOFF&amp;d=PG01&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.html&amp;r=1&amp;f=G&amp;l=50&amp;s1=20170295187.PGNR."><input class="button3" type="button" value="USPTO" /></a><pre id="havelka-patent17-bibtex" style="display: none;"><small>@misc{havelka:patent17,
-  title = {Detection of malicious domains using recurring patterns in domain names},
-  author = {Havelka, Jiri and Sofka, Michal and Rehak, Martin},
-  howpublished = {US20170295187},
-  month = "Filed: 12~" # oct,
-  year = {2017}
+</small></pre></li> <li><span id="machlica:patent18">Machlica, L., &amp; Sofka, M. (2018). Joint Anomaly Detection Across IoT Devices. US20180041528.</span> <br /> <div id="machlica:patent18-materials"> <button class="button1" onclick="$('#machlica-patent18-bibtex').toggle();">bibtex</button> <a href="/pdfs/machlica-patent18.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US20180041528"><input class="button2" type="button" value="Google" /></a> <a href="http://appft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&amp;Sect2=HITOFF&amp;d=PG01&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.html&amp;r=1&amp;f=G&amp;l=50&amp;s1=20180041528.PGNR."><input class="button3" type="button" value="USPTO" /></a><pre id="machlica-patent18-bibtex" style="display: none;"><small>@misc{machlica:patent18,
+  title = {Joint Anomaly Detection Across {IoT} Devices},
+  author = {Machlica, Lukas and Sofka, Michal},
+  howpublished = {US20180041528},
+  month = "Filed: 8~" # feb,
+  year = {2018}
 }
-</small></pre></div><pre id="havelka-patent17-bibtex" style="display: none;"><small>@misc{havelka:patent17,
-  title = {Detection of malicious domains using recurring patterns in domain names},
-  author = {Havelka, Jiri and Sofka, Michal and Rehak, Martin},
-  howpublished = {US20170295187},
-  month = "Filed: 12~" # oct,
-  year = {2017}
-}
-</small></pre></li> <li><span id="franc:patent17">Franc, V., Bartos, K., &amp; Sofka, M. (2017). Refined learning data representation for classifiers. US20170316342A1.</span> <br /> <div id="franc:patent17-materials"> <button class="button1" onclick="$('#franc-patent17-bibtex').toggle();">bibtex</button> <a href="/pdfs/franc-patent17.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US20170316342A1"><input class="button2" type="button" value="Google" /></a> <a href="http://appft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&amp;Sect2=HITOFF&amp;d=PG01&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.html&amp;r=1&amp;f=G&amp;l=50&amp;s1=20170316342A1.PGNR."><input class="button3" type="button" value="USPTO" /></a><pre id="franc-patent17-bibtex" style="display: none;"><small>@misc{franc:patent17,
-  title = {Refined learning data representation for classifiers},
-  author = {Franc, Vojtech and Bartos, Karel and Sofka, Michal},
-  howpublished = {US20170316342A1},
-  month = "Filed: 2~" # nov,
-  year = {2017}
-}
-</small></pre></div><pre id="franc-patent17-bibtex" style="display: none;"><small>@misc{franc:patent17,
-  title = {Refined learning data representation for classifiers},
-  author = {Franc, Vojtech and Bartos, Karel and Sofka, Michal},
-  howpublished = {US20170316342A1},
-  month = "Filed: 2~" # nov,
-  year = {2017}
-}
-</small></pre></li> <li><span id="franc:patent18">Franc, V., Sofka, M., &amp; Bartos, K. (2017). Learning Detector of Malicious Network Traffic from Weak Labels. US20170063893A1.</span> <br /> <div id="franc:patent18-materials"> <button class="button1" onclick="$('#franc-patent18-bibtex').toggle();">bibtex</button> <a href="/pdfs/franc-patent18.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US20170063893A1"><input class="button2" type="button" value="Google" /></a> <a href="http://appft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&amp;Sect2=HITOFF&amp;d=PG01&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.html&amp;r=1&amp;f=G&amp;l=50&amp;s1=20170063893A1.PGNR."><input class="button3" type="button" value="USPTO" /></a><pre id="franc-patent18-bibtex" style="display: none;"><small>@misc{franc:patent18,
-  title = {Learning Detector of Malicious Network Traffic from Weak Labels},
-  author = {Franc, Vojtech and Sofka, Michal and Bartos, Karel},
-  howpublished = {US20170063893A1},
-  month = "Filed: 2~" # mar,
-  year = {2017}
-}
-</small></pre></div><pre id="franc-patent18-bibtex" style="display: none;"><small>@misc{franc:patent18,
-  title = {Learning Detector of Malicious Network Traffic from Weak Labels},
-  author = {Franc, Vojtech and Sofka, Michal and Bartos, Karel},
-  howpublished = {US20170063893A1},
-  month = "Filed: 2~" # mar,
-  year = {2017}
+</small></pre></div><pre id="machlica-patent18-bibtex" style="display: none;"><small>@misc{machlica:patent18,
+  title = {Joint Anomaly Detection Across {IoT} Devices},
+  author = {Machlica, Lukas and Sofka, Michal},
+  howpublished = {US20180041528},
+  month = "Filed: 8~" # feb,
+  year = {2018}
 }
 </small></pre></li> <li><span id="rothberg:patent17cond">Rothberg, A., de Jonge, M., Jia, J., Nouri, D., Rothberg, J. M., Sofka, M., … Gafner, T. (2017). Automated Image Analysis For Diagnosing A Medical Condition. US20170360412.</span> <br /> <div id="rothberg:patent17cond-materials"> <button class="button1" onclick="$('#rothberg-patent17cond-bibtex').toggle();">bibtex</button> <a href="/pdfs/rothberg-patent17cond.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US20170360412"><input class="button2" type="button" value="Google" /></a> <a href="http://appft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&amp;Sect2=HITOFF&amp;d=PG01&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.html&amp;r=1&amp;f=G&amp;l=50&amp;s1=20170360412.PGNR."><input class="button3" type="button" value="USPTO" /></a><pre id="rothberg-patent17cond-bibtex" style="display: none;"><small>@misc{rothberg:patent17cond,
   title = {Automated Image Analysis For Diagnosing A Medical Condition},
@@ -721,20 +799,6 @@
   title = {Automated Image Analysis For Diagnosing A Medical Condition},
   author = {Rothberg, Alex and de Jonge, Matthew and Jia, Jimmy and Nouri, Daniel and Rothberg, Jonathan M. and Sofka, Michal and Elgena, David and Mark, Mark Michalski and Gafner, Tomer},
   howpublished = {US20170360412},
-  month = "Filed: 21~" # dec,
-  year = {2017}
-}
-</small></pre></li> <li><span id="rothberg:patent17aug">Gafner, T., de Jonge, M., Schneider, R., Elgena, D., Rothberg, A., Rothberg, J. M., … Thiele, K. (2017). Augmented Reality Interface For Assisting A User To Operate An Ultrasound Device. US20170360404.</span> <br /> <div id="rothberg:patent17aug-materials"> <button class="button1" onclick="$('#rothberg-patent17aug-bibtex').toggle();">bibtex</button> <a href="/pdfs/rothberg-patent17aug.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US20170360404"><input class="button2" type="button" value="Google" /></a> <a href="http://appft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&amp;Sect2=HITOFF&amp;d=PG01&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.html&amp;r=1&amp;f=G&amp;l=50&amp;s1=20170360404.PGNR."><input class="button3" type="button" value="USPTO" /></a><pre id="rothberg-patent17aug-bibtex" style="display: none;"><small>@misc{rothberg:patent17aug,
-  title = {Augmented Reality Interface For Assisting A User To Operate An Ultrasound Device},
-  author = {Gafner, Tomer and de Jonge, Matthew and Schneider, Robert and Elgena, David and Rothberg, Alex and Rothberg, Jonathan M. and Sofka, Michal and Thiele, Karl},
-  howpublished = {US20170360404},
-  month = "Filed: 21~" # dec,
-  year = {2017}
-}
-</small></pre></div><pre id="rothberg-patent17aug-bibtex" style="display: none;"><small>@misc{rothberg:patent17aug,
-  title = {Augmented Reality Interface For Assisting A User To Operate An Ultrasound Device},
-  author = {Gafner, Tomer and de Jonge, Matthew and Schneider, Robert and Elgena, David and Rothberg, Alex and Rothberg, Jonathan M. and Sofka, Michal and Thiele, Karl},
-  howpublished = {US20170360404},
   month = "Filed: 21~" # dec,
   year = {2017}
 }
@@ -752,6 +816,20 @@
   month = "Filed: 21~" # dec,
   year = {2017}
 }
+</small></pre></li> <li><span id="rothberg:patent17aug">Gafner, T., de Jonge, M., Schneider, R., Elgena, D., Rothberg, A., Rothberg, J. M., … Thiele, K. (2017). Augmented Reality Interface For Assisting A User To Operate An Ultrasound Device. US20170360404.</span> <br /> <div id="rothberg:patent17aug-materials"> <button class="button1" onclick="$('#rothberg-patent17aug-bibtex').toggle();">bibtex</button> <a href="/pdfs/rothberg-patent17aug.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US20170360404"><input class="button2" type="button" value="Google" /></a> <a href="http://appft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&amp;Sect2=HITOFF&amp;d=PG01&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.html&amp;r=1&amp;f=G&amp;l=50&amp;s1=20170360404.PGNR."><input class="button3" type="button" value="USPTO" /></a><pre id="rothberg-patent17aug-bibtex" style="display: none;"><small>@misc{rothberg:patent17aug,
+  title = {Augmented Reality Interface For Assisting A User To Operate An Ultrasound Device},
+  author = {Gafner, Tomer and de Jonge, Matthew and Schneider, Robert and Elgena, David and Rothberg, Alex and Rothberg, Jonathan M. and Sofka, Michal and Thiele, Karl},
+  howpublished = {US20170360404},
+  month = "Filed: 21~" # dec,
+  year = {2017}
+}
+</small></pre></div><pre id="rothberg-patent17aug-bibtex" style="display: none;"><small>@misc{rothberg:patent17aug,
+  title = {Augmented Reality Interface For Assisting A User To Operate An Ultrasound Device},
+  author = {Gafner, Tomer and de Jonge, Matthew and Schneider, Robert and Elgena, David and Rothberg, Alex and Rothberg, Jonathan M. and Sofka, Michal and Thiele, Karl},
+  howpublished = {US20170360404},
+  month = "Filed: 21~" # dec,
+  year = {2017}
+}
 </small></pre></li> <li><span id="rothberg:patent17acqua">Rothberg, A., de Jonge, M., Jia, J., Nouri, D., Rothberg, J. M., &amp; Sofka, M. (2017). Automated Image Acquisition For Assisting A User To Operate An Ultrasound Device. US20170360403.</span> <br /> <div id="rothberg:patent17acqua-materials"> <button class="button1" onclick="$('#rothberg-patent17acqua-bibtex').toggle();">bibtex</button> <a href="/pdfs/rothberg-patent17acqua.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US20170360403"><input class="button2" type="button" value="Google" /></a> <a href="http://appft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&amp;Sect2=HITOFF&amp;d=PG01&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.html&amp;r=1&amp;f=G&amp;l=50&amp;s1=20170360403.PGNR."><input class="button3" type="button" value="USPTO" /></a><pre id="rothberg-patent17acqua-bibtex" style="display: none;"><small>@misc{rothberg:patent17acqua,
   title = {Automated Image Acquisition For Assisting A User To Operate An Ultrasound Device},
   author = {Rothberg, Alex and de Jonge, Matthew and Jia, Jimmy and Nouri, Daniel and Rothberg, Jonathan M. and Sofka, Michal},
@@ -766,35 +844,19 @@
   month = "Filed: 21~" # dec,
   year = {2017}
 }
-</small></pre></li> <li><span id="bartos:patent15rep">Bartos, K., &amp; Sofka, M. (2015). Robust Representation of Network Traffic for Detecting Malware Variations. US20170063892.</span> <br /> <div id="bartos:patent15rep-materials"> <button class="button1" onclick="$('#bartos-patent15rep-bibtex').toggle();">bibtex</button> <a href="/pdfs/bartos-patent15rep.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US20170063892"><input class="button2" type="button" value="Google" /></a> <a href="http://appft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&amp;Sect2=HITOFF&amp;d=PG01&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.html&amp;r=1&amp;f=G&amp;l=50&amp;s1=20170063892.PGNR."><input class="button3" type="button" value="USPTO" /></a><pre id="bartos-patent15rep-bibtex" style="display: none;"><small>@misc{bartos:patent15rep,
-  title = {Robust Representation of Network Traffic for Detecting Malware Variations},
-  author = {Bartos, Karel and Sofka, Michal},
-  howpublished = {US20170063892},
-  month = "Filed: 28~" # aug,
-  year = {2015}
+</small></pre></li> <li><span id="franc:patent17">Franc, V., Bartos, K., &amp; Sofka, M. (2017). Refined learning data representation for classifiers. US20170316342A1.</span> <br /> <div id="franc:patent17-materials"> <button class="button1" onclick="$('#franc-patent17-bibtex').toggle();">bibtex</button> <a href="/pdfs/franc-patent17.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US20170316342A1"><input class="button2" type="button" value="Google" /></a> <a href="http://appft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&amp;Sect2=HITOFF&amp;d=PG01&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.html&amp;r=1&amp;f=G&amp;l=50&amp;s1=20170316342A1.PGNR."><input class="button3" type="button" value="USPTO" /></a><pre id="franc-patent17-bibtex" style="display: none;"><small>@misc{franc:patent17,
+  title = {Refined learning data representation for classifiers},
+  author = {Franc, Vojtech and Bartos, Karel and Sofka, Michal},
+  howpublished = {US20170316342A1},
+  month = "Filed: 2~" # nov,
+  year = {2017}
 }
-</small></pre></div><pre id="bartos-patent15rep-bibtex" style="display: none;"><small>@misc{bartos:patent15rep,
-  title = {Robust Representation of Network Traffic for Detecting Malware Variations},
-  author = {Bartos, Karel and Sofka, Michal},
-  howpublished = {US20170063892},
-  month = "Filed: 28~" # aug,
-  year = {2015}
-}
-</small></pre></li> <li><span id="machlica:patent15">Machlica, L., &amp; Sofka, M. (2015). Hierarchical Feature Extraction for Malware Classification in Network Traffic. US20170134404.</span> <br /> <div id="machlica:patent15-materials"> <button class="button1" onclick="$('#machlica-patent15-bibtex').toggle();">bibtex</button> <a href="/pdfs/machlica-patent15.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US20170134404"><input class="button2" type="button" value="Google" /></a> <a href="http://appft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&amp;Sect2=HITOFF&amp;d=PG01&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.html&amp;r=1&amp;f=G&amp;l=50&amp;s1=20170134404.PGNR."><input class="button3" type="button" value="USPTO" /></a><pre id="machlica-patent15-bibtex" style="display: none;"><small>@misc{machlica:patent15,
-  title = {Hierarchical Feature Extraction for Malware Classification in Network Traffic},
-  author = {Machlica, Lukas and Sofka, Michal},
-  howpublished = {US20170134404},
-  note = {},
-  month = "Filed: 6~" # nov,
-  year = {2015}
-}
-</small></pre></div><pre id="machlica-patent15-bibtex" style="display: none;"><small>@misc{machlica:patent15,
-  title = {Hierarchical Feature Extraction for Malware Classification in Network Traffic},
-  author = {Machlica, Lukas and Sofka, Michal},
-  howpublished = {US20170134404},
-  note = {},
-  month = "Filed: 6~" # nov,
-  year = {2015}
+</small></pre></div><pre id="franc-patent17-bibtex" style="display: none;"><small>@misc{franc:patent17,
+  title = {Refined learning data representation for classifiers},
+  author = {Franc, Vojtech and Bartos, Karel and Sofka, Michal},
+  howpublished = {US20170316342A1},
+  month = "Filed: 2~" # nov,
+  year = {2017}
 }
 </small></pre></li> <li><span id="zhou:patent14">Zhou, S. K., Birkbeck, N., Guardia, G. D., Zhang, J., Sofka, M., B. Thompson, J., &amp; Paladini, G. (2014). Cloud-Based Processing of Medical Imaging Data. US20160092632.</span> <br /> <div id="zhou:patent14-materials"> <button class="button1" onclick="$('#zhou-patent14-bibtex').toggle();">bibtex</button> <a href="/pdfs/zhou-patent14.pdf"><input class="button4" type="button" value="pdf" /></a> <a href="http://www.google.com/patents/US20160092632"><input class="button2" type="button" value="Google" /></a> <a href="http://appft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&amp;Sect2=HITOFF&amp;d=PG01&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.html&amp;r=1&amp;f=G&amp;l=50&amp;s1=20160092632.PGNR."><input class="button3" type="button" value="USPTO" /></a><pre id="zhou-patent14-bibtex" style="display: none;"><small>@misc{zhou:patent14,
   title = {Cloud-Based Processing of Medical Imaging Data},
