@@ -38,7 +38,7 @@ widget-3:
         <h2 class="no-marg myFont"><strong> About </strong></h2>
         <h4 class="myFont no-marg"><strong><kbd> Michal Sofka </kbd></strong></h4>
         <br>
-        <p>AI architect and software hacker. Passion for machine learning, computer vision, medical image analysis, and computer security.</p>
+        <p>AI architect and software builder. Passion for machine learning, computer vision, medical image analysis, and computer security.</p>
         <p>Since 2016 building new products at technology accelerator 4Catalyzer, involved with Butterfly Network and Hyperfine. Currently learning the machine learning team at Hyperfine.</p>
         <p>Between 2013 and 2016 technical leader of network security projects at Cisco Systems. Built products in large scale traffic analysis for threat defense used by millions of customers.</p>
         <p>Between 2008 and 2013 scientist and leader at Siemens Corporate Research. Contributed to tens of products, received best product award from J&amp;J.</p>
