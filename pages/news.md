@@ -10,6 +10,7 @@ permalink: "/projects/news/"
 news:
 
 -  "8/27/2019 Hyperfine will showcase the technology at the [ACEP conference](https://www.acep.org/acep19/generalinfo/about-acep-sa/) in Denver on Oct 27-30. Come and see us."
+-  "6/16/2019 Presented invited talk on ``Bringing MRI to the Patient's Bedside: Deep Learning for Image Acquisition and Image Interpretation'' at Medical Computer Vision Workshop ([CVPR MVC 2019](https://sites.google.com/view/cvprmcv19/home))."
 -  "6/4/2019 Our paper on ``Nonuniform Variational Network: Deep Learning for Accelerated Nonuniform MR Image Reconstruction'' was accepted and will be presented at the [MICCAI 2019](https://www.miccai2019.org) conference in Shenzhen."
 -  "3/11/2019 The [video](https://www.youtube.com/watch?v=2djGATBc_eE) of my talk on our work on ``Deep MR image reconstruction across k­-space and image domain'' has been posted on [i2i Workshop](http://cai2r.net/i2i) 2018 web site."
 -  "3/4/2019 Hyperfine launches a new website. The company envisions MR systems that are portable at the Point of Care. Imagine MR directly at the bedside - no need for a shielded room."
