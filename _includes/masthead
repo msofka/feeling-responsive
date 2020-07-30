@@ -9,7 +9,6 @@
 		</div><!-- /.small-12.columns -->
 	</div><!-- /.row -->
 </div><!-- /#masthead -->
-
 {% if page.breadcrumb == true %}
 {% include breadcrumbs %}
 {% endif %}
@@ -18,18 +17,24 @@
 
 {% elsif page.header.title %}
 
-<div id="masthead-with-text" style="{% if page.header.background-color %}background: {{ page.header.background-color }};{% endif %} {% if page.header.image_fullwidth %}{% elsif page.header.pattern %}background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('{{ site.urlimg }}/{{ page.header.pattern }}'){% endif %}">
+<div id="masthead-with-text" style="{% if page.header.background-color %}background: {{ page.header.background-color }};{% endif %} {% if page.header.image_fullwidth %}background: url({{ site.urlimg }}/{{ page.header.image_fullwidth }});background-position: center; {% elsif page.header.pattern %}background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('{{ site.urlimg }}/{{ page.header.pattern }}'){% endif %}">
 	<div class="row">
 		<div class="small-12 columns">
 			<div class="masthead-title">{{ page.header.title }}</div>
-		</div><!-- /.small-12.columns -->
+                </div><!-- /.small-12.columns -->
+                <div class="small-6 columns">
+                </div>
+                <div class="small-6 columns">
+			{% if page.header.subtitle %}
+			<h5 class="masthead-subtitle">{{ page.header.subtitle }}</div>
+			{% endif %}
+		</div>
 	</div><!-- /.row -->
 </div><!-- /#masthead -->
 
 {% if page.breadcrumb == true %}
 {% include breadcrumbs %}
 {% endif %}
-
 {% if page.header.caption_url && page.header.caption %}
 <div class="masthead-caption">
 	<a href="{{ page.header.caption_url }}">{{ page.header.caption }}</a>
@@ -43,11 +48,13 @@
 
 
 {% elsif page.header.image_fullwidth %}
-
 <div id="masthead" style="background: url({{ site.urlimg }}/{{ page.header.image_fullwidth }});background-position: center;">
 	<div class="row">
 		<div class="small-12 columns">
 			{% unless page.header.noname %}
+<!--
+There must be a bug somewhere, but site.title is empty here. site.slogan is fine
+-->
 			<a id="logo" href="/" title="{{ site.title }} – {{ site.slogan }}">
 				<img src="/assets/img/{{ site.logo }}" alt="{{ site.title }} – {{ site.slogan }}">
 			</a>
