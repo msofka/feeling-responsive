@@ -9,6 +9,7 @@ header:
 permalink: "/projects/news/"
 news:
 
+-  "12/6/2019 Hyperfine featured the bedside scanners at RSNA (presentations and scanning on the exhibition floor and [nVidia showcase](https://www.businesswire.com/news/home/20191201005195/en/Hyperfine-Research-Teams-NVIDIA-Next-Generation-Point-of-Care-MRI)). Anonounced [collaboration with UPenn Medicine](https://www.businesswire.com/news/home/20191202005138/en/Hyperfine-Penn-Medicine-Announce-Partnership-Image-Hydrocephalus)."
 -  "8/27/2019 Hyperfine will showcase the technology at the [ACEP conference](https://www.acep.org/acep19/generalinfo/about-acep-sa/) in Denver on Oct 27-30. Come and see us."
 -  "6/16/2019 Presented invited talk on ``Bringing MRI to the Patient's Bedside: Deep Learning for Image Acquisition and Image Interpretation'' at Medical Computer Vision Workshop ([CVPR MVC 2019](https://sites.google.com/view/cvprmcv19/home))."
 -  "6/4/2019 Our paper on ``Nonuniform Variational Network: Deep Learning for Accelerated Nonuniform MR Image Reconstruction'' was accepted and will be presented at the [MICCAI 2019](https://www.miccai2019.org) conference in Shenzhen."
