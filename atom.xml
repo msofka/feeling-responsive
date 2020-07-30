@@ -2,24 +2,24 @@
 <?xml-stylesheet type="text/xsl" href="//assets/xslt/atom.xslt" ?>
 <?xml-stylesheet type="text/css" href="//assets/css/atom.css" ?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<id>//</id>
+	<id>http://localhost:4000//</id>
 	<title></title>
-	<updated>2019-10-15T19:24:02-04:00</updated>
+	<updated>2020-07-30T19:40:40-04:00</updated>
 
 	<subtitle>Homepage of Michal Sofka, scientist and technical leader with passion for innovation to transform ideas into product solutions.</subtitle>
 
 	
 
-	<link href="//atom.xml" rel="self" type="application/rss+xml" />
-	<link href="//" rel="alternate" type="text/html" />
+	<link href="http://localhost:4000//atom.xml" rel="self" type="application/rss+xml" />
+	<link href="http://localhost:4000//" rel="alternate" type="text/html" />
 
-	<generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator>
+	<generator uri="http://jekyllrb.com" version="4.1.0">Jekyll</generator>
 
 	
 		<entry>
-			<id>//2015/09/03/Learning-Detectors-of-Malicious-Network-Traffic</id>
+			<id>http://localhost:4000//2015/09/03/Learning-Detectors-of-Malicious-Network-Traffic</id>
 			<title>Learning Detectors of Malicious Network Traffic</title>
-			<link href="//2015/09/03/Learning-Detectors-of-Malicious-Network-Traffic" rel="alternate" type="text/html" title="Learning Detectors of Malicious Network Traffic" />
+			<link href="http://localhost:4000//2015/09/03/Learning-Detectors-of-Malicious-Network-Traffic" rel="alternate" type="text/html" title="Learning Detectors of Malicious Network Traffic" />
 			<updated>2015-09-03T00:00:00-04:00</updated>
 
 			
@@ -33,7 +33,7 @@
 				</author>
 			
 			<summary>Malware is constantly evolving and changing. One way to identify malware is by analyzing the communication that the malware performs on the network. Using machine learning, these traffic patterns can be utilized to identify malicious software. Machine learning faces two obstacles: obtaining a sufficient training set of malicious and normal traffic and retraining the system as malware evolves. This post will analyze an approach that overcomes these obstacles by developing a detector that utilizes domains (easily obtained from domain black lists, security reports, and sandboxing analysis) to train the system which can then be used to analyze more detailed proxy logs using statistical and machine learning techniques.</summary>
-			<content type="html" xml:base="//2015/09/03/Learning-Detectors-of-Malicious-Network-Traffic">&lt;!--more--&gt;
+			<content type="html" xml:base="http://localhost:4000//2015/09/03/Learning-Detectors-of-Malicious-Network-Traffic">&lt;!--more--&gt;
 
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;medium-4 medium-push-8 columns&quot;&gt;

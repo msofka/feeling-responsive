@@ -10,11 +10,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Atom Feed (Styled)</title>
 
-    <link rel="stylesheet" type="text/css" href="//assets/css/styles_feeling_responsive.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000//assets/css/styles_feeling_responsive.css">
 
   
 
-	<script src="//assets/js/modernizr.min.js"></script>
+	<script src="http://localhost:4000//assets/js/modernizr.min.js"></script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
 	<script>
@@ -31,20 +31,20 @@
 
 
 	<!-- Search Engine Optimization -->
-	<meta name="description" content="Homepage of Michal Sofka, scientist and technical leader with passion for innovation to transform ideas into product solutions.">
+	<meta name="description" content="content">
 	
 	
 	
 	
 	
 	
-	<link rel="canonical" href="//assets/xslt/atom.xslt">
+	<link rel="canonical" href="http://localhost:4000//assets/xslt/atom.xslt">
 
 
 	<!-- Facebook Open Graph -->
 	<meta property="og:title" content="Atom Feed (Styled)">
-	<meta property="og:description" content="Homepage of Michal Sofka, scientist and technical leader with passion for innovation to transform ideas into product solutions.">
-	<meta property="og:url" content="//assets/xslt/atom.xslt">
+	<meta property="og:description" content="content">
+	<meta property="og:url" content="http://localhost:4000//assets/xslt/atom.xslt">
 	<meta property="og:locale" content="en_EN">
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="">
@@ -54,34 +54,34 @@
 
 	
 
-	<link type="text/plain" rel="author" href="//humans.txt">
+	<link type="text/plain" rel="author" href="http://localhost:4000//humans.txt">
 
 	
 
 	
 
-	<link rel="icon" sizes="32x32" href="//assets/img/favicon-32x32.png">
+	<link rel="icon" sizes="32x32" href="http://localhost:4000/assets/img/favicon-32x32.png">
 
-	<link rel="icon" sizes="192x192" href="//assets/img/favicon-32x32.png">
+	<link rel="icon" sizes="192x192" href="http://localhost:4000/assets/img/favicon-32x32.png">
 
-	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="//assets/img/favicon-32x32.png">
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="http://localhost:4000/assets/img/favicon-32x32.png">
 
-	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="//assets/img/favicon-32x32.png">
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://localhost:4000/assets/img/favicon-32x32.png">
 
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="//assets/img/favicon-32x32.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/assets/img/favicon-32x32.png">
 
-	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="//assets/img/favicon-32x32.png">
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://localhost:4000/assets/img/favicon-32x32.png">
 
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//assets/img/favicon-32x32.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/assets/img/favicon-32x32.png">
 
 	
-	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="//assets/img/favicon-32x32.png">
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://localhost:4000/assets/img/favicon-32x32.png">
 
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//assets/img/favicon-32x32.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/assets/img/favicon-32x32.png">
 
-	<link rel="apple-touch-icon-precomposed" href="//assets/img/favicon-32x32.png">	
+	<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/assets/img/favicon-32x32.png">	
 
-	<meta name="msapplication-TileImage" content="//assets/img/favicon-32x32.png">
+	<meta name="msapplication-TileImage" content="http://localhost:4000/assets/img/favicon-32x32.png">
 
 	<meta name="msapplication-TileColor" content="#fabb00">
 
@@ -96,7 +96,7 @@
   <nav class="top-bar" role="navigation" data-topbar>
     <ul class="title-area">
       <li class="name">
-      <h1 class="show-for-small-only"><a href="/" class="icon-tree"> </a></h1>
+      <h1 class="show-for-small-only"><a href="http://localhost:4000/" class="icon-tree"> </a></h1>
     </li>
        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
       <li class="toggle-topbar menu-icon"><a href="#"><span>Nav</span></a></li>
@@ -143,7 +143,7 @@
             
             
               <li class="divider"></li>
-              <li><a  href="//blog/">Blog</a></li>
+              <li><a  href="http://localhost:4000//blog/">Blog</a></li>
 
             
             
@@ -157,7 +157,7 @@
             
             
               <li class="divider"></li>
-              <li><a  href="//contact/">Contact</a></li>
+              <li><a  href="http://localhost:4000//contact/">Contact</a></li>
 
             
             
@@ -176,7 +176,7 @@
 
             
             
-              <li><a  href="//">Home</a></li>
+              <li><a  href="http://localhost:4000//">Home</a></li>
               <li class="divider"></li>
 
             
@@ -193,14 +193,19 @@
             
 
               <li class="has-dropdown">
-                <a  href="//about/">About</a>
+                <a  href="http://localhost:4000//about/">About</a>
 
                   <ul class="dropdown">
                     
 
                       
 
-                      <li><a  href="//about/">Bio</a></li>
+                      <li><a  href="http://localhost:4000//about/">Bio</a></li>
+                    
+
+                      
+
+                      <li><a  href="http://localhost:4000//projects/news/">News</a></li>
                     
                   </ul>
 
@@ -219,34 +224,24 @@
             
 
               <li class="has-dropdown">
-                <a  href="//projects/">Projects</a>
+                <a  href="http://localhost:4000//projects/">Projects</a>
 
                   <ul class="dropdown">
                     
 
                       
 
-                      <li><a  href="//projects/#imga">Image Analysis</a></li>
+                      <li><a  href="http://localhost:4000//projects/#imga">Image Analysis</a></li>
                     
 
                       
 
-                      <li><a  href="//projects/#nwsecu">Network Security</a></li>
+                      <li><a  href="http://localhost:4000//projects/#nwsecu">Network Security</a></li>
                     
 
                       
 
-                      <li><a  href="//projects/news/">News</a></li>
-                    
-
-                      
-
-                      <li><a  href="//activities/">Activities</a></li>
-                    
-
-                      
-
-                      <li><a  href="//downloads/">Downloads</a></li>
+                      <li><a  href="http://localhost:4000//downloads/">Downloads</a></li>
                     
                   </ul>
 
@@ -265,19 +260,19 @@
             
 
               <li class="has-dropdown">
-                <a  href="//publications/">Publications</a>
+                <a  href="http://localhost:4000//publications/">Publications</a>
 
                   <ul class="dropdown">
                     
 
                       
 
-                      <li><a  href="//publications/#papers">Papers</a></li>
+                      <li><a  href="http://localhost:4000//publications/#papers">Papers</a></li>
                     
 
                       
 
-                      <li><a  href="//publications/#patents">Patents</a></li>
+                      <li><a  href="http://localhost:4000//publications/#patents">Patents</a></li>
                     
                   </ul>
 
@@ -294,7 +289,7 @@
 
             
             
-              <li><a  href="//inmedia/">In Media</a></li>
+              <li><a  href="http://localhost:4000//inmedia/">In Media</a></li>
               <li class="divider"></li>
 
             
@@ -324,8 +319,8 @@
 <div id="masthead-no-image-header">
 	<div class="row">
 		<div class="small-12 columns">
-			<a id="logo" href="//" title=" – Scientist and Technical Leader">
-				<img src="//assets/img/logo.png" alt=" – Scientist and Technical Leader">
+			<a id="logo" href="http://localhost:4000/" title=" – AI architect and software builder">
+				<img src="http://localhost:4000//assets/img/logo.png" alt=" – AI architect and software builder">
 			</a>
 		</div><!-- /.small-12.columns -->
 	</div><!-- /.row -->
@@ -403,7 +398,7 @@
 
             <p class="shadow-black">
               Homepage of Michal Sofka, scientist and technical leader with passion for innovation to transform ideas into product solutions.
-              <a href="//info/">« more »</a>
+              <a href="http://localhost:4000//info/">« more »</a>
             </p>
           </div><!-- /.large-6.columns -->
 
@@ -427,27 +422,27 @@
               
                 
                   <li >
-                    <a href="/"  title=""></a>
+                    <a href="http://localhost:4000/"  title=""></a>
                   </li>
               
                 
                   <li >
-                    <a href="//contact/"  title="Contact">Contact</a>
+                    <a href="http://localhost:4000//contact/"  title="Contact">Contact</a>
                   </li>
               
                 
                   <li >
-                    <a href="//feed.xml"  title="Subscribe to RSS Feed">RSS</a>
+                    <a href="http://localhost:4000//feed.xml"  title="Subscribe to RSS Feed">RSS</a>
                   </li>
               
                 
                   <li >
-                    <a href="//atom.xml"  title="Subscribe to Atom Feed">Atom</a>
+                    <a href="http://localhost:4000//atom.xml"  title="Subscribe to Atom Feed">Atom</a>
                   </li>
               
                 
                   <li >
-                    <a href="//sitemap.xml"  title="Sitemap for Google Webmaster Tools">sitemap.xml</a>
+                    <a href="http://localhost:4000//sitemap.xml"  title="Sitemap for Google Webmaster Tools">sitemap.xml</a>
                   </li>
               
               </ul>
@@ -471,7 +466,7 @@
             
               
                 <li >
-                  <a href="/"  title=""></a>
+                  <a href="http://localhost:4000/"  title=""></a>
                 </li>
             
               
@@ -524,7 +519,7 @@
 		
 
 
-<script src="//assets/js/javascript.min.js"></script>
+<script src="http://localhost:4000//assets/js/javascript.min.js"></script>
 
 
 

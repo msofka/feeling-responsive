@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="//assets/xslt/rss.xslt" ?>
-<?xml-stylesheet type="text/css" href="//assets/css/rss.css" ?>
+<?xml-stylesheet type="text/xsl" href="http://localhost:4000//assets/xslt/rss.xslt" ?>
+<?xml-stylesheet type="text/css" href="http://localhost:4000//assets/css/rss.css" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title></title>
 		<description>Homepage of Michal Sofka, scientist and technical leader with passion for innovation to transform ideas into product solutions.</description>
-		<link>//</link>
-		<atom:link href="//feed.xml" rel="self" type="application/rss+xml" />
+		<link>http://localhost:4000//</link>
+		<atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
 				<title>Learning Detectors of Malicious Network Traffic</title>
-				<link>//2015/09/03/Learning-Detectors-of-Malicious-Network-Traffic</link>
+				<link>http://localhost:4000//2015/09/03/Learning-Detectors-of-Malicious-Network-Traffic</link>
 				<pubDate>Thu, 03 Sep 2015 00:00:00 -0400</pubDate>
 				<description>&lt;!--more--&gt;
 
@@ -269,7 +269,7 @@
 &lt;/div&gt;
 &lt;!-- /.row --&gt;
 </description>
-				<guid isPermaLink="true">//2015/09/03/Learning-Detectors-of-Malicious-Network-Traffic</guid>
+				<guid isPermaLink="true">http://localhost:4000//2015/09/03/Learning-Detectors-of-Malicious-Network-Traffic</guid>
 			</item>
 		
 	</channel>

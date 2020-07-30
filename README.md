@@ -1,23 +1,17 @@
-#Hompage
+# Responsive Vertical Timeline
 
-## installing
+An easy to customize, responsive timeline.
 
-With `ruby --version` > 2.0.0 installed:
+[Article on CodyHouse](https://codyhouse.co/gem/vertical-timeline)
 
-        gem install bundler
-        bundler install
+[Demo](https://codyhouse.co/demo/vertical-timeline)
+ 
+[License](https://codyhouse.co/license)
 
-## development / running locally
+## Dependencies
 
-use
+This experiment is built upon the [CodyHouse Framework](https://github.com/CodyHouse/codyhouse-framework).
 
-       make
+## Credits
 
-or
-
-       bundle exec jekyll serve
-
-website is at
-
-        http://localhost:4000/
-
+Icons: [Nucleo Library](https://nucleoapp.com/)
