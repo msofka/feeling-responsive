@@ -12,7 +12,7 @@ title: "Michal Sofka"
 
 
 # The slogan describes your website and is used on homepage in <title> and other important places
-slogan: "Scientist and Technical Leader"
+slogan: "AI architect and software builder"
 
 
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
@@ -89,7 +89,6 @@ exclude:
 
 collections:
 - news
-- activities
 
 # BIBLIOGRAPHY
 
@@ -232,7 +231,7 @@ og_image:                           "/images/logo.png"
 og_locale:                          "en_EN"
 og_type:                            "website"
 og_title:                           "Michal Sofka - Senior Scientist and Technical Leader"
-og_description:                     "Homepage of Leon Moonen, scientist and technical leader with passion for innovation to transform ideas into product solutions."
+og_description:                     "Homepage of Michal Sofka, scientist and technical leader with passion for innovation to transform ideas into product solutions."
 # og_url:                           ""
 # og_site_name:                     ""
 
