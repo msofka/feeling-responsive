@@ -8,6 +8,8 @@
   dropdown:
   - title: "Bio"
     url: "/about/"
+  - title: "News"
+    url: "/projects/news/"
 
 - title: Projects
   url: "/projects/"
@@ -17,10 +19,6 @@
     url: "/projects/#imga"
   - title: "Network Security"
     url: "/projects/#nwsecu"
-  - title: "News"
-    url: "/projects/news/"
-  - title: "Activities"
-    url: "/activities/"
   - title: "Downloads"
     url: "/downloads/"
 
