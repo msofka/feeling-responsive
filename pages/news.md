@@ -9,8 +9,8 @@ header:
 permalink: "/projects/news/"
 news:
 
--  "8/12/2020 Abstract on ``[Deep Learning MRI Reconstruction in Application to Point-of-Care MRI](https://msofka.github.io/pdfs/schlemper-ismrm20.pdf)`` presented by Jo S. at [ISMRM] (https://www.ismrm.org/20/program_files/O57.htm)."
--  "7//2020 [Listen to a podcast] where I speak about the role of deep learning in delivering Hyperfine's MRI systems (https://alldus.com/blog/podcasts/aiinaction-michal-sofka-hyperfine/)."
+-  "8/12/2020 Abstract on [``Deep Learning MRI Reconstruction in Application to Point-of-Care MRI''](https://msofka.github.io/pdfs/schlemper-ismrm20.pdf) presented by Jo S. at [ISMRM](https://www.ismrm.org/20/program_files/O57.htm)."
+-  "7/28/2020 [Listen to a podcast](https://alldus.com/blog/podcasts/aiinaction-michal-sofka-hyperfine/) where I speak about the role of deep learning in delivering Hyperfine's MRI systems."
 -  "12/6/2019 Hyperfine featured the bedside scanners at RSNA (presentations and scanning on the exhibition floor and [nVidia showcase](https://www.businesswire.com/news/home/20191201005195/en/Hyperfine-Research-Teams-NVIDIA-Next-Generation-Point-of-Care-MRI)). Anonounced [collaboration with UPenn Medicine](https://www.businesswire.com/news/home/20191202005138/en/Hyperfine-Penn-Medicine-Announce-Partnership-Image-Hydrocephalus)."
 -  "8/27/2019 Hyperfine will showcase the technology at the [ACEP conference](https://www.acep.org/acep19/generalinfo/about-acep-sa/) in Denver on Oct 27-30. Come and see us."
 -  "6/16/2019 Presented invited talk on ``Bringing MRI to the Patient's Bedside: Deep Learning for Image Acquisition and Image Interpretation'' at Medical Computer Vision Workshop ([CVPR MVC 2019](https://sites.google.com/view/cvprmcv19/home))."
