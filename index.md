@@ -29,6 +29,11 @@ widget-2:
     url: '/publications/'
     text-open: ""
     text-close: "<p />"
+    publications:
+      - "[Deep Learning MRI Reconstruction in Application to Point-of-Care MRI](pdfs/schlemper-ismrm20.pdf). ISMRM 2020."
+      - "[Deep Learning for Accelerated Nonuniform MR Image Reconstruction](pdfs/schlemper-miccai19.pdf). MICCAI 2019."
+      - "[Integrating statistical prior knowledge into convolutional neural networks](pdfs/milletari-miccai17.pdf). MICCAI 2017."
+      - "[Optimized Invariant Representation of Network Traffic for Detecting Unseen Malware Variants](pdfs/bartos-usenix16.pdf). USENIX 2016."
 widget-3:
     title: "Recent Tweets"
     url: "https://twitter.com/intent/follow?screen_name=MichalSofka"
