@@ -40,7 +40,7 @@ format: post
             {% endfor %}</ul>
             {{ page.widget-1.text-close }}
             </div>
-            <p><a class="button tiny radius" href="{{ page.widget-2.url }}">{{ site.data.language.more }}</a></p>
+            <p><a class="button tiny radius" href="{{ page.widget-1.url }}">{{ site.data.language.more }}</a></p>
         </div><!-- /.medium-4.columns -->
         {% endif %}
 
@@ -52,16 +52,12 @@ format: post
             <h2 class="font-size-h3 t10">{{ page.widget-2.title }}</h2>
             <div>{{ page.widget-2.text-open }}
             <ul>
-            {% for thepage in site.pages %}
-              {% if thepage.upcoming %}
-                {% for item in thepage.upcoming limit:5 %}
-                <li>{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</li>
-                {% endfor %}
-              {% endif %}
-            {% endfor %}</ul>
+            {% for item in page.widget-2.publications %}
+            <li>{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+            {% endfor %}
             {{ page.widget-2.text-close }}
             </div>
-            <p><a class="button tiny radius" href="{{ page.widget-1.url }}">{{ site.data.language.more }}</a></p>
+            <p><a class="button tiny radius" href="{{ page.widget-2.url }}">{{ site.data.language.more }}</a></p>
         </div><!-- /.medium-4.columns -->
         {% endif %}
     </div>
