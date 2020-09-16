@@ -100,7 +100,7 @@ I am most excited about the opportunities that that is this new imaging device w
         </video>
     </div>
     <div class="col-xs-12">
-        <p><I>T1 scan reconstructed using linear and deep learning algorithm.</I></p>
+        <p><I>T1 scan reconstructed using linear and deep learning algorithm (work in progress).</I></p>
     </div>
   </div>
 
