@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>http://localhost:4000//</id>
 	<title></title>
-	<updated>2020-09-15T20:52:36-04:00</updated>
+	<updated>2020-09-16T09:33:34-04:00</updated>
 
 	<subtitle>Homepage of Michal Sofka, scientist and technical leader with passion for innovation to transform ideas into product solutions.</subtitle>
 
@@ -74,10 +74,7 @@
 
     &lt;div class=&quot;row t30&quot;&gt;
     &lt;div class=&quot;col-xs-12&quot;&gt;
-      &lt;img class=&quot;cust-padd&quot; src=&quot;/images/hyperfine_swoop.jpg&quot; /&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-xs-12&quot;&gt;
-      &lt;p&gt;&lt;i&gt;Hyperfine Swoop portable MRI system.&lt;/i&gt;&lt;/p&gt;
+      &lt;img class=&quot;cust-padd&quot; src=&quot;/images/MRI_not_accessible.png&quot; /&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
