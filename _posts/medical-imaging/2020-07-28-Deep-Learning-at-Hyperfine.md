@@ -62,10 +62,7 @@ Hyperfine is a privately held company founded by Jonathan Rothberg in 2014. And 
 
   <div class="row t30">
     <div class="col-xs-12">
-      <img class="cust-padd" src="/images/hyperfine_swoop.jpg">
-    </div>
-    <div class="col-xs-12">
-      <p><I>Hyperfine Swoop portable MRI system.</I></p>
+      <img class="cust-padd" src="/images/MRI_not_accessible.png">
     </div>
   </div>
 
