@@ -5,7 +5,7 @@ layout: pagewide
 #
 subheadline: "Making MRI's smarter"
 title: "Deep Learning at Hyperfine Research"
-teaser: "As soon as Hyperfine was getting the first scans, I started building out the machine learning competency. We now have a strong team and are building algorithms that improve images and run on the scanner and tools for image interpretation that run in the cloud. I am passionate to work on hard and complex problems and there is no lack of those at Hyperfine."
+teaser: "As soon as Hyperfine was getting the first scans, I started building out the machine learning competency. We now have a strong team and are building algorithms that improve image quality and run on the scanner and tools for image interpretation that run in the cloud. I am passionate to work on hard and complex problems and there is no lack of those at Hyperfine."
 categories:
   - Hyperfine Deep Learning
 tags:
