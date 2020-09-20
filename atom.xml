@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>http://localhost:4000//</id>
 	<title></title>
-	<updated>2020-09-16T13:18:30-04:00</updated>
+	<updated>2020-09-16T17:33:11-04:00</updated>
 
 	<subtitle>Homepage of Michal Sofka, scientist and technical leader with passion for innovation to transform ideas into product solutions.</subtitle>
 
@@ -32,7 +32,7 @@
 					
 				</author>
 			
-			<summary>As soon as Hyperfine was getting the first scans, I started building out the machine learning competency. We now have a strong team and are building algorithms that improve images and run on the scanner and tools for image interpretation that run in the cloud. I am passionate to work on hard and complex problems and there is no lack of those at Hyperfine.</summary>
+			<summary>As soon as Hyperfine was getting the first scans, I started building out the machine learning competency. We now have a strong team and are building algorithms that improve image quality and run on the scanner and tools for image interpretation that run in the cloud. I am passionate to work on hard and complex problems and there is no lack of those at Hyperfine.</summary>
 			<content type="html" xml:base="http://localhost:4000//2020/07/28/Deep-Learning-at-Hyperfine">&lt;!--more--&gt;
 
 &lt;div class=&quot;row&quot;&gt;
