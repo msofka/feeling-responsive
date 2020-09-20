@@ -9,6 +9,7 @@ header:
 permalink: "/projects/news/"
 news:
 
+-  "9/19/2020 Looking forward to representing Hyperfine in an upcoming keynote ``Point-of-Care MRI: low-cost and portable system for low field dMRI anywhere anytime'' at the [MICCAI 2020 International Workshop on Computational Diffusion MRI](http://cmic.cs.ucl.ac.uk/cdmri/programme.html)."
 -  "8/12/2020 Abstract on [``Deep Learning MRI Reconstruction in Application to Point-of-Care MRI''](https://msofka.github.io/pdfs/schlemper-ismrm20.pdf) presented by Jo S. at [ISMRM](https://www.ismrm.org/20/program_files/O57.htm)."
 -  "7/28/2020 [Released a podcast](https://alldus.com/blog/podcasts/aiinaction-michal-sofka-hyperfine/) where I speak about the role of deep learning in delivering Hyperfine's MRI systems. [Transcript](2020/07/28/Deep-Learning-at-Hyperfine) also available."
 -  "12/6/2019 Hyperfine featured the bedside scanners at RSNA (presentations and scanning on the exhibition floor and [nVidia showcase](https://www.businesswire.com/news/home/20191201005195/en/Hyperfine-Research-Teams-NVIDIA-Next-Generation-Point-of-Care-MRI)). Anonounced [collaboration with UPenn Medicine](https://www.businesswire.com/news/home/20191202005138/en/Hyperfine-Penn-Medicine-Announce-Partnership-Image-Hydrocephalus)."
