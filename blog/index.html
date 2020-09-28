@@ -1,35 +1,58 @@
 ---
-layout: blog
-title: "Blog"
-teaser: "This is the Feeling Responsive Blog Template."
-image:
-   header: "bus_header.jpg"
+layout: default
+title: "Blog Posts"
+teaser: "Subscribe to be notified about new posts."
+breadcrumb: true
+header:
+   image_fullwidth: header_unsplash_8.jpg
+permalink: "blog"
 ---
 
 <div class="row">
-    <div class="medium-8 columns t30">
-    </div>
+        <div class="medium-8 columns t30">
+        </div>
+        <div class="medium-4 columns t30">
+		<!-- Begin Mailchimp Signup Form -->
+		<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+			#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+			/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+			   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+		</style>
+		<div id="mc_embed_signup">
+		<form action="https://sofka.us17.list-manage.com/subscribe/post?u=c2cddd8d5546cb92fcdcd2b20&amp;id=8e9708208e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+		    <div id="mc_embed_signup_scroll">
+			<label for="mce-EMAIL">Subscribe</label>
+			<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+		    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+		    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c2cddd8d5546cb92fcdcd2b20_8e9708208e" tabindex="-1" value=""></div>
+		    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+		    </div>
+		</form>
+		</div>
 
-    <div class="medium-4 columns t30">
-                <!-- Begin Mailchimp Signup Form -->
-                <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
-                <style type="text/css">
-                        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-                        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-                           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-                </style>
-                <div id="mc_embed_signup">
-                <form action="https://sofka.us17.list-manage.com/subscribe/post?u=c2cddd8d5546cb92fcdcd2b20&amp;id=8e9708208e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                    <div id="mc_embed_signup_scroll">
-                        <label for="mce-EMAIL">Subscribe</label>
-                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c2cddd8d5546cb92fcdcd2b20_8e9708208e" tabindex="-1" value=""></div>
-                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                    </div>
-                </form>
-                </div>
-
-                <!--End mc_embed_signup-->
-    </div>
+		<!--End mc_embed_signup-->
+	</div>
 </div>
+
+
+<div id="blog-index" class="row">
+	<div class="small-12 columns t30">
+		<h1>{{ page.title }}</h1>
+		{% if page.teaser %}<p class="teaser">{{ page.teaser }}</p>{% endif %}
+
+		<dl class="accordion" data-accordion>
+			{% assign counter = 1 %}
+			{% for post in site.posts limit:1000 %}
+			<dd class="accordion-navigation">
+			<a href="#panel{{ counter }}"><span class="iconfont"></span> {% if post.subheadline %}{{ post.subheadline }} › {% endif %}<strong>{{ post.title }}</strong></a>
+				<div id="panel{{ counter }}" class="content active">
+					{% if post.meta_description %}{{ post.meta_description | strip_html | escape }}{% elsif post.teaser %}{{ post.teaser | strip_html | escape }}{% endif %}
+					<a href="{{ post.url }}" title="Read {{ post.title | escape_once }}"><strong>{{ site.data.language.read_more }}</strong></a><br><br>
+				</div>
+			</dd>
+			{% assign counter=counter | plus:1 %}
+			{% endfor %}
+		</dl>
+	</div><!-- /.small-12.columns -->
+</div><!-- /.row -->

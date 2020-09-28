@@ -15,7 +15,7 @@ teaser:
         <p>In each of my previous roles, I started something out of nothing (in addition to my main job) which grew and ended up in a product. I like taking calculated risks and taking on life adventures. I drove from New York to Cancun once.</p>"
 header:
    title: "Michal Sofka"
-   subtitle: "AI architect and software builder"
+   subtitle: "Building AI software systems at startups"
    image_fullwidth: "open_road.jpg"
    noname: false
 header_image_set: true
