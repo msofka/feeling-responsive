@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<!-- Pages: 47 links with priority=0.3, changefreq=monthly -->
+<!-- Pages: 46 links with priority=0.3, changefreq=monthly -->
 
 	
 	<url>
 	<loc>http://localhost:4000//404.html</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -24,7 +24,7 @@
 	<url>
 	<loc>http://localhost:4000//atom.xml</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -41,7 +41,7 @@
 	<url>
 	<loc>http://localhost:4000//about/</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -56,7 +56,7 @@
 	<url>
 	<loc>http://localhost:4000//projects/cdc/</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -71,7 +71,7 @@
 	<url>
 	<loc>http://localhost:4000//changelog/</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -86,7 +86,7 @@
 	<url>
 	<loc>http://localhost:4000//contact/</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -101,7 +101,7 @@
 	<url>
 	<loc>http://localhost:4000//design/</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -116,7 +116,7 @@
 	<url>
 	<loc>http://localhost:4000//projects/dic/</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -131,7 +131,7 @@
 	<url>
 	<loc>http://localhost:4000//downloads/</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -146,7 +146,7 @@
 	<url>
 	<loc>http://localhost:4000//feed.xml</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -161,7 +161,7 @@
 	<url>
 	<loc>http://localhost:4000//projects/hdn/</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -176,7 +176,7 @@
 	<url>
 	<loc>http://localhost:4000//headers/</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -191,7 +191,7 @@
 	<url>
 	<loc>http://localhost:4000//humans.txt</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -206,7 +206,7 @@
 	<url>
 	<loc>http://localhost:4000//projects/i2i/</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -221,7 +221,7 @@
 	<url>
 	<loc>http://localhost:4000//old/index-new</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -236,7 +236,7 @@
 	<url>
 	<loc>http://localhost:4000//old/index-old</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -251,7 +251,7 @@
 	<url>
 	<loc>http://localhost:4000//blog</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -266,7 +266,7 @@
 	<url>
 	<loc>http://localhost:4000//</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -281,7 +281,7 @@
 	<url>
 	<loc>http://localhost:4000//</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -296,7 +296,7 @@
 	<url>
 	<loc>http://localhost:4000//old/index.md-05-29-2020</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -311,7 +311,7 @@
 	<url>
 	<loc>http://localhost:4000//old/index.md-12-15-2019</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -326,7 +326,7 @@
 	<url>
 	<loc>http://localhost:4000//old/index.md-12_10_2019</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -341,7 +341,7 @@
 	<url>
 	<loc>http://localhost:4000//old/index.md-newest</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -356,7 +356,7 @@
 	<url>
 	<loc>http://localhost:4000//inmedia/</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -371,7 +371,7 @@
 	<url>
 	<loc>http://localhost:4000//projects/lrr/</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -386,7 +386,7 @@
 	<url>
 	<loc>http://localhost:4000//projects/lrr_src/</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -401,7 +401,7 @@
 	<url>
 	<loc>http://localhost:4000//projects/malware/</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -416,7 +416,7 @@
 	<url>
 	<loc>http://localhost:4000//activities/media</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -431,7 +431,7 @@
 	<url>
 	<loc>http://localhost:4000//projects/news/</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -446,7 +446,7 @@
 	<url>
 	<loc>http://localhost:4000//projects/organs/</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -461,7 +461,7 @@
 	<url>
 	<loc>http://localhost:4000//projects/</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -476,22 +476,7 @@
 	<url>
 	<loc>http://localhost:4000//publications/</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000//research/</loc>
-	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -506,7 +491,7 @@
 	<url>
 	<loc>http://localhost:4000//robots.txt</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -525,7 +510,7 @@
 	<url>
 	<loc>http://localhost:4000//search/</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -540,7 +525,7 @@
 	<url>
 	<loc>http://localhost:4000//publications/selected/</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -555,7 +540,7 @@
 	<url>
 	<loc>http://localhost:4000//sitemap.xml</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -572,7 +557,7 @@
 	<url>
 	<loc>http://localhost:4000//vessels.html</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -587,7 +572,7 @@
 	<url>
 	<loc>http://localhost:4000//projects/vessels_classify/</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -602,7 +587,7 @@
 	<url>
 	<loc>http://localhost:4000//projects/vessels_exec/</loc>
 	
-		<lastmod>2020-09-27T20:46:00-04:00</lastmod>
+		<lastmod>2020-11-29T19:23:03-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
